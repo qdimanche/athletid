@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         'timeRed': '#D93A2F',
-        'timeRedHover' : '#c3342a'
+        'timeRedHover' : '#c3342a',
+        'blackShade' : '#242629'
       }
     },
   },
