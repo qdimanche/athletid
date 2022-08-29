@@ -8,6 +8,9 @@ import HoverVideoPlayer from 'react-hover-video-player';
 import {FaPlus} from "react-icons/fa";
 import RedButton from "./RedButton";
 import Testimonial from "../components/Testimonial";
+import Faq from "../components/Faq"
+import { ExpandMore } from '@material-ui/icons';
+import { Accordion, AccordionSummary, AccordionDetails } from '@material-ui/core';
 
 const HomepageContent = () => {
     return (
@@ -83,6 +86,25 @@ const HomepageContent = () => {
 
             <div className={'h-[100vh] py-8'}>
                 <Testimonial/>
+            </div>
+
+            <div className={'h-[100vh] py-8 grid grid-cols-2'}>
+                <div className={''}>
+                    <div className={'mb-12'}>
+                        <h2>Lorem ipsum dolor</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+
+                    <div>
+                        <Faq/>
+                    </div>
+
+                </div>
+
+
+
+
             </div>
 
         </div>

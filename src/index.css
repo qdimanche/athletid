@@ -46,6 +46,10 @@ h2 {
     line-height: 60px;
 }
 
+svg {
+    color: white;
+}
+
 @media screen and (min-width: 1040px) {
     .navbar {
         left: 0;
