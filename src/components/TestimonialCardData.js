@@ -45,6 +45,34 @@ const TestimonialCardData = [
         name: "Stark",
         surname: "Frederic",
         publicationDate: "4 days ago",
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        imgsrc: Avatar03,
+        name: "Herman",
+        surname: "Mike",
+        publicationDate: "1 hour ago",
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        imgsrc: Avatar04,
+        name: "Kim",
+        surname: "Alix",
+        publicationDate: "6 months ago",
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        imgsrc: Avatar01,
+        name: "Dupont",
+        surname: "Diana",
+        publicationDate: "2 months ago",
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        imgsrc: Avatar02,
+        name: "Stark",
+        surname: "Frederic",
+        publicationDate: "4 days ago",
         comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
-import RedButton from "./RedButton";
+import DownloadButton from "./DownloadButton";
 import {FaBars, FaTimes} from "react-icons/fa";
 import Logo from "../assets/images/logo-timer.webp"
 
@@ -10,7 +10,7 @@ const Navbar = () => {
 
 
     return (
-        <div className={'flex flex-row md:justify-between justify-between md:h-fit md:items-center px-12 py-8 z-10 absolute w-full'}>
+        <div className={'flex flex-row md:justify-between justify-between md:h-fit items-center px-12 py-8 z-10 absolute w-full'}>
             <Link to="/">
                 <img src={Logo} className={'w-14'} alt=""/>
             </Link>
@@ -25,7 +25,7 @@ const Navbar = () => {
                     <Link to="/">FAQ</Link>
                 </li>
                 <li>
-                    <RedButton/>
+                    <DownloadButton/>
                 </li>
 
             </ul>

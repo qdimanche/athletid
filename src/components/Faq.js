@@ -8,13 +8,12 @@ import { withStyles } from '@material-ui/core/styles';
 
 const Accordion = withStyles({
     root: {
-        border: '1px solid rgba(0, 0, 0, .125)',
         color: 'white',
         boxShadow: 'none',
         borderRadius: '10px',
         backgroundColor: '#292D30',
-        '&:not(:last-child)': {
-            borderBottom: 0,
+        '&:not(:first-child)': {
+            marginTop: '1em',
         },
         '&:before': {
             display: 'none',
@@ -35,6 +34,7 @@ const AccordionSummary = withStyles({
         borderRadius: '10px',
         minHeight: 56,
         '&$expanded': {
+            marginTop: '1em',
             minHeight: 56,
         },
     },
@@ -57,6 +57,19 @@ const Faq = () => {
 
                 <AccordionSummary  expandIcon={<ExpandMore />} className={'rounded-[30px]'}>
                     Accordion 1
+                </AccordionSummary>
+
+                <AccordionDetails>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                    sit amet blandit leo lobortis eget.
+                </AccordionDetails>
+
+            </Accordion>
+
+            <Accordion>
+
+                <AccordionSummary  expandIcon={<ExpandMore />}>
+                    Accordion 2
                 </AccordionSummary>
 
                 <AccordionDetails>

@@ -6,16 +6,16 @@ import HomeImg2 from '../assets/images/homeImg2.jpg';
 import AppVideoScreenshot from '../assets/images/appVideoScreenshot2.png'
 import HoverVideoPlayer from 'react-hover-video-player';
 import {FaPlus} from "react-icons/fa";
-import RedButton from "./RedButton";
+import DownloadButton from "./DownloadButton";
 import Testimonial from "../components/Testimonial";
-import Faq from "../components/Faq"
-import { ExpandMore } from '@material-ui/icons';
-import { Accordion, AccordionSummary, AccordionDetails } from '@material-ui/core';
+import Faq from "../components/Faq";
+import ContactForm from "../components/ContactForm"
+
 
 const HomepageContent = () => {
     return (
         <div className={'mx-12'}>
-            <div className={'grid grid-cols-2 gap-6 h-[100vh]  py-8'}>
+            <div className={'grid md:grid-cols-2 gap-6 min-h-screen  py-8'}>
                 <div className={'relative overflow-hidden rounded-[30px]'} id={'hover-target'}>
                     <HoverVideoPlayer
                         className="player-wrapper"
@@ -33,7 +33,7 @@ const HomepageContent = () => {
                             dolor sit amet</h2>
                     </div>
                     <Link to="/">
-                        <div className={'absolute bottom-[40px] right-[40px] border rounded-full p-4'}>
+                        <div className={'absolute bottom-[40px] right-[40px] border-[2px] rounded-full p-3'}>
                             <FaPlus/>
                         </div>
                     </Link>
@@ -46,7 +46,7 @@ const HomepageContent = () => {
                                 dolor sit amet</h2>
                         </div>
                         <Link to="/">
-                            <div className={'absolute bottom-[40px] right-[40px] border rounded-full p-4'}>
+                            <div className={'absolute bottom-[40px] right-[40px] border-[2px] rounded-full p-3'}>
                                 <FaPlus/>
                             </div>
                         </Link>
@@ -59,7 +59,7 @@ const HomepageContent = () => {
                                     dolor sit amet</h2>
                             </div>
                             <Link to="/">
-                                <div className={'absolute bottom-[40px] right-[40px] border rounded-full p-4'}>
+                                <div className={'absolute bottom-[40px] right-[40px] border-[2px] rounded-full p-3'}>
                                     <FaPlus/>
                                 </div>
                             </Link>
@@ -71,35 +71,36 @@ const HomepageContent = () => {
                 </div>
             </div>
 
-            <div className={'grid grid-cols-2 gap-6 h-[100vh] py-8'}>
+            <div className={'grid grid-cols-2 gap-6 min-h-screen py-8'}>
                 <div className={'lg:pr-20 lg:pl-20 md:px-10 pl-0 justify-center flex flex-col '}>
                     <h2 className={'lg:mb-3 mb-6'}>Lorem ipsum <br/>
                         dolor sit amet</h2>
                     <p className={'mb-8'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     <div className={'flex items-center space-x-10'}>
-                        <RedButton/>
+                        <DownloadButton/>
                     </div>
                 </div>
                 <div className={'bg-cover bg-center rounded-[30px] w-full h-full object-cover'} style={{backgroundImage: `url(${AppVideoScreenshot})`}}>
                 </div>
             </div>
 
-            <div className={'h-[100vh] py-8'}>
+            <div className={'min-h-screen py-8'}>
                 <Testimonial/>
             </div>
 
-            <div className={'h-[100vh] py-8 grid grid-cols-2'}>
+            <div className={'min-h-screen py-32 grid md:grid-cols-2 gap-16 lg:mx-28 '}>
                 <div className={''}>
                     <div className={'mb-12'}>
                         <h2>Lorem ipsum dolor</h2>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
 
+                    <Faq/>
 
-                    <div>
-                        <Faq/>
-                    </div>
+                </div>
 
+                <div className={'bg-blackShade rounded-[30px] h-fit'}>
+                    <ContactForm/>
                 </div>
 
 

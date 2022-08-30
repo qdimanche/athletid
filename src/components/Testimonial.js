@@ -10,7 +10,7 @@ const Testimonial = () => {
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
 
-            <div className={'grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6'}>
+            <div className={'grid lg:grid-cols-4 md:grid-cols-3 grid-rows-3 gap-6'}>
                 {TestimonialCardData.map((val, ind) =>{
                     return(
                         <TestimonialCard
