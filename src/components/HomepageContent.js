@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import AppShowcase from "../assets/videos/appShowcase.mp4";
 import HomeImg1 from '../assets/images/homeImg1.jpg';
 import HomeImg2 from '../assets/images/homeImg2.jpg';
-import AppVideoScreenshot from '../assets/images/appVideoScreenshot2.png'
+import AppShowcase02 from '../assets/videos/appShowcase02.mp4'
 import HoverVideoPlayer from 'react-hover-video-player';
 import {FaPlus} from "react-icons/fa";
 import DownloadButton from "./DownloadButton";
@@ -33,7 +33,7 @@ const HomepageContent = () => {
                             dolor sit amet</h2>
                     </div>
                     <Link to="/">
-                        <div className={'absolute bottom-[40px] right-[40px] border-[2px] rounded-full p-3'}>
+                        <div className={'absolute lg:bottom-[40px] lg:right-[40px] bottom-[20px] right-[20px] border-[2px] rounded-full p-3'}>
                             <FaPlus/>
                         </div>
                     </Link>
@@ -46,7 +46,7 @@ const HomepageContent = () => {
                                 dolor sit amet</h2>
                         </div>
                         <Link to="/">
-                            <div className={'absolute bottom-[40px] right-[40px] border-[2px] rounded-full p-3'}>
+                            <div className={'absolute lg:bottom-[40px] lg:right-[40px] bottom-[20px] right-[20px] border-[2px] rounded-full p-3'}>
                                 <FaPlus/>
                             </div>
                         </Link>
@@ -59,7 +59,7 @@ const HomepageContent = () => {
                                     dolor sit amet</h2>
                             </div>
                             <Link to="/">
-                                <div className={'absolute bottom-[40px] right-[40px] border-[2px] rounded-full p-3'}>
+                                <div className={'absolute lg:bottom-[40px] lg:right-[40px] bottom-[20px] right-[20px] border-[2px] rounded-full p-3'}>
                                     <FaPlus/>
                                 </div>
                             </Link>
@@ -71,7 +71,7 @@ const HomepageContent = () => {
                 </div>
             </div>
 
-            <div className={'grid grid-cols-2 gap-6 min-h-screen py-8'}>
+            <div className={'grid lg:grid-cols-2 gap-6 min-h-screen py-8 items-center'}>
                 <div className={'lg:pr-20 lg:pl-20 md:px-10 pl-0 justify-center flex flex-col '}>
                     <h2 className={'lg:mb-3 mb-6'}>Lorem ipsum <br/>
                         dolor sit amet</h2>
@@ -80,8 +80,12 @@ const HomepageContent = () => {
                         <DownloadButton/>
                     </div>
                 </div>
-                <div className={'bg-cover bg-center rounded-[30px] w-full h-full object-cover'} style={{backgroundImage: `url(${AppVideoScreenshot})`}}>
+                <div className={'rounded-[30px] overflow-hidden h-[90%]'}>
+                    <div className={"absolute top-0 left-0 w-full h-full bg-[black]/20 "}></div>
+                    <video className={'w-full h-full object-cover'} src={AppShowcase02} autoPlay loop muted />
                 </div>
+
+
             </div>
 
             <div className={'min-h-screen py-8'}>
