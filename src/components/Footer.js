@@ -1,10 +1,25 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {FaChevronRight, FaFacebook, FaInstagram, FaTiktok, FaYoutube} from "react-icons/fa";
+import FooterImg from "../assets/images/footerImg.jpg";
+
 
 const Footer = () => {
     return (
-        <div className={'px-12 pb-16 pt-16 md:pt-32 flex md:flex-row flex-col h-fit bg-blackShade justify-between'}>
+        <div className={'px-12 pb-16 pt-40 md:pt-48 mt-16 flex md:flex-row flex-col h-fit bg-blackShade justify-between relative'}>
+
+            <div className={'w-3/4 px-[20px] pt-32 pb-[20px] bg-cover bg-center absolute md:-top-[25%] -top-[15%] center-absolute rounded-[50px] flex items-end justify-between '} style={{backgroundImage: `url(${FooterImg})`}}>
+                <div>
+                    <h2>Lorem ipsum <br/>
+                        dolor sit amet</h2>
+                </div>
+                <div>
+                    <button className={'rounded-full bg-timeRed hover:bg-timeRedHover transition duration-300 p-4  circle-boxShadow'}><FaChevronRight/></button>
+                </div>
+
+            </div>
+
+
             <div className={'md:w-1/4 w-full flex flex-col'}>
                 <h2 >Timer</h2>
                 <div className={'flex flex-col mt-2 mb-14'}>

@@ -7,15 +7,16 @@ import AppShowcase02 from '../assets/videos/appShowcase02.mp4'
 import HoverVideoPlayer from 'react-hover-video-player';
 import {FaPlus} from "react-icons/fa";
 import DownloadButton from "./DownloadButton";
-import Testimonial from "../components/Testimonial";
+import Testimonial from "./Testimonial/Testimonial";
 import Faq from "../components/Faq";
-import ContactForm from "../components/ContactForm"
+import ContactForm from "../components/ContactForm";
 
 
 const HomepageContent = () => {
+
     return (
-        <div className={'mx-12'}>
-            <div className={'grid md:grid-cols-2 gap-6 min-h-screen  py-8'}>
+        <div className={'mx-12 containerScroll'}>
+            <div className={'grid md:grid-cols-2 gap-6 min-h-screen  py-8 panel orange'}>
                 <div className={'relative overflow-hidden rounded-[30px]'} id={'hover-target'}>
                     <HoverVideoPlayer
                         className="player-wrapper"
@@ -71,7 +72,7 @@ const HomepageContent = () => {
                 </div>
             </div>
 
-            <div className={'grid lg:grid-cols-2 gap-6 min-h-screen py-8 items-center'}>
+            <div className={'grid lg:grid-cols-2 gap-6 min-h-screen py-8 items-center panel red'}>
                 <div className={'lg:pr-20 lg:pl-20 md:px-10 pl-0 justify-center flex flex-col '}>
                     <h2 className={'lg:mb-3 mb-6'}>Lorem ipsum <br/>
                         dolor sit amet</h2>
@@ -88,11 +89,11 @@ const HomepageContent = () => {
 
             </div>
 
-            <div className={'min-h-screen py-8'}>
+            <div className={'min-h-screen py-8 panel'}>
                 <Testimonial/>
             </div>
 
-            <div className={'min-h-screen py-32 grid md:grid-cols-2 gap-16 lg:mx-28 '}>
+            <div className={'min-h-screen py-32 grid md:grid-cols-2 gap-16 lg:mx-28 panel blue yoyo'}>
                 <div className={''}>
                     <div className={'mb-12'}>
                         <h2>Lorem ipsum dolor</h2>

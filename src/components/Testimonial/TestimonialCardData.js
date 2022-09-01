@@ -1,7 +1,7 @@
-import Avatar01 from "../assets/images/avatar-01.jpeg";
-import Avatar02 from "../assets/images/avatar-02.jpeg";
-import Avatar03 from "../assets/images/avatar-03.jpeg";
-import Avatar04 from "../assets/images/avatar-04.jpeg";
+import Avatar01 from "../../assets/images/avatar-01.jpeg";
+import Avatar02 from "../../assets/images/avatar-02.jpeg";
+import Avatar03 from "../../assets/images/avatar-03.jpeg";
+import Avatar04 from "../../assets/images/avatar-04.jpeg";
 
 
 const TestimonialCardData = [
