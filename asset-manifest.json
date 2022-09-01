@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/timer/static/css/main.d0ef3b5b.css",
+    "main.js": "/timer/static/js/main.22e3f50c.js",
+    "static/media/heroVideoHome.mp4": "/timer/static/media/heroVideoHome.777bc56aec26055483d6.mp4",
+    "static/media/appShowcase02.mp4": "/timer/static/media/appShowcase02.1fec02bddf41f1698e5b.mp4",
+    "static/media/appShowcase.mp4": "/timer/static/media/appShowcase.3f4ede7485574dc1979c.mp4",
+    "static/media/footerImg.jpg": "/timer/static/media/footerImg.58aa86fa75e2852a5cd7.jpg",
+    "static/media/homeImg1.jpg": "/timer/static/media/homeImg1.ffcd6a1ec1e46d164965.jpg",
+    "static/media/logo-timer.webp": "/timer/static/media/logo-timer.f1f2c223738dba7dc331.webp",
+    "static/media/homeImg2.jpg": "/timer/static/media/homeImg2.7093b2a70a9c10d73d12.jpg",
+    "static/media/avatar-04.jpeg": "/timer/static/media/avatar-04.d072150bc05f018a4d91.jpeg",
+    "static/media/avatar-01.jpeg": "/timer/static/media/avatar-01.2e45ccceeda77b73c66e.jpeg",
+    "static/media/avatar-03.jpeg": "/timer/static/media/avatar-03.22c58d282da240e212bb.jpeg",
+    "static/media/avatar-02.jpeg": "/timer/static/media/avatar-02.14a07c72f4171110bb01.jpeg",
+    "static/media/greycliffCF-bold.ttf": "/timer/static/media/greycliffCF-bold.8883621dc18ff4a9833a.ttf",
+    "static/media/greycliffCF-demibold.ttf": "/timer/static/media/greycliffCF-demibold.ad44fd62743f9946a3e4.ttf",
+    "static/media/greycliffcf-regular.ttf": "/timer/static/media/greycliffcf-regular.2d53298323f2ca25b753.ttf",
+    "index.html": "/timer/index.html",
+    "main.d0ef3b5b.css.map": "/timer/static/css/main.d0ef3b5b.css.map",
+    "main.22e3f50c.js.map": "/timer/static/js/main.22e3f50c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0ef3b5b.css",
+    "static/js/main.22e3f50c.js"
+  ]
+}
