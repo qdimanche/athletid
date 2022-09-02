@@ -15,7 +15,7 @@ import ContactForm from "../components/ContactForm";
 const HomepageContent = () => {
 
     return (
-        <div className={'mx-12 containerScroll'}>
+        <div className={'mx-20 containerScroll'}>
             <div className={'grid md:grid-cols-2 gap-6 min-h-screen  py-8 panel orange'}>
                 <div className={'relative overflow-hidden rounded-[30px]'} id={'hover-target'}>
                     <HoverVideoPlayer
