@@ -101,9 +101,9 @@ const HomepageContent = () => {
                         <DownloadButton/>
                     </div>
                 </div>
-                <div className={'rounded-[30px] relative overflow-hidden md:h-full h-[70%] md:order-2'}>
+                <div className={'rounded-[30px] relative !overflow-hidden md:h-full h-[70%] md:order-2'}>
                     <div className={"absolute top-0 left-0 w-full h-full lg:bg-[black]/20 bg-black/60 z-2 "}></div>
-                    <video className={'w-full h-full object-cover z-1'} src={AppShowcase02} autoPlay loop muted />
+                    <video className={'w-full h-full object-cover absolute z-1'} src={AppShowcase02} autoPlay loop muted type="video/mp4" />
                 </div>
 
 
