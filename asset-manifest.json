@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/timer/static/css/main.46628ad2.css",
-    "main.js": "/timer/static/js/main.54a4ac3d.js",
+    "main.css": "/timer/static/css/main.c16e4d3b.css",
+    "main.js": "/timer/static/js/main.76ee761c.js",
     "static/media/heroVideoHome.mp4": "/timer/static/media/heroVideoHome.777bc56aec26055483d6.mp4",
     "static/media/appShowcase02.mp4": "/timer/static/media/appShowcase02.1fec02bddf41f1698e5b.mp4",
     "static/media/appShowcase.mp4": "/timer/static/media/appShowcase.3f4ede7485574dc1979c.mp4",
@@ -18,11 +18,11 @@
     "static/media/greycliffCF-demibold.ttf": "/timer/static/media/greycliffCF-demibold.ad44fd62743f9946a3e4.ttf",
     "static/media/greycliffcf-regular.ttf": "/timer/static/media/greycliffcf-regular.2d53298323f2ca25b753.ttf",
     "index.html": "/timer/index.html",
-    "main.46628ad2.css.map": "/timer/static/css/main.46628ad2.css.map",
-    "main.54a4ac3d.js.map": "/timer/static/js/main.54a4ac3d.js.map"
+    "main.c16e4d3b.css.map": "/timer/static/css/main.c16e4d3b.css.map",
+    "main.76ee761c.js.map": "/timer/static/js/main.76ee761c.js.map"
   },
   "entrypoints": [
-    "static/css/main.46628ad2.css",
-    "static/js/main.54a4ac3d.js"
+    "static/css/main.c16e4d3b.css",
+    "static/js/main.76ee761c.js"
   ]
 }
