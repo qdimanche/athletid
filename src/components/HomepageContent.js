@@ -16,7 +16,7 @@ import ContactForm from "../components/ContactForm";
 const HomepageContent = () => {
 
     return (
-        <div className={'mx-20 containerScroll'}>
+        <div className={'md:mx-20 mx-10 containerScroll'}>
             <div className={'grid md:grid-cols-2 md:gap-6 min-h-screen items-center md:items-stretch py-8 panel orange'}>
                 <div className={'relative overflow-hidden rounded-[30px] hidden md:block'} id={'hover-target'}>
                     <HoverVideoPlayer
@@ -42,7 +42,7 @@ const HomepageContent = () => {
                     </Link>
 
                 </div>
-                <div className={'grid grid-cols-1 md:grid-rows-2 grid-rows-3 gap-6 md:h-full h-2/3'}>
+                <div className={'grid grid-cols-1 md:grid-rows-2 grid-rows-3 gap-6 h-full'}>
 
 
 
@@ -92,8 +92,8 @@ const HomepageContent = () => {
                 </div>
             </div>
 
-            <div className={'grid lg:grid-cols-2 gap-6 min-h-screen py-8 items-center panel red md:items-stretch items-center'}>
-                <div className={'lg:pr-20 lg:pl-20 md:px-10 pl-0 justify-center flex flex-col md:order-1 order-last'}>
+            <div className={'grid lg:grid-cols-2 lg:gap-6 h-screen py-8 items-center panel red md:items-stretch items-center relative'}>
+                <div className={'lg:pr-20 lg:pl-20 md:px-10 pl-0 justify-center flex flex-col lg:order-1 order-last lg:mt-0 -mt-6 lg:relative absolute z-30 w-2/3 lg:w-full md:top-[10%] lg:top-0 top-[12%] bottom-[10%] center-absolute'}>
                     <h2 className={'lg:mb-3 mb-6'}>Lorem ipsum <br/>
                         dolor sit amet</h2>
                     <p className={'mb-8'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -101,19 +101,19 @@ const HomepageContent = () => {
                         <DownloadButton/>
                     </div>
                 </div>
-                <div className={'rounded-[30px] overflow-hidden h-[90%] md:order-2'}>
-                    <div className={"absolute top-0 left-0 w-full h-full bg-[black]/20 "}></div>
-                    <video className={'w-full h-full object-cover'} src={AppShowcase02} autoPlay loop muted />
+                <div className={'rounded-[30px] relative overflow-hidden md:h-full h-[70%] md:order-2'}>
+                    <div className={"absolute top-0 left-0 w-full h-full lg:bg-[black]/20 bg-black/60 z-2 "}></div>
+                    <video className={'w-full h-full object-cover z-1'} src={AppShowcase02} autoPlay loop muted />
                 </div>
 
 
             </div>
 
-            <div className={'min-h-screen py-8 panel'}>
+            <div className={'min-h-screen py-8 panel grid items-center'}>
                 <Testimonial/>
             </div>
 
-            <div className={'min-h-screen py-32 grid md:grid-cols-2 gap-16 lg:mx-28 panel blue yoyo'}>
+            <div className={'min-h-screen py-32 grid md:grid-cols-2 gap-16 lg:mx-28 '}>
                 <div className={''}>
                     <div className={'mb-12'}>
                         <h2>Lorem ipsum dolor</h2>

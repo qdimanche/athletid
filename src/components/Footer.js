@@ -33,12 +33,12 @@ const Footer = () => {
                 <p className={'font-bold hidden md:block'}>© 2022 Timer by Athletid. All rights reserved.</p>
             </div>
             <div className={'lg:w-3/4 w-fit w-full flex lg:flex-row flex-col lg:items-start lg:justify-end md:justify-start lg:space-y-0 md:space-y-10 relative'}>
-                <div className={'flex lg:w-fit md:w-full lg:space-x-16 md:space-x-10'}>
+                <div className={'flex lg:w-fit md:w-full lg:space-x-16 md:space-x-10 space-x-6 md:space-y-0'}>
                     <Link to="/"><div className={'font-semibold'}>À propos de nous</div></Link>
                     <Link to="/"><div className={'font-semibold'}>Comment ça marche ?</div></Link>
                 </div>
 
-                <div className={'flex flex-col w-fit lg:ml-16'}>
+                <div className={'flex flex-col w-fit lg:ml-16 md:mt-0 mt-6'}>
                     <p className={'font-semibold mb-2'}>S'abonner</p>
                     <form action="" className={'flex flex-col space-y-6'}>
                         <div className={'relative'}>

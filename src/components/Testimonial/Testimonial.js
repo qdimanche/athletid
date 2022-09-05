@@ -10,8 +10,8 @@ const Testimonial = () => {
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
 
-            <div className={'grid lg:grid-cols-4 md:grid-cols-3 grid-rows-3 gap-6'}>
-                {TestimonialCardData.map((val, ind) =>{
+            <div className={'lg:grid grid-cols-4 grid-rows-2 gap-6 hidden'}>
+                {TestimonialCardData.slice(0,12).map((val, ind) =>{
                     return(
                         <TestimonialCard
                          key={ind}
@@ -24,6 +24,37 @@ const Testimonial = () => {
                     )
                 })}
             </div>
+
+            <div className={'grid lg:grid-cols-4 md:grid-cols-2 gap-6 lg:hidden md:grid hidden '}>
+                {TestimonialCardData.slice(0,6).map((val, ind) =>{
+                    return(
+                        <TestimonialCard
+                            key={ind}
+                            imgsrc={val.imgsrc}
+                            name={val.name}
+                            surname={val.surname}
+                            publicationDate={val.publicationDate}
+                            comment={val.comment}
+                        />
+                    )
+                })}
+            </div>
+
+            <div className={'gap-6 md:hidden grid'}>
+                {TestimonialCardData.slice(0,4).map((val, ind) =>{
+                    return(
+                        <TestimonialCard
+                            key={ind}
+                            imgsrc={val.imgsrc}
+                            name={val.name}
+                            surname={val.surname}
+                            publicationDate={val.publicationDate}
+                            comment={val.comment}
+                        />
+                    )
+                })}
+            </div>
+
         </div>
     );
 };

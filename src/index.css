@@ -91,6 +91,12 @@ input:-webkit-autofill{
     transform: translate(-50%, 0);
 }
 
+.center-vertically {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
 
 .circle-boxShadow {
     -webkit-box-shadow: 0px -1px 15px 1px rgba(230,61,49,0.7);
