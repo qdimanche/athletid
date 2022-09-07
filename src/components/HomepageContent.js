@@ -17,7 +17,7 @@ const HomepageContent = () => {
 
     return (
         <div className={'md:mx-20 mx-10 containerScroll'}>
-            <div className={'grid md:grid-cols-2 md:gap-6 min-h-screen items-center md:items-stretch py-8 panel orange'}>
+            <div className={'grid md:grid-cols-2 md:gap-6 min-h-screen items-center md:items-stretch py-8 panel orange lg:mt-6'}>
                 <div className={'relative overflow-hidden rounded-[30px] hidden md:block'} id={'hover-target'}>
                     <HoverVideoPlayer
                         className="player-wrapper"
@@ -42,7 +42,7 @@ const HomepageContent = () => {
                     </Link>
 
                 </div>
-                <div className={'grid grid-cols-1 md:grid-rows-2 grid-rows-3 gap-6 h-full'}>
+                <div className={'grid grid-cols-1 md:grid-rows-2 grid-rows-3 gap-6 md:h-full min-h-[90vh] md:mt-0 mt-28'}>
 
 
 
@@ -101,9 +101,9 @@ const HomepageContent = () => {
                         <DownloadButton/>
                     </div>
                 </div>
-                <div className={'rounded-[30px] relative !overflow-hidden md:h-full h-[70%] md:order-2'}>
-                    <div className={"absolute top-0 left-0 w-full h-full lg:bg-[black]/20 bg-black/60 z-2 "}></div>
-                    <video className={'w-full h-full object-cover absolute z-1'} src={AppShowcase02} autoPlay loop muted type="video/mp4" />
+                <div className={'!rounded-[30px] relative !overflow-hidden md:h-full h-[70%] md:order-2'}>
+                    <div className={"absolute !rounded-[30px] top-0 left-0 w-full h-full lg:bg-[black]/20 bg-black/60 z-10 "}></div>
+                    <video className={'w-full !rounded-[30px] h-full object-cover absolute z-1'} src={AppShowcase02} autoPlay loop muted type="video/mp4" />
                 </div>
 
 

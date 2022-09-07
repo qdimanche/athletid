@@ -41,7 +41,7 @@ const Testimonial = () => {
             </div>
 
             <div className={'gap-6 md:hidden grid'}>
-                {TestimonialCardData.slice(0,4).map((val, ind) =>{
+                {TestimonialCardData.slice(0,3).map((val, ind) =>{
                     return(
                         <TestimonialCard
                             key={ind}
