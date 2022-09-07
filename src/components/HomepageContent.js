@@ -16,9 +16,9 @@ import ContactForm from "../components/ContactForm";
 const HomepageContent = () => {
 
     return (
-        <div className={'md:mx-20 mx-10 containerScroll'}>
+        <div className={'mx-10 containerScroll'}>
             <div className={'grid md:grid-cols-2 md:gap-6 min-h-screen items-center md:items-stretch py-8 panel orange lg:mt-6'}>
-                <div className={'relative overflow-hidden rounded-[30px] hidden md:block'} id={'hover-target'}>
+                <div className={'relative !overflow-hidden rounded-[30px] video-rounded-webkit hidden md:block'} id={'hover-target'}>
                     <HoverVideoPlayer
                         className="player-wrapper"
                         hoverTarget={() => document.getElementById("hover-target")}
@@ -36,8 +36,8 @@ const HomepageContent = () => {
                             dolor sit amet</h2>
                     </div>
                     <Link to="/">
-                        <div className={'absolute lg:bottom-[40px] lg:right-[40px] bottom-[20px] right-[20px] border-[2px] rounded-full p-3'}>
-                            <FaPlus/>
+                        <div className={'absolute lg:bottom-[30px] lg:right-[30px] bottom-[20px] right-[20px] border-[2px] rounded-full p-1'}>
+                            <FaPlus size={18}/>
                         </div>
                     </Link>
 
@@ -53,8 +53,8 @@ const HomepageContent = () => {
                                 dolor sit amet</h2>
                         </div>
                         <Link to="/">
-                            <div className={'absolute lg:bottom-[40px] lg:right-[40px] bottom-[20px] right-[20px] border-[2px] rounded-full p-3'}>
-                                <FaPlus/>
+                            <div className={'absolute lg:bottom-[30px] lg:right-[30px] bottom-[20px] right-[20px] border-[2px] rounded-full p-1'}>
+                                <FaPlus size={18}/>
                             </div>
                         </Link>
                     </div>
@@ -68,8 +68,8 @@ const HomepageContent = () => {
                                 dolor sit amet</h2>
                         </div>
                         <Link to="/">
-                            <div className={'absolute lg:bottom-[40px] lg:right-[40px] bottom-[20px] right-[20px] border-[2px] rounded-full p-3'}>
-                                <FaPlus/>
+                            <div className={'absolute lg:bottom-[30px] lg:right-[30px] bottom-[20px] right-[20px] border-[2px] rounded-full p-1'}>
+                                <FaPlus size={18}/>
                             </div>
                         </Link>
                     </div>
@@ -81,8 +81,8 @@ const HomepageContent = () => {
                                 dolor sit amet</h2>
                         </div>
                         <Link to="/">
-                            <div className={'absolute lg:bottom-[40px] lg:right-[40px] bottom-[20px] right-[20px] border-[2px] rounded-full p-3'}>
-                                <FaPlus/>
+                            <div className={'absolute lg:bottom-[30px] lg:right-[30px] bottom-[20px] right-[20px] border-[2px] rounded-full p-1'}>
+                                <FaPlus size={18}/>
                             </div>
                         </Link>
                     </div>

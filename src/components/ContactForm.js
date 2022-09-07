@@ -56,7 +56,7 @@ const ContactForm = (props) => {
                     <textarea name="message" id="message" rows="5" placeholder={'Message'}></textarea>
                 </div>
 
-                <input type="submit" value="Send a message" className={'bg-timeRed hover:bg-timeRedHover transition duration-300  px-4 py-3 rounded-[30px] shadow-lg shadow-timeRed/50'}/>
+                <input type="submit" value="Send a message" className={'bg-timeRed hover:bg-timeRedHover transition duration-300  px-4 py-3 rounded-[30px] shadow-lg shadow-timeRed/50 w-1/2 self-end'}/>
 
                 <div> {result ? <Result/> : null} </div>
             </form>

@@ -111,6 +111,9 @@ input:-webkit-autofill{
     height: 100%;
 }
 
+.video-rounded-webkit video {
+    -webkit-border-radius: 30px !important;
+}
 
 .MuiAccordion-rounded {
     border-radius: 10px !important;
