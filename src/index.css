@@ -36,6 +36,7 @@
 body {
     color: white;
     background-color: #313539;
+    height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6, span {
@@ -52,8 +53,8 @@ h1 {
 }
 
 h2 {
-    font-size:2.7em;
-    line-height: 50px;
+    font-size:4.5em;
+    line-height: 90px;
 }
 
 svg {
@@ -91,16 +92,27 @@ input:-webkit-autofill{
     transform: translate(-50%, 0);
 }
 
-.center-vertically {
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
+.absoluteVertical {
+    position: absolute;
+    top: 50%;
+    left: 2.5rem !important;
+    transform: translate(-0%, -50%);
 }
 
 
 .circle-boxShadow {
     -webkit-box-shadow: 0px -1px 15px 1px rgba(230,61,49,0.7);
     box-shadow: 0px -1px 15px 1px rgba(230,61,49,0.7);
+}
+
+.scrollbar-thumb {
+    background-color: black !important;
+    width: 6px !important;
+}
+
+.scrollbar-track-y {
+    background-color: transparent !important;
+    width: 6px !important;
 }
 
 
@@ -119,6 +131,49 @@ input:-webkit-autofill{
     border-radius: 10px !important;
 }
 
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+}
+.my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    margin-bottom: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.my-masonry-grid_column:nth-child(1) {
+    width: 15% !important;
+}
+
+.my-masonry-grid_column:nth-child(2) {
+    width: 20% !important;
+}
+
+.my-masonry-grid_column:nth-child(3) {
+    width: 15% !important;
+}
+
+.my-masonry-grid_column:nth-child(4) {
+    width: 15% !important;
+}
+
+.my-masonry-grid_column:nth-child(5) {
+    width: 20% !important;
+}
+
+.my-masonry-grid_column:nth-child(6) {
+    width: 15% !important;
+}
 
 
 

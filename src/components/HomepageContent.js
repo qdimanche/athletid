@@ -7,7 +7,7 @@ import HomeImg2 from '../assets/images/homeImg2.jpg';
 import AppShowcase02 from '../assets/videos/appShowcase02.mp4'
 import HoverVideoPlayer from 'react-hover-video-player';
 import {FaPlus} from "react-icons/fa";
-import DownloadButton from "./DownloadButton";
+import DiscoverButton from "./Buttons/DiscoverButton";
 import Testimonial from "./Testimonial/Testimonial";
 import Faq from "../components/Faq";
 import ContactForm from "../components/ContactForm";
@@ -98,7 +98,7 @@ const HomepageContent = () => {
                         dolor sit amet</h2>
                     <p className={'mb-8'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     <div className={'flex items-center space-x-10'}>
-                        <DownloadButton/>
+                        <DiscoverButton/>
                     </div>
                 </div>
                 <div className={'!rounded-[30px] relative !overflow-hidden md:h-full h-[70%] md:order-2'}>
