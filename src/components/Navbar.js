@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
-import DiscoverButton from "./Buttons/DiscoverButton";
+import RedButton from "./Buttons/RedButton";
 import {FaBars, FaTimes} from "react-icons/fa";
 import Logo from "../assets/images/logo-athletid.webp"
 
@@ -10,7 +10,7 @@ const Navbar = () => {
 
 
     return (
-        <div className={'flex flex-row md:justify-between justify-between md:h-fit items-center px-10  py-8 z-10 absolute w-full'}>
+        <div className={'flex flex-row md:justify-between justify-between md:h-fit items-center px-10  py-8 z-10 absolute w-full fade-in-effect'}>
             <Link to="/">
                 <img src={Logo} className={'w-32'} alt=""/>
             </Link>
@@ -19,13 +19,10 @@ const Navbar = () => {
                     <Link to="/">À propos de nous</Link>
                 </li>
                 <li>
-                    <Link to="/">Comment ça marche ?</Link>
+                    <Link to="/">Support</Link>
                 </li>
                 <li>
-                    <Link to="/">FAQ</Link>
-                </li>
-                <li>
-                    <DiscoverButton/>
+                    <RedButton text={'Applications'}/>
                 </li>
 
             </ul>

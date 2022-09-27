@@ -35,9 +35,11 @@
 
 body {
     color: white;
-    background-color: #313539;
     height: 100vh;
+    transition: background-color 1s ease;
 }
+
+
 
 h1, h2, h3, h4, h5, h6, span {
     font-weight: 700;
@@ -55,6 +57,11 @@ h1 {
 h2 {
     font-size:4.5em;
     line-height: 90px;
+}
+
+h3 {
+    font-size: 2.2em;
+    line-height: 48px;
 }
 
 svg {
@@ -87,10 +94,12 @@ input:-webkit-autofill{
 }
 
 
+
 .center-absolute {
     left: 50%;
     transform: translate(-50%, 0);
 }
+
 
 .absoluteVertical {
     position: absolute;
@@ -113,6 +122,15 @@ input:-webkit-autofill{
 .scrollbar-track-y {
     background-color: transparent !important;
     width: 6px !important;
+}
+
+.fade-in-effect {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 

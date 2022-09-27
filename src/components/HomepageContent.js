@@ -7,7 +7,7 @@ import HomeImg2 from '../assets/images/homeImg2.jpg';
 import AppShowcase02 from '../assets/videos/appShowcase02.mp4'
 import HoverVideoPlayer from 'react-hover-video-player';
 import {FaPlus} from "react-icons/fa";
-import DiscoverButton from "./Buttons/DiscoverButton";
+import DiscoverButton from "./Buttons/RedButton";
 import Testimonial from "./Testimonial/Testimonial";
 import Faq from "../components/Faq";
 import ContactForm from "../components/ContactForm";

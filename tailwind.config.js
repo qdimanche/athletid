@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'timeRed': '#D93A2F',
-        'timeRedHover' : '#c3342a',
+        'timeRed': '#E63D31',
+        'timeRedHover' : '#D93A2F',
         'blackShade' : '#242629'
       }
     },

@@ -1,14 +1,14 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-const DiscoverButton = () => {
+const RedButton = (props) => {
     return (
         <Link to="/">
             <div className={'bg-timeRed hover:bg-timeRedHover transition duration-300  px-6 py-3 rounded-[30px] circle-boxShadow'}>
-                Découvrir
+                {props.text}
             </div>
         </Link>
     );
 };
 
-export default DiscoverButton;
+export default RedButton;
