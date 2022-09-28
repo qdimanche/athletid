@@ -17,7 +17,7 @@ const MasonryGrid = (props) => {
                 columnClassName="my-masonry-grid_column">
                 {props.imagesUrls.map((img, i) =>
                     <div>
-                        <img src={img} key={i} className={'block w-full'}/>
+                        <img src={img} alt={''} key={i} className={'block w-full'}/>
                     </div>
 
                 )}

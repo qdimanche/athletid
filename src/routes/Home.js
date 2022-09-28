@@ -1,6 +1,5 @@
 import React from 'react';
-import Navbar from "../components/Navbar";
-import HeroVideo from "../components/HeroVideo";
+import Header from "../components/Header";
 import HeroVideoHome from "../assets/videos/heroVideoHome.mp4";
 import FullScreenBgImage from "../components/FullScreenBgImage";
 import timerAppPreview from "../assets/images/timer-app-preview.png";
@@ -12,7 +11,10 @@ import {useInView} from "react-intersection-observer";
 
 
 
+
 const MyComponent = () => {
+
+
 
     const { ref: bgWhite, inView: myElementIsVisible } = useInView();
 
@@ -21,15 +23,14 @@ const MyComponent = () => {
         document.body.style.color = "black";
 
     }else  {
-        document.body.style.backgroundColor = "black";
+        document.body.style.backgroundColor = "#313539";
         document.body.style.color = "white";
     }
 
 
     return (
         <div>
-            <Navbar/>
-            <HeroVideo src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"}/>
+            <Header src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"}/>
             <FullScreenBgImage src={timerAppPreview} title={"Title"}  tag={"Bientôt disponible"}/>
             <FullScreenBgImage src={athletidAppPreview} title={"Title"}  tag={"Nouveau"}/>
             <AboutHome/>

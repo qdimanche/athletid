@@ -34,6 +34,7 @@
 
 
 body {
+    background-color: #313539;
     color: white;
     height: 100vh;
     transition: background-color 1s ease;
@@ -93,6 +94,11 @@ input:-webkit-autofill{
     -webkit-text-fill-color: white !important;
 }
 
+.navbar {
+    left: 0;
+    position: relative;
+}
+
 
 
 .center-absolute {
@@ -124,14 +130,36 @@ input:-webkit-autofill{
     width: 6px !important;
 }
 
-.fade-in-effect {
-    animation: fadeIn 3s;
+
+.apparition-from-bottom {
+    animation: fadeIn 6s, text-bottom-to-top 4s;
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+.apparition-from-top {
+    animation: fadeIn 6s, text-top-to-bottom 4s;
 }
+
+
+@keyframes fadeIn {
+    0%{ opacity: 0;}
+    30%{ opacity : 0;}
+    40%{opacity: 0;}
+    100% { opacity: 1;}
+}
+
+
+
+@keyframes text-bottom-to-top {
+    0% {margin-top: 20px }
+    60% {margin-top: 20px}
+    100% {margin-top: 0}
+}
+
+@keyframes text-top-to-bottom {
+    0% {margin-top: -20px }
+    100% {margin-top: 0}
+}
+
 
 
 
@@ -198,13 +226,6 @@ input:-webkit-autofill{
 
 /*Responsive*/
 
-@media screen and (min-width: 1040px) {
-    .navbar {
-        left: 0;
-        position: relative;
-    }
-}
-
 
 @media screen and (max-width: 1040px) {
     h1 {
@@ -220,10 +241,6 @@ input:-webkit-autofill{
 
     .navbar {
         transition: 0.3s;
-    }
-
-    .navbar li {
-        padding: 1rem 0;
     }
 
     .navbar li a {
