@@ -27,6 +27,8 @@ const Header = (props) => {
 
 
 
+
+
     return (
         <div className={playApparitionAnimation ? 'h-[93vh] m-6  relative rounded-[60px] overflow-hidden duration-[1500ms] delay-[1500ms] flex' : 'h-screen relative  overflow-hidden duration-[2000ms] delay-[2000ms] flex'}>
             <Navbar/>
@@ -44,11 +46,11 @@ const Header = (props) => {
                 </div>
 
             </div>
-            <div className={'absolute bottom-[5%] right-[2.5rem] flex space-x-4 z-[999] apparition-from-bottom'}>
-                <FaYoutube/>
-                <FaFacebook/>
-                <FaInstagram/>
-                <FaTiktok/>
+            <div className={'absolute bottom-[40px] right-[40px] flex space-x-4 z-[900] apparition-from-bottom-absolute'}>
+                <FaYoutube size={14}/>
+                <FaFacebook size={14}/>
+                <FaInstagram size={14}/>
+                <FaTiktok size={14}/>
             </div>
 
 

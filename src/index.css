@@ -51,8 +51,8 @@ p {
 }
 
 h1 {
-    font-size: 6em;
-    line-height: 90px;
+    font-size: 5.8em;
+    line-height: 120px;
 }
 
 h2 {
@@ -63,6 +63,12 @@ h2 {
 h3 {
     font-size: 2.2em;
     line-height: 48px;
+}
+
+
+li a {
+    font-size: 0.8em;
+    color: white !important;
 }
 
 svg {
@@ -94,17 +100,11 @@ input:-webkit-autofill{
     -webkit-text-fill-color: white !important;
 }
 
-.navbar {
-    left: 0;
-    position: relative;
-}
 
 
 
-.center-absolute {
-    left: 50%;
-    transform: translate(-50%, 0);
-}
+
+
 
 
 .absoluteVertical {
@@ -131,34 +131,74 @@ input:-webkit-autofill{
 }
 
 
-.apparition-from-bottom {
-    animation: fadeIn 6s, text-bottom-to-top 4s;
+
+.disparition {
+    animation: disparition-to-top 2s, fade-effect-disparition 0.5s;
 }
 
-.apparition-from-top {
-    animation: fadeIn 6s, text-top-to-bottom 4s;
+.apparition-from-bottom {
+    animation: fadeIn 11s, text-bottom-to-top 6s;
 }
+
+.apparition-from-bottom-absolute {
+    animation: fadeIn 11s, text-bottom-to-top-absolute 6s;
+}
+
+
+.apparition-from-top {
+    animation: fadeIn 11s, text-top-to-bottom 6s;
+}
+
+fade-animation {
+    animation: fadeIn 2s;
+}
+
+
+
+
 
 
 @keyframes fadeIn {
     0%{ opacity: 0;}
-    30%{ opacity : 0;}
-    40%{opacity: 0;}
-    100% { opacity: 1;}
+    20% { opacity: 0;}
+    50%{opacity: 1;}
+}
+
+
+@keyframes disparition-to-top {
+    0% {margin-top: 0}
+    100% {margin-top: -300%}
+}
+
+@keyframes fade-effect-disparition {
+    0%{ opacity: 1;}
+    30%{ opacity : 1;}
+    70%{opacity: 0;}
 }
 
 
 
 @keyframes text-bottom-to-top {
-    0% {margin-top: 20px }
-    60% {margin-top: 20px}
+    0% {margin-top: 40px }
+    40% {margin-top: 40px}
     100% {margin-top: 0}
 }
 
 @keyframes text-top-to-bottom {
-    0% {margin-top: -20px }
+    0% {margin-top: -40px }
+    40% {margin-top: -40px}
     100% {margin-top: 0}
 }
+
+
+@keyframes text-bottom-to-top-absolute {
+    0% {bottom: 20px }
+    40% {bottom: 20px}
+    100% {bottom: 60px}
+}
+
+
+
 
 
 
@@ -238,10 +278,6 @@ input:-webkit-autofill{
         line-height: 40px;
     }
 
-
-    .navbar {
-        transition: 0.3s;
-    }
 
     .navbar li a {
         font-size: 1.3rem;
