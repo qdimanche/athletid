@@ -24,7 +24,6 @@
 }
 
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -106,12 +105,19 @@ input:-webkit-autofill{
 
 
 
-
-.absoluteVertical {
+.absolute-vertical-center {
     position: absolute;
     top: 50%;
     left: 2.5rem !important;
     transform: translate(-0%, -50%);
+}
+
+
+.fixed-center-element {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -136,8 +142,24 @@ input:-webkit-autofill{
     animation: disparition-to-top 2s, fade-effect-disparition 0.5s;
 }
 
-.apparition-from-bottom {
+
+.apparition-from-bottom-text {
     animation: fadeIn 11s, text-bottom-to-top 6s;
+}
+
+.apparition-from-bottom-section {
+    animation: fadeIn 5s, section-bottom-to-top 3s;
+    animation-iteration-count: 1;
+}
+
+
+.animation-stop {
+    animation-play-state: paused;
+}
+
+
+.apparition-from-bottom-hamburger-menu {
+    animation: fadeIn 6s, text-bottom-to-top 4s;
 }
 
 .apparition-from-bottom-absolute {
@@ -153,6 +175,10 @@ fade-animation {
     animation: fadeIn 2s;
 }
 
+.bounce-click-effect {
+    animation: bounceEffect 2s;
+}
+
 
 
 
@@ -162,6 +188,11 @@ fade-animation {
     0%{ opacity: 0;}
     20% { opacity: 0;}
     50%{opacity: 1;}
+}
+
+
+@keyframes bounceEffect {
+    0%{top:-100%; right:-50%;  height: 500px; width: 500px}
 }
 
 
@@ -181,6 +212,13 @@ fade-animation {
 @keyframes text-bottom-to-top {
     0% {margin-top: 40px }
     40% {margin-top: 40px}
+    100% {margin-top: 0}
+}
+
+
+@keyframes section-bottom-to-top {
+    0% {margin-top: 100px }
+    40% {margin-top: 100px}
     100% {margin-top: 0}
 }
 

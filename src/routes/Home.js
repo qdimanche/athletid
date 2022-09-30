@@ -15,9 +15,11 @@ import {useInView} from "react-intersection-observer";
 const MyComponent = () => {
 
 
-    const { ref: bgWhite, inView: myElementIsVisible } = useInView();
+    const { ref: bgWhite, inView: myElementIsChangingColor } = useInView();
 
-    if (myElementIsVisible===true) {
+
+
+    if (myElementIsChangingColor===true) {
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
     }else  {
