@@ -6,7 +6,7 @@ import Logo from "../../assets/images/logo.svg";
 import TextLogo from "../../assets/images/text-logo.svg";
 
 
-const Navbar = () => {
+const Navbar = (props) => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     const [scrollingDownNavStyle, setScrollingDownNavStyle] = useState(false);
@@ -35,13 +35,13 @@ const Navbar = () => {
     window.addEventListener('scroll', changeNavStyle);
 
 
-
-
-
+    const style = {
+        padding:props.padding
+    }
 
 
     return (
-        <div data-scroll data-scroll-sticky data-scroll-target="#main-container"  className={scrollingDownNavStyle ?'flex fixed justify-between z-[999] w-screen left-0 top-0 px-[65px] py-[30px] duration-700 ' : 'flex fixed justify-between z-[999] w-screen left-0 top-0 px-[65px] py-[30px]'}>
+        <div data-scroll data-scroll-sticky style={style} data-scroll-target="#main-container"  className={scrollingDownNavStyle ?'flex fixed justify-between z-[999] w-screen left-0 top-0 px-[65px] py-[30px] duration-700 ' : 'flex fixed justify-between z-[999] w-screen left-0 top-0 px-[65px] py-[60px]'}>
             <Link to="/">
                 <div className={'flex space-x-2 apparition-from-bottom-text  delay-[1500ms]'}>
                     <img src={Logo} className={'w-8'} alt=""/>

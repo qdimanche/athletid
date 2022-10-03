@@ -34,6 +34,8 @@ const Home = () => {
 
 
 
+
+
     useEffect(() => {
         let locoScroll = null;
 
@@ -42,7 +44,7 @@ const Home = () => {
         locoScroll = new LocomotiveScroll({
             el: scrollEl,
             smooth: true,
-            multiplier: 0.05,
+            multiplier: 0.1,
         });
     }, [])
 
@@ -56,7 +58,7 @@ const Home = () => {
 
 
         <>
-            <Navbar/>
+            <Navbar  padding={myElementIsChangingColor ?'30px' : '65px' }/>
             <div data-scroll-container
                  id={'main-container'} >
                 <Header src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"} />
