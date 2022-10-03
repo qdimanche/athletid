@@ -13,6 +13,10 @@ const MyComponent = () => {
 
 
     return (
+
+
+
+
         <div className={"mx-10"}>
             <div className={'text-center mt-40 relative '}>
                 <div className={'mb-20 flex flex-col items-center'}>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from "../components/Header";
 import HeroVideoHome from "../assets/videos/heroVideoHome.mp4";
 import FullScreenBgImage from "../components/FullScreenBgImage";
@@ -8,11 +8,16 @@ import AboutHome from "../components/AboutHome";
 import ContactSupport from "../components/ContactSupport";
 import Footer from "../components/Footer";
 import {useInView} from "react-intersection-observer";
+import LocomotiveScroll from "locomotive-scroll";
+import "locomotive-scroll/src/locomotive-scroll.scss";
+import Navbar from "../components/Nav/Navbar";
 
 
 
 
-const MyComponent = () => {
+
+const Home = () => {
+
 
 
     const { ref: bgWhite, inView: myElementIsChangingColor } = useInView();
@@ -28,18 +33,45 @@ const MyComponent = () => {
     }
 
 
+
+    useEffect(() => {
+        let locoScroll = null;
+
+        const scrollEl = document.querySelector("#main-container");
+
+        locoScroll = new LocomotiveScroll({
+            el: scrollEl,
+            smooth: true,
+            multiplier: 0.05,
+        });
+    }, [])
+
+
+
+
+
     return (
-        <div>
-            <Header src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"}/>
-            <FullScreenBgImage src={timerAppPreview} title={"Title"}  tag={"Bientôt disponible"}/>
-            <FullScreenBgImage src={athletidAppPreview} title={"Title"}  tag={"Nouveau"}/>
-            <AboutHome/>
-            <div ref={bgWhite}>
-                <ContactSupport/>
-                <Footer/>
+
+
+
+
+        <>
+            <Navbar/>
+            <div data-scroll-container
+                 id={'main-container'} >
+                <Header src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"} />
+                <FullScreenBgImage src={timerAppPreview} title={"Title"}  tag={"Bientôt disponible"} />
+                <FullScreenBgImage src={athletidAppPreview} title={"Title"}  tag={"Nouveau"}/>
+                <AboutHome/>
+                <div ref={bgWhite}>
+                    <ContactSupport/>
+                    <Footer/>
+                </div>
             </div>
-        </div>
+        </>
+
+
     );
 };
 
-export default MyComponent;
+export default Home;

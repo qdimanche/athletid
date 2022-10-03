@@ -13,6 +13,8 @@ const Navbar = () => {
 
 
 
+
+
     if (click === true) {
         document.body.style.overflow = "hidden";
     }else {
@@ -39,7 +41,7 @@ const Navbar = () => {
 
 
     return (
-        <div className={scrollingDownNavStyle ?'flex fixed justify-between z-[999] w-screen left-0 top-0 px-[65px] py-[20px] duration-700 ' : 'flex fixed justify-between z-[999] w-screen left-0 top-0 px-[65px] py-[65px]'}>
+        <div data-scroll data-scroll-sticky data-scroll-target="#main-container"  className={scrollingDownNavStyle ?'flex fixed justify-between z-[999] w-screen left-0 top-0 px-[65px] py-[30px] duration-700 ' : 'flex fixed justify-between z-[999] w-screen left-0 top-0 px-[65px] py-[30px]'}>
             <Link to="/">
                 <div className={'flex space-x-2 apparition-from-bottom-text  delay-[1500ms]'}>
                     <img src={Logo} className={'w-8'} alt=""/>
@@ -60,11 +62,11 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                <div className={click? 'fixed rounded-full bounce-click-effect   h-[3000px] w-[3000px] top-[-200%] right-[-50%]  bg-[#313539]':'hidden'}>
+                <div  className={click? 'fixed rounded-full bounce-click-effect   h-[3000px] w-[3000px] top-[-200%] right-[-50%]  bg-[#313539] ':'hidden'}>
 
 
 
-                    <div className={'fixed-center-element flex space-x-40'}>
+                    <div  className={'fixed-center-element flex space-x-40'}>
 
                             <ul className={' text-left apparition-from-bottom-hamburger-menu delay-1000 '}>
                                 <li className={'text-[14px] font-bold'}>
