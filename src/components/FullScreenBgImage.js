@@ -11,7 +11,7 @@ const FullScreenBgImage = (props) => {
 
 
     return (
-        <div ref={sectionAnimation} className={mySectionHasAnimations?'h-[93vh] apparition-from-bottom-section rounded-[60px] overflow-hidden relative m-6':'h-[93vh] rounded-[60px] overflow-hidden relative m-6'}>
+        <div ref={sectionAnimation} className={mySectionHasAnimations?'h-[93vh] apparition-from-bottom-section rounded-[60px] overflow-hidden relative m-8':'h-[93vh] rounded-[60px] overflow-hidden relative m-8'}>
             <div className={"absolute top-0 left-0 w-full h-full bg-[black]/20 z-[1] "}></div>
             <img className={mySectionHasAnimations?'w-full h-full object-cover scale-110 duration-[4000ms] ':'w-full h-full object-cover scale-100'} alt={''} src={props.src}/>
             <div className={'absolute left-[2.5rem] top-[2.5rem] px-4 py-2 rounded-[30px] bg-white text-black text-[0.8em]'}>{props.tag}</div>

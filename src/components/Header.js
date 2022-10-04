@@ -29,7 +29,7 @@ const Header = (props) => {
 
 
     return (
-        <div className={playApparitionAnimation ? 'h-[93vh] m-6  relative rounded-[60px] overflow-hidden duration-[1500ms] delay-[1500ms] flex' : 'h-screen relative  overflow-hidden duration-[2000ms] delay-[2000ms] flex'}>
+        <div className={playApparitionAnimation ? 'h-[93vh] m-8  relative rounded-[60px] overflow-hidden duration-[1500ms] delay-[1500ms] flex' : 'h-screen relative  overflow-hidden duration-[2000ms] delay-[2000ms] flex'}>
             <div className={"absolute top-0 left-0 w-full h-full bg-[black]/20 z-[1] "}></div>
             <video className={'w-full h-full object-cover '} src={props.src} autoPlay loop muted type="video/mp4" />
             <div  className={'absolute-vertical-center  flex flex-col justify-center items-start w-3/4  z-[3] fade-in-effect'}>

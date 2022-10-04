@@ -21,6 +21,8 @@ const Home = () => {
 
 
     const { ref: bgWhite, inView: myElementIsChangingColor } = useInView();
+    const { ref: headerNotVisible, inView: myNavbarIsChangingStyle } = useInView();
+
 
 
 
@@ -36,6 +38,9 @@ const Home = () => {
 
 
 
+
+
+
     useEffect(() => {
         let locoScroll = null;
 
@@ -44,7 +49,7 @@ const Home = () => {
         locoScroll = new LocomotiveScroll({
             el: scrollEl,
             smooth: true,
-            multiplier: 0.1,
+            multiplier: 0.2,
         });
     }, [])
 
@@ -58,17 +63,21 @@ const Home = () => {
 
 
         <>
-            <Navbar  padding={myElementIsChangingColor ?'30px' : '65px' }/>
+            <Navbar classNameNav={myNavbarIsChangingStyle ?'flex fixed justify-between z-[999] w-screen py-[30px] px-[75px] duration-1000' : 'animation-direction-reverse duration-1000 flex fixed justify-between z-[999] w-screen py-[60px] px-[75px]' } classNameLinksWayUp={myNavbarIsChangingStyle ?'mt-[-300%] duration-1000':'duration-1000 animation-direction-reverse mt-0'} />
             <div data-scroll-container
-                 id={'main-container'} >
+                 id={'main-container'}  >
+
                 <Header src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"} />
-                <FullScreenBgImage src={timerAppPreview} title={"Title"}  tag={"Bientôt disponible"} />
-                <FullScreenBgImage src={athletidAppPreview} title={"Title"}  tag={"Nouveau"}/>
-                <AboutHome/>
-                <div ref={bgWhite}>
-                    <ContactSupport/>
-                    <Footer/>
+                <div ref={headerNotVisible}>
+                    <FullScreenBgImage src={timerAppPreview} title={"Title"}  tag={"Bientôt disponible"} />
+                    <FullScreenBgImage  src={athletidAppPreview} title={"Title"}  tag={"Nouveau"}/>
+                    <AboutHome />
+                    <div ref={bgWhite}>
+                        <ContactSupport/>
+                        <Footer/>
+                    </div>
                 </div>
+
             </div>
         </>
 
