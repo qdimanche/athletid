@@ -1,16 +1,16 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import AppShowcase from "../assets/videos/appShowcase.mp4";
-import ScreenshotAppShowcase01 from "../assets/images/screenshotAppShowcase-01.png";
-import HomeImg1 from '../assets/images/homeImg1.jpg';
-import HomeImg2 from '../assets/images/homeImg2.jpg';
-import AppShowcase02 from '../assets/videos/appShowcase02.mp4'
+import AppShowcase from "../../assets/videos/appShowcase.mp4";
+import ScreenshotAppShowcase01 from "../../assets/images/screenshotAppShowcase-01.png";
+import HomeImg1 from '../../assets/images/homeImg1.jpg';
+import HomeImg2 from '../../assets/images/homeImg2.jpg';
+import AppShowcase02 from '../../assets/videos/appShowcase02.mp4'
 import HoverVideoPlayer from 'react-hover-video-player';
 import {FaPlus} from "react-icons/fa";
-import DiscoverButton from "./Buttons/RedButton";
-import Testimonial from "./Testimonial/Testimonial";
-import Faq from "../components/Faq";
-import ContactForm from "../components/ContactForm";
+import DiscoverButton from "../Buttons/RedButton";
+import Testimonial from "../Testimonial/Testimonial";
+import Faq from "../Faq";
+import ContactForm from "../Contact/ContactForm";
 
 
 const HomepageContent = () => {

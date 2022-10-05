@@ -1,5 +1,5 @@
 import React from 'react';
-import BlackBorderButton from "./Buttons/BlackBorderButton";
+import BlackBorderButton from "../Buttons/BlackBorderButton";
 
 const ContactSupport = () => {
     return (

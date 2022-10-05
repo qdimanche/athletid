@@ -4,8 +4,8 @@ import HeroVideoHome from "../assets/videos/heroVideoHome.mp4";
 import FullScreenBgImage from "../components/FullScreenBgImage";
 import timerAppPreview from "../assets/images/timer-app-preview.png";
 import athletidAppPreview from "../assets/images/athletid-app-preview.png";
-import AboutHome from "../components/AboutHome";
-import ContactSupport from "../components/ContactSupport";
+import MasonryGrid from "../components/Masonry/MasonryGrid";
+import ContactSupport from "../components/Contact/ContactSupport";
 import Footer from "../components/Footer";
 import {useInView} from "react-intersection-observer";
 import LocomotiveScroll from "locomotive-scroll";
@@ -71,7 +71,7 @@ const Home = () => {
                 <div ref={headerNotVisible}>
                     <FullScreenBgImage src={timerAppPreview} title={"Title"}  tag={"Bientôt disponible"} />
                     <FullScreenBgImage  src={athletidAppPreview} title={"Title"}  tag={"Nouveau"}/>
-                    <AboutHome />
+                    <MasonryGrid />
                     <div ref={bgWhite}>
                         <ContactSupport/>
                         <Footer/>
