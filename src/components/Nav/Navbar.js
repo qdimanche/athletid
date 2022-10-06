@@ -37,16 +37,9 @@ const Navbar = (props) => {
 
     const styleNavbar = {
         padding:props.padding,
-        transitionDuration: props.transitionDurationNavbar,
         animationDirection: props.animationDirection,
     }
 
-    const styleLinkWayUp = {
-        transitionDuration: props.transitionDurationLink,
-        opacity: props.opacity,
-        marginTop: props.marginTop,
-        animationDirection: props.animationDirection
-    }
 
 
     return (
@@ -54,7 +47,7 @@ const Navbar = (props) => {
             <Link to="/">
                 <div className={'flex space-x-2 apparition-from-bottom-text  delay-[1500ms]'}>
                     <img src={Logo} className={'w-8'} alt=""/>
-                    <img  src={TextLogo} style={styleLinkWayUp} className={'w-14'} alt=""/>
+                    <img  src={TextLogo} style={{width: "50%"}} className={props.classNameLinksWayUp}  alt=""/>
                 </div>
             </Link>
 

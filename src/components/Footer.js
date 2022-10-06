@@ -39,7 +39,7 @@ const Footer = () => {
                         <FaInstagram color={'black'}/>
                         <FaTiktok color={'black'}/>
                     </div>
-                    <p className={'text-black/30'}>Lille, France</p>
+                    <p className={'text-black/30'}>Privacy Policy</p>
                 </div>
 
                 </div>

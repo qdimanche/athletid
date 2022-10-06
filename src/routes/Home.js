@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from "../components/Header";
 import HeroVideoHome from "../assets/videos/heroVideoHome.mp4";
 import FullScreenBgImage from "../components/FullScreenBgImage";
@@ -16,24 +16,24 @@ import Navbar from "../components/Nav/Navbar";
 
 
 
-const Home = () => {
+const Home =  () => {
 
 
 
-    const { ref: bgWhite, inView: myElementIsChangingColor } = useInView();
+    const { ref: endOfPage, inView: myElementIsAfterMasonry } = useInView();
+    const { ref : fullScreenBgImg2, myElementIsBeforeMasonry} = useInView();
     const { ref: headerNotVisible, inView: myNavbarIsChangingStyle } = useInView();
 
 
 
 
-    if (myElementIsChangingColor===true) {
+    if (myElementIsAfterMasonry===true) {
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
     }else  {
         document.body.style.backgroundColor = "#313539";
         document.body.style.color = "white";
     }
-
 
 
 
@@ -49,9 +49,11 @@ const Home = () => {
         locoScroll = new LocomotiveScroll({
             el: scrollEl,
             smooth: true,
-            multiplier: 0.3,
+            multiplier: 0.2,
         });
     }, [])
+
+
 
 
 
@@ -70,9 +72,9 @@ const Home = () => {
                 <Header src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"} />
                 <div ref={headerNotVisible}>
                     <FullScreenBgImage src={timerAppPreview} title={"Title"}  tag={"Bientôt disponible"} />
-                    <FullScreenBgImage  src={athletidAppPreview} title={"Title"}  tag={"Nouveau"}/>
-                    <MasonryGrid />
-                    <div ref={bgWhite}>
+                    <FullScreenBgImage ref={fullScreenBgImg2}  src={athletidAppPreview} title={"Title"}  tag={"Nouveau"}/>
+                    <MasonryGrid previousElementIsVisible={myElementIsBeforeMasonry} nextElementIsVisible={myElementIsAfterMasonry}/>
+                    <div ref={endOfPage}>
                         <ContactSupport/>
                         <Footer/>
                     </div>
