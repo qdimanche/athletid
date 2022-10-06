@@ -29,7 +29,7 @@ const MasonryGrid = () => {
             <div  className={'flex space-x-4 mx-[-10%] mt-[-12%] h-full relative'}>
                 <div className=
                          {mySectionReachMiddle ? 'mt-[-20%] space-y-4 w-[12%] duration-1000 z-[800]'
-                             : mySectionReachEnd ? 'mt-[-40%] space-y-4 w-[12%] duration-1000 z-[800]'
+                             : mySectionReachEnd ? 'mt-[-32%] space-y-4 w-[12%] duration-1000 z-[800]'
                                  : 'mt-0 space-y-4 w-[12%] duration-1000 z-[800]' }
                 >
                     <img className={'object-cover h-[400px] w-full rounded-[30px]'} src={Image1} alt=""/>
@@ -44,8 +44,8 @@ const MasonryGrid = () => {
                     <img className={'object-cover h-[240px] w-full  rounded-[30px]'} src={Image1} alt=""/>
                 </div>
                 <div className={
-                    mySectionReachMiddle ? 'mt-[-20%] space-y-4 w-[12%] duration-1000 z-[800]'
-                        : mySectionReachEnd ? 'mt-[-30%] space-y-4 w-[12%] duration-1000 z-[800]'
+                    mySectionReachMiddle ? 'mt-0 space-y-4 w-[12%] duration-1000 z-[800]'
+                        : mySectionReachEnd ? 'mt-[-12%] space-y-4 w-[12%] duration-1000 z-[800]'
                             : 'mt-[20%] space-y-4 w-[12%] duration-1000 z-[800]'
                 }>
                     <img className={'object-cover h-[350px] w-2/3 rounded-[30px]'} src={Image1} alt=""/>
@@ -58,8 +58,8 @@ const MasonryGrid = () => {
                     <img className={'object-contain rounded-[30px]'} src={Image1} alt=""/>
                 </div>
                 <div className={
-                    mySectionReachMiddle ? 'mt-[-20%] space-y-4 w-[12%] duration-1000 z-[800]'
-                        : mySectionReachEnd ? 'mt-[-30%] space-y-4 w-[12%] duration-1000 z-[800]'
+                    mySectionReachMiddle ? 'mt-[-7%] space-y-4 w-[12%] duration-1000 z-[800]'
+                        : mySectionReachEnd ? 'mt-[-19%] space-y-4 w-[12%] duration-1000 z-[800]'
                             : 'mt-[13%] space-y-4 w-[12%] duration-1000 z-[800]'
                 } >
                     <img className={'object-contain rounded-[30px] '} src={Image1} alt=""/>
@@ -71,7 +71,11 @@ const MasonryGrid = () => {
                     <img className={'object-contain rounded-[30px]'} src={Image1} alt=""/>
                     <img className={'object-contain rounded-[30px]'} src={Image1} alt=""/>
                 </div>
-                <div className={' mt-[10%] space-y-4 w-[12%] duration-1000 z-[800]'}>
+                <div className={
+                    mySectionReachMiddle ? 'mt-[-11%] space-y-4 w-[12%] duration-1000 z-[800]'
+                        : mySectionReachEnd ? 'mt-[-23%] space-y-4 w-[12%] duration-1000 z-[800]'
+                            : 'mt-[9%] space-y-4 w-[12%] duration-1000 z-[800]'
+                }>
                     <img className={'object-contain rounded-[30px]'} src={Image1} alt=""/>
                     <img className={'object-contain rounded-[30px]'} src={Image1} alt=""/>
                     <img className={'object-contain rounded-[30px]'} src={Image1} alt=""/>

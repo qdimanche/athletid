@@ -49,7 +49,7 @@ const Home = () => {
         locoScroll = new LocomotiveScroll({
             el: scrollEl,
             smooth: true,
-            multiplier: 0.2,
+            multiplier: 0.3,
         });
     }, [])
 
