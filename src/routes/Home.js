@@ -22,9 +22,10 @@ const Home =  () => {
 
     const { ref: endOfPage, inView: myElementIsAfterMasonry } = useInView();
     const { ref : fullScreenBgImg2, myElementIsBeforeMasonry} = useInView();
-    const { ref: headerNotVisible, inView: myNavbarIsChangingStyle } = useInView();
+    const { ref: headerVisible, inView: myNavbarIsChangingStyle } = useInView();
 
 
+    console.log(myNavbarIsChangingStyle);
 
 
     if (myElementIsAfterMasonry===true) {
@@ -52,12 +53,6 @@ const Home =  () => {
             multiplier: 0.2,
         });
 
-        return () => {
-            if (locoScroll) {
-                locoScroll.destroy();
-            }
-        }
-
 
     }, [])
 
@@ -73,22 +68,18 @@ const Home =  () => {
 
 
         <>
-            <Navbar classNameNav={myNavbarIsChangingStyle ?'flex fixed justify-between z-[999] w-screen py-[30px] px-[75px] duration-1000' : 'animation-direction-reverse duration-1000 flex fixed justify-between z-[999] w-screen py-[60px] px-[75px]' } classNameLinksWayUp={myNavbarIsChangingStyle ?'mt-[-300%] duration-1000':'duration-1000 animation-direction-reverse mt-0'} />
+            <Navbar classNameNav={myNavbarIsChangingStyle ? 'animation-direction-reverse duration-1000 flex fixed justify-between z-[999] w-screen py-[60px] px-[75px]' : 'flex fixed justify-between z-[999] w-screen py-[30px] px-[75px] duration-1000'  } classNameLinksWayUp={myNavbarIsChangingStyle ?'duration-1000 animation-direction-reverse mt-0' : 'mt-[-300%] duration-1000'} />
             <div data-scroll-container
                  id={'main-container'}  >
-
-                <Header src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"} />
-                <div ref={headerNotVisible}>
-                    <FullScreenBgImage src={timerAppPreview} title={"Title"}  tag={"Bientôt disponible"} />
-                    <FullScreenBgImage ref={fullScreenBgImg2}  src={athletidAppPreview} title={"Title"}  tag={"Nouveau"}/>
-                    <MasonryGrid previousElementIsVisible={myElementIsBeforeMasonry} nextElementIsVisible={myElementIsAfterMasonry}/>
-                    <div ref={endOfPage}>
-                        <ContactSupport/>
-                        <Footer/>
-                    </div>
+                <Header src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"} ref={headerVisible} />
+                <FullScreenBgImage src={timerAppPreview} title={"Title"}  tag={"Bientôt disponible"} />
+                <FullScreenBgImage ref={fullScreenBgImg2}  src={athletidAppPreview} title={"Title"}  tag={"Nouveau"}/>
+                <MasonryGrid previousElementIsVisible={myElementIsBeforeMasonry} nextElementIsVisible={myElementIsAfterMasonry}/>
+                <div ref={endOfPage}>
+                    <ContactSupport/>
+                    <Footer/>
                 </div>
-
-            </div>
+                </div>
         </>
 
 

@@ -39,7 +39,6 @@ const MasonryGrid = (props) => {
         }, config);
 
 
-        console.log(document.querySelectorAll("[data-src]"))
 
         const imgs = document.querySelectorAll("[data-src]");
         imgs.forEach((img) => {
