@@ -134,6 +134,17 @@ input:-webkit-autofill{
 
 
 
+/*.loading {
+    opacity: 0;
+    clip-path: inset(0);
+}
+
+.loaded {
+    opacity: 1;
+    transition: filter 0.5s linear;
+}*/
+
+
 
 .apparition-from-bottom-text {
     animation: fadeIn 11s, text-bottom-to-top 6s;

@@ -43,7 +43,7 @@ const Navbar = (props) => {
 
 
     return (
-        <div  style={styleNavbar}  className={props.classNameNav}>
+        <div style={styleNavbar}  className={props.classNameNav}>
             <Link to="/">
                 <div className={'flex space-x-2 apparition-from-bottom-text  delay-[1500ms]'}>
                     <img src={Logo} className={'w-8'} alt=""/>

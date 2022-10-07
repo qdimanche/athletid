@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import Header from "../components/Header";
 import HeroVideoHome from "../assets/videos/heroVideoHome.mp4";
 import FullScreenBgImage from "../components/FullScreenBgImage";
 import timerAppPreview from "../assets/images/timer-app-preview.png";
 import athletidAppPreview from "../assets/images/athletid-app-preview.png";
-import MasonryGrid from "../components/Masonry/MasonryGrid";
+import MasonryGrid from "../components/MasonryGrid";
 import ContactSupport from "../components/Contact/ContactSupport";
 import Footer from "../components/Footer";
 import {useInView} from "react-intersection-observer";
@@ -51,6 +51,14 @@ const Home =  () => {
             smooth: true,
             multiplier: 0.2,
         });
+
+        return () => {
+            if (locoScroll) {
+                locoScroll.destroy();
+            }
+        }
+
+
     }, [])
 
 
