@@ -35,15 +35,11 @@ const Navbar = (props) => {
     window.addEventListener('scroll', changeNavStyle);
 
 
-    const styleNavbar = {
-        padding:props.padding,
-        animationDirection: props.animationDirection,
-    }
 
 
 
     return (
-        <div /*style={styleNavbar}*/  className={props.classNameNav}>
+        <div  className={props.classNameNav}>
             <Link to="/">
                 <div className={'flex space-x-2 apparition-from-bottom-text  delay-[1500ms]'}>
                     <img src={Logo} className={'w-8'} alt=""/>
