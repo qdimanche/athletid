@@ -39,7 +39,6 @@ const MasonryGrid = (props) => {
         }, config);
 
 
-
         const imgs = document.querySelectorAll("[data-src]");
         imgs.forEach((img) => {
             observer.observe(img);
@@ -70,7 +69,7 @@ const MasonryGrid = (props) => {
 
 
     return (
-        <div className={'relative mt-40'}>
+        <div data-scroll-section className={'relative mt-40'}>
 
 
             <div className={"mx-8 z-1"}>

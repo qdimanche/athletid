@@ -2,13 +2,13 @@ import React from 'react';
 import {FaFacebook, FaInstagram, FaTiktok, FaYoutube} from "react-icons/fa";
 
 
-const Footer = () => {
+const Footer = React.forwardRef((props, ref) => {
     return (
 
 
 
 
-        <div className={'pb-10'}>
+        <div ref={ref} data-scroll-section className={'pb-10'}>
 
             <div className={'mb-48 flex flex-col items-center'}>
 
@@ -42,7 +42,7 @@ const Footer = () => {
                     <p className={'text-black/30'}>Privacy Policy</p>
                 </div>
 
-                </div>
+            </div>
 
 
 
@@ -50,6 +50,6 @@ const Footer = () => {
 
         </div>
     );
-};
+})
 
 export default Footer;
