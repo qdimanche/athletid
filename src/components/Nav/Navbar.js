@@ -13,23 +13,15 @@ const Navbar = (props) => {
 
 
 
+    click ?  document.body.style.overflow = "hidden" :  document.body.style.overflow = "visible";
 
-
-    if (click === true) {
-        document.body.style.overflow = "hidden";
-    }else {
-        document.body.style.overflow = "visible";
-    }
 
 
 
 
     const changeNavStyle = () => {
-        if(window.scrollY >= 80 )  {
-            setScrollingDownNavStyle(true);
-        }else {
-            setScrollingDownNavStyle(false);
-        }
+        window.scrollY >= 80 ?
+            setScrollingDownNavStyle(true) : setScrollingDownNavStyle(false);
     }
 
     window.addEventListener('scroll', changeNavStyle);
@@ -108,13 +100,6 @@ const Navbar = (props) => {
                                 </li>
                             </ul>
                     </div>
-
-
-
-
-
-
-
                 </div>
 
 

@@ -8,7 +8,7 @@ const Footer = React.forwardRef((props, ref) => {
 
 
 
-        <div ref={ref} data-scroll-section className={'pb-10'}>
+        <div ref={ref} data-scroll-section className={'pb-24'}>
 
             <div className={'mb-48 flex flex-col items-center'}>
 

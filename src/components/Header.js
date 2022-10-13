@@ -1,35 +1,17 @@
 import React, {useState, useEffect} from 'react';
 import {FaFacebook, FaInstagram, FaTiktok, FaYoutube, FaPlay} from "react-icons/fa";
 import WhiteBorderButton from "./Buttons/WhiteBorderButton";
+import {useInView} from "react-intersection-observer";
 
 const Header =  React.forwardRef((props,ref) => {
 
-    const [playApparitionAnimation, setPlayApparitionAnimation] = useState(false);
 
-    useEffect(() => {
-        const onPageLoad = () => {
-            setPlayApparitionAnimation(true);
-        };
-
-        // Check if the page has already loaded
-        if (document.readyState === "complete") {
-            onPageLoad();
-        } else {
-            window.addEventListener("load", onPageLoad);
-            // Remove the event listener when component unmounts
-            return () => window.removeEventListener("load", onPageLoad);
-        }
-    }, []);
-
-
-
-
-
+    const { ref: headerVisible, inView: myHeaderIsVisible } = useInView();
 
 
 
     return (
-        <div data-scroll-section ref={ref} className={'h-[93vh] m-8  relative rounded-[60px] overflow-hidden flex mb-12'}>
+        <div data-scroll-section ref={headerVisible} className={'h-[93vh] m-6  relative rounded-[60px] overflow-hidden flex'}>
             <div className={"absolute top-0 left-0 w-full h-full bg-[black]/20 z-[1] "}></div>
             <video className={'w-full h-full object-cover '} src={props.src} autoPlay loop muted type="video/mp4" />
             <div  className={'absolute-vertical-center  flex flex-col justify-center items-start w-3/4  z-[3] fade-in-effect'}>
@@ -50,10 +32,6 @@ const Header =  React.forwardRef((props,ref) => {
                 <FaInstagram size={14}/>
                 <FaTiktok size={14}/>
             </div>
-
-
-
-
 
 
 
