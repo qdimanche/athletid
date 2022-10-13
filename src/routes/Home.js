@@ -21,7 +21,6 @@ const Home =  () => {
 
     const { ref: endOfPage, inView: myElementIsAfterMasonry } = useInView();
     const { ref : fullScreenBgImg2, inView: myElementIsBeforeMasonry} = useInView();
-    const { ref: headerVisible, inView: myHeaderIsVisible } = useInView();
 
 
     useLocoScroll();
@@ -32,6 +31,7 @@ const Home =  () => {
     if (myElementIsAfterMasonry) {
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
+        document.body.style.transitionDuration = '1000ms';
     }else  {
         document.body.style.backgroundColor = "#313539";
         document.body.style.color = "white";
