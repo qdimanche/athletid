@@ -26,7 +26,7 @@ const MasonryGrid = (props) => {
 
 
     return (
-        <div data-scroll-section className={'relative'}>
+        <div data-scroll-section className={'relative mt-40'}>
 
 
             <div className={"mx-8 z-1 mb-48"}>
