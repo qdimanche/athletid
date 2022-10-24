@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../components/Header";
 import HeroVideoHome from "../assets/videos/heroVideoHome.mp4";
 import FullScreenBgImage from "../components/FullScreenBgImage";
-import timerAppPreview from "../assets/images/timer-app-preview.png";
+import timerAppPreview from "../assets/images/timer-app-screenshot.webp";
 import athletidAppPreview from "../assets/images/athletid-app-preview.png";
 import MasonryGrid from "../components/MasonryGrid";
 import ContactSupport from "../components/Contact/ContactSupport";
@@ -22,7 +22,14 @@ const Home =  () => {
     const { ref: endOfPage, inView: myElementIsAfterMasonry } = useInView();
     const { ref : fullScreenBgImg2, inView: myElementIsBeforeMasonry} = useInView();
 
+    const button = document.querySelectorAll('#button');
+
+
+
     useLocoScroll();
+
+
+
 
 
     if (myElementIsAfterMasonry) {
@@ -43,7 +50,7 @@ const Home =  () => {
                 <FullScreenBgImage src={timerAppPreview}  title={"Title"}  tag={"Bientôt disponible"} />
                 <FullScreenBgImage ref={fullScreenBgImg2} src={athletidAppPreview} title={"Title"}  tag={"Nouveau"}/>
                 <MasonryGrid previousElementIsVisible={myElementIsBeforeMasonry} nextElementIsVisible={myElementIsAfterMasonry}/>
-                <ContactSupport ref={endOfPage}/>
+                <ContactSupport ref={endOfPage} />
                 <Footer ref={endOfPage}/>
             </div>
         </>

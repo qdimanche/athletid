@@ -101,9 +101,6 @@ input:-webkit-autofill{
 
 
 
-
-
-
 .absolute-vertical-center {
     position: absolute;
     top: 50%;
@@ -120,6 +117,11 @@ input:-webkit-autofill{
 }
 
 
+.object-custom-top-position {
+    object-position: 0% 10%;
+}
+
+
 .circle-boxShadow {
     -webkit-box-shadow: 0px -1px 15px 1px rgba(230,61,49,0.7);
     box-shadow: 0px -1px 15px 1px rgba(230,61,49,0.7);
@@ -128,8 +130,24 @@ input:-webkit-autofill{
 
 
 
+
+
+
+
 .apparition-from-bottom-text {
-    animation: fadeIn 11s, text-bottom-to-top 6s;
+    animation: fadeIn 3s forwards, text-bottom-to-top 3s forwards;
+    animation-delay: 4s;
+}
+
+.apparition-from-bottom-absolute {
+    animation: fadeIn 3s forwards, text-bottom-to-top-absolute 3s forwards;
+    animation-delay: 4s;
+}
+
+
+.apparition-from-top {
+    animation: fadeIn 3s forwards, text-top-to-bottom 3s forwards;
+    animation-delay: 4s;
 }
 
 
@@ -139,14 +157,17 @@ input:-webkit-autofill{
     animation: fadeIn 6s, text-bottom-to-top 4s;
 }
 
-.apparition-from-bottom-absolute {
-    animation: fadeIn 11s, text-bottom-to-top-absolute 6s;
+
+
+
+
+.rounded-header-effect {
+    animation: rounded 2s forwards;
+    animation-delay: 3s;
 }
 
 
-.apparition-from-top {
-    animation: fadeIn 11s, text-top-to-bottom 6s;
-}
+
 
 fade-animation {
     animation: fadeIn 2s;
@@ -162,14 +183,29 @@ fade-animation {
 }
 
 
-
-@keyframes fadeIn {
-    0%{ opacity: 0;}
-    20% { opacity: 0;}
-    50%{opacity: 1;}
+.animation-zoom-in {
+    animation: zoomIn 4s forwards;
+    animation-delay: 2s;
 }
 
 
+@keyframes zoomIn {
+    0%{ transform: scale(1);}
+    100%{ transform: scale(1.25);}
+}
+
+
+
+@keyframes rounded {
+    0%{border-radius: 0; margin: 0}
+    100%{border-radius: 60px; margin: 1.5rem}
+}
+
+
+@keyframes fadeIn {
+    0%{ opacity: 0;}
+    100%{opacity: 1;}
+}
 
 
 @keyframes text-bottom-to-top {
@@ -179,11 +215,6 @@ fade-animation {
 }
 
 
-@keyframes section-bottom-to-top {
-    0% {margin-top: 100px }
-    40% {margin-top: 100px}
-    100% {margin-top: 0}
-}
 
 @keyframes text-top-to-bottom {
     0% {margin-top: -40px }

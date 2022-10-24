@@ -35,13 +35,13 @@ const Navbar = (props) => {
     return (
         <div data-scroll data-scroll-sticky data-scroll-target="#main-container" id={"navbar"} className={'animation-direction-reverse duration-1000 flex fixed justify-between z-[999] w-screen py-[60px] px-[75px] top-0'}>
             <Link to="/">
-                <div className={'flex space-x-2 apparition-from-bottom-text  delay-[1500ms]'}>
+                <div className={'flex space-x-2 opacity-0 apparition-from-bottom-text  delay-[1500ms]'}>
                     <img src={Logo} className={'w-8'} alt=""/>
                     <img  id={"elementWayUp"} src={TextLogo} style={{width: "50%"}} className={props.classNameLinksWayUp}  alt=""/>
                 </div>
             </Link>
 
-            <div className={'flex items-center apparition-from-bottom-text'}>
+            <div className={'flex items-center opacity-0 apparition-from-bottom-text'}>
                 <ul className={'flex justify-end items-center px-10 w-full    space-x-8 ' }>
                     <li id={"elementWayUp"} className={props.classNameLinksWayUp}>
                         <Link to="/">À propos de nous</Link>
@@ -54,13 +54,13 @@ const Navbar = (props) => {
                     </li>
                 </ul>
 
-                <div  className={click? 'fixed rounded-full h-[3000px] w-[3000px] top-[-250%] right-[-80%]  bg-[#313539] duration-[2000ms] ':'bg-[#313539] rounded-full top-[-250%] right-[-100%] h-0 w-0 fixed duration-[2000ms]'}>
+                <div  className={click? 'fixed  bg-[#313539] rounded-full duration-[2000ms] w-[120%] h-[220%] top-[-50%] right-[-10%] ':'rounded-full bg-[#313539] w-0 h-0 right-[-50%] top-[-55%]  fixed duration-[2000ms] '}>
 
 
 
                     <div  className={click?'fixed-center-element flex space-x-40':'hidden'}>
 
-                            <ul className={' text-left apparition-from-bottom-hamburger-menu delay-1000 '}>
+                            <ul className={' text-left opacity-0 apparition-from-bottom-hamburger-menu delay-1000 '}>
                                 <li className={'text-[14px] font-bold'}>
                                     <Link to="/">Contact</Link>
                                 </li>
@@ -87,7 +87,7 @@ const Navbar = (props) => {
 
 
 
-                            <ul className={'text-left apparition-from-bottom-hamburger-menu delay-1000 '}>
+                            <ul className={'text-left opacity-0 apparition-from-bottom-hamburger-menu delay-1000 '}>
                                 <li className={'text-[14px] font-bold'}>
                                     <Link to="/">Accueil</Link>
                                 </li>
