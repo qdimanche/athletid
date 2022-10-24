@@ -1,7 +1,7 @@
 {
   "name": "timer",
   "version": "0.1.0",
-  "homepage": "https://qdimanche.github.io/timer/",
+  "homepage": "https://qdimanche.github.io/athletid/",
   "private": true,
   "dependencies": {
     "@ashthornton/asscroll": "^2.0.11",
