@@ -22,10 +22,7 @@ const Home =  () => {
     const { ref: endOfPage, inView: myElementIsAfterMasonry } = useInView();
     const { ref : fullScreenBgImg2, inView: myElementIsBeforeMasonry} = useInView();
 
-
     useLocoScroll();
-
-
 
 
     if (myElementIsAfterMasonry) {
@@ -38,19 +35,9 @@ const Home =  () => {
     }
 
 
-
-
-
-
-
-
     return (
-
-
-
-
         <>
-            <Navbar classNameNav={'animation-direction-reverse duration-1000 flex fixed justify-between z-[999] w-screen py-[60px] px-[75px]' } classNameLinksWayUp={'duration-1000 animation-direction-reverse mt-0' } />
+            <Navbar classNameNav={''} classNameLinksWayUp={'duration-1000' } />
             <div id={'main-container'}  >
                 <Header src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"} />
                 <FullScreenBgImage src={timerAppPreview}  title={"Title"}  tag={"Bientôt disponible"} />

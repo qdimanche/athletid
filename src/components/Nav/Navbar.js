@@ -4,12 +4,14 @@ import RedButton from "../Buttons/RedButton";
 import HamburgerMenu from "./Burger"
 import Logo from "../../assets/images/logo.svg";
 import TextLogo from "../../assets/images/text-logo.svg";
+import useLocoScroll from "../hooks/useLocoScroll";
 
 
 const Navbar = (props) => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     const [scrollingDownNavStyle, setScrollingDownNavStyle] = useState(false);
+
 
 
 
@@ -31,20 +33,20 @@ const Navbar = (props) => {
 
 
     return (
-        <div data-scroll data-scroll-sticky data-scroll-target="#main-container" className={props.classNameNav}>
+        <div data-scroll data-scroll-sticky data-scroll-target="#main-container" id={"navbar"} className={'animation-direction-reverse duration-1000 flex fixed justify-between z-[999] w-screen py-[60px] px-[75px] top-0'}>
             <Link to="/">
                 <div className={'flex space-x-2 apparition-from-bottom-text  delay-[1500ms]'}>
                     <img src={Logo} className={'w-8'} alt=""/>
-                    <img  src={TextLogo} style={{width: "50%"}} className={props.classNameLinksWayUp}  alt=""/>
+                    <img  id={"elementWayUp"} src={TextLogo} style={{width: "50%"}} className={props.classNameLinksWayUp}  alt=""/>
                 </div>
             </Link>
 
             <div className={'flex items-center apparition-from-bottom-text'}>
                 <ul className={'flex justify-end items-center px-10 w-full    space-x-8 ' }>
-                    <li className={props.classNameLinksWayUp}>
+                    <li id={"elementWayUp"} className={props.classNameLinksWayUp}>
                         <Link to="/">À propos de nous</Link>
                     </li>
-                    <li className={props.classNameLinksWayUp} >
+                    <li id={"elementWayUp"} className={props.classNameLinksWayUp} >
                         <Link to="/">Support</Link>
                     </li>
                     <li className={'z-[999]'}>
