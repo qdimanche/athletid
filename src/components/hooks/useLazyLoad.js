@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 
 const config = {
     rootMargin: "0px 0px 0px 0px",

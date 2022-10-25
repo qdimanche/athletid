@@ -4,6 +4,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      'xl' : '1500px',
+      '2xl' : '1700px',
+    },
     extend: {
       colors: {
         'timeRed': '#E63D31',
