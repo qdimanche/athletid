@@ -12,7 +12,8 @@ module.exports = {
       colors: {
         'timeRed': '#E63D31',
         'timeRedHover' : '#D93A2F',
-        'blackShade' : '#242629'
+        'blackShade' : '#242629',
+        'almostBlack' : '#25282B'
       }
     },
   },

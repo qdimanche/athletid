@@ -35,12 +35,11 @@ const Burger = () => {
     const [open, setOpen] = useState(false);
 
 
-
     return (
         <div>
             <StyledBurger open={open} onClick={() => setOpen (!open)}>
-                <div className={document.body.style.backgroundColor==='white' ? '!bg-black':'!bg-white'} ></div>
-                <div className={document.body.style.backgroundColor==='white' ? '!bg-black':'!bg-white'} ></div>
+                <div id={'bar'} ></div>
+                <div id={'bar'} ></div>
             </StyledBurger>
 
         </div>

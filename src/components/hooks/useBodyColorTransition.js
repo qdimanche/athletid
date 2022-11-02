@@ -5,18 +5,28 @@ function UseBodyColorTransition(myElementIsVisible) {
 
     useEffect(() => {
         const button = document.getElementById('button');
+        const bodyStyle = document.body.style;
+        const bars = document.querySelectorAll('#bar');
+
 
         if (myElementIsVisible) {
-            document.body.style.backgroundColor = "white";
-            document.body.style.color = "black";
-            document.body.style.transitionDuration = '1000ms';
+            bodyStyle.backgroundColor = "white";
+            bodyStyle.color = "black";
+            bodyStyle.transitionDuration = '1000ms';
+            for (let i = 0; i < bars.length; i++) {
+                bars[i].style.backgroundColor = 'black';
+            }
+
             if (button != null) {
                 button.style.borderColor = 'black';
                 button.style.transitionDuration = '1000ms';
             }
         }else  {
-            document.body.style.backgroundColor = "#313539";
-            document.body.style.color = "white";
+            bodyStyle.backgroundColor = "#313539";
+            bodyStyle.color = "white";
+            for (let i = 0; i < bars.length; i++) {
+                bars[i].style.backgroundColor = 'white';
+            }
             if (button != null) {
                 button.style.borderColor = 'white';
                 button.style.transitionDuration = '1000ms';

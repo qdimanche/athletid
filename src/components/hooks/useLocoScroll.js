@@ -1,8 +1,8 @@
-import {useEffect} from 'react';
+import {useEffect, useState, useLayoutEffect} from 'react';
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/src/locomotive-scroll.scss";
 
-function useLocoScroll(props) {
+function useLocoScroll() {
 
 
     useEffect(() => {
@@ -15,8 +15,8 @@ function useLocoScroll(props) {
             el: scrollEl,
             smooth: true,
             multiplier: 0.2,
+            class: 'is-reveal'
         });
-
 
         locoScroll.on('scroll', (instance) => {
 
@@ -29,7 +29,6 @@ function useLocoScroll(props) {
                 for (let i = 0; i < elementWayUp.length ; i ++) {
                     elementWayUp[i].style.transform = 'translateY(-300%)';
                 }
-
             } else {
                 navbar[0].style.paddingTop = '65px';
                 navbar[0].style.paddingBottom = '65px';
@@ -38,10 +37,26 @@ function useLocoScroll(props) {
                     elementWayUp[i].style.transform = 'translateY(0)';
                 }
             }
+
+
         });
 
 
+
+
     }, [])
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

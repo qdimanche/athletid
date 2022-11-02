@@ -1,18 +1,21 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {FaFacebook, FaInstagram, FaTiktok, FaYoutube, FaPlay} from "react-icons/fa";
 import WhiteBorderButton from "./Buttons/WhiteBorderButton";
 import {useInView} from "react-intersection-observer";
+import Burger from "./Nav/Burger";
 
 const Header =  React.forwardRef((props,ref) => {
 
 
     const { ref: headerVisible, inView: myHeaderIsVisible } = useInView({ triggerOnce: true});
 
+    Burger(myHeaderIsVisible);
+
 
 
     return (
-        <div data-scroll-section>
-            <div ref={headerVisible} className={myHeaderIsVisible?'h-[93vh] relative overflow-hidden flex rounded-header-effect ':' h-[93vh]  relative overflow-hidden flex'}>
+        <div ref={ref} data-scroll-section>
+            <div ref={headerVisible} className={myHeaderIsVisible?'h-[93vh] relative overflow-hidden flex rounded-header-effect':' h-[93vh]  relative overflow-hidden flex'}>
                 <div className={"absolute top-0 left-0 w-full h-full bg-[black]/20 z-[1] "}></div>
                 <video className={'w-full h-full object-cover '} src={props.src} autoPlay loop muted type="video/mp4" />
                 <div  className={'absolute-vertical-center  flex flex-col justify-center items-start w-3/4  z-[3] fade-in-effect'}>
