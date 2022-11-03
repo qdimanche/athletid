@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 
 
@@ -24,7 +24,7 @@ const StyledPlus = styled.div`
     height: 2px;
     border-radius: 2px;
     left: 10px;
-    background-color: white;
+    background-color: white !important;
     transition: all 0.4s linear;
   }
   

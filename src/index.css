@@ -36,10 +36,6 @@
 
 
 
-
-
-
-
 h1, h2, h3, h4, h5, h6, span {
     font-weight: 700;
 }
@@ -126,6 +122,10 @@ input:-webkit-autofill{
 .circle-boxShadow {
     -webkit-box-shadow: 0px -1px 15px 1px rgba(230,61,49,0.7);
     box-shadow: 0px -1px 15px 1px rgba(230,61,49,0.7);
+}
+
+.white-inner-shadow {
+    background :linear-gradient(0deg, white, transparent 50%) bottom;
 }
 
 

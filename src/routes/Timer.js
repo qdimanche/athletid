@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Navbar from "../components/Nav/Navbar";
 import AppFeature from "../components/Timer/AppFeature";
 import useLocoScroll from "../components/hooks/useLocoScroll";
@@ -22,9 +22,6 @@ const Timer = () => {
 
     useLocoScroll(myHeaderIsVisible);
     useBodyColorTransition(myBodyBgIsWhite);
-
-
-
 
 
 

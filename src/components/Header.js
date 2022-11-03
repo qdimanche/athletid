@@ -14,7 +14,7 @@ const Header =  React.forwardRef((props,ref) => {
 
 
     return (
-        <div ref={ref} data-scroll-section>
+        <div ref={ref} data-scroll-section data-scroll>
             <div ref={headerVisible} className={myHeaderIsVisible?'h-[93vh] relative overflow-hidden flex rounded-header-effect':' h-[93vh]  relative overflow-hidden flex'}>
                 <div className={"absolute top-0 left-0 w-full h-full bg-[black]/20 z-[1] "}></div>
                 <video className={'w-full h-full object-cover '} src={props.src} autoPlay loop muted type="video/mp4" />
