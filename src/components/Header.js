@@ -1,50 +1,45 @@
 import React from 'react';
-import {FaFacebook, FaInstagram, FaTiktok, FaYoutube, FaPlay} from "react-icons/fa";
+import {FaFacebook, FaInstagram, FaTiktok, FaYoutube, FaPlay, FaLinkedin} from "react-icons/fa";
 import WhiteBorderButton from "./Buttons/WhiteBorderButton";
 import {useInView} from "react-intersection-observer";
 import Burger from "./Nav/Burger";
 
-const Header =  React.forwardRef((props,ref) => {
+const Header =  (props) => {
 
 
     const { ref: headerVisible, inView: myHeaderIsVisible } = useInView({ triggerOnce: true});
-
     Burger(myHeaderIsVisible);
 
-
-
     return (
-        <div ref={ref} data-scroll-section data-scroll>
-            <div ref={headerVisible} className={myHeaderIsVisible?'h-[93vh] relative overflow-hidden flex rounded-header-effect':' h-[93vh]  relative overflow-hidden flex'}>
-                <div className={"absolute top-0 left-0 w-full h-full bg-[black]/20 z-[1] "}></div>
-                <video className={'w-full h-full object-cover '} src={props.src} autoPlay loop muted type="video/mp4" />
-                <div  className={'absolute-vertical-center  flex flex-col justify-center items-start w-3/4  z-[3] fade-in-effect'}>
-                    <h1 className={'contentHeader md:mb-3 mb-4 opacity-0 apparition-from-top'}>{props.title}</h1>
-                    <p className={'mb-8 lg:w-2/4 w-full opacity-0 apparition-from-bottom-text'}>{props.subTitle}</p>
-                    <div className={'flex items-center space-x-4 opacity-0 apparition-from-bottom-text'}>
-                        <WhiteBorderButton text={'Découvrir'}/>
-                        <div className={'p-4 border-[1px] rounded-full'}>
-                            <FaPlay/>
+        <div data-scroll-section>
+            <div ref={headerVisible} data-scroll>
+                <div className={'h-[60vh] lg:h-[93vh] relative overflow-hidden flex rounded-header-effect-desktop rounded-header-mobile-tablet m-5 mb-0 lg:m-0'}>
+                    <div className={"absolute top-0 left-0 w-full h-full bg-[black]/20 z-[1] "}></div>
+                    <video className={'w-full h-full object-cover '} src={props.src} autoPlay loop muted type="video/mp4" />
+                    <div  className={'lg:absolute-vertical-center absolute-vertical-center-mobile flex flex-col justify-center items-start lg:w-3/4 z-[3] fade-animation'}>
+                        <h1 className={'contentHeader lg:mb-3 mb-4 apparition-from-top'}>{props.title}</h1>
+                        <p className={'mb-8 lg:w-2/4 w-full  apparition-from-bottom-text'}>{props.subTitle}</p>
+                        <div className={'flex items-center space-x-4 apparition-from-bottom-text'}>
+                            <WhiteBorderButton text={'Découvrir'}/>
                         </div>
 
                     </div>
+                    <div className={'absolute lg:bottom-[40px] bottom-[1.75rem] lg:right-[40px] right-[1.75rem] flex space-x-4 z-[900] apparition-from-bottom-absolute fade-animation text-[1.3em]' }>
+                        <a href="https://www.instagram.com/athletid/"><FaInstagram /></a>
+                        <a href="https://www.linkedin.com/company/athletid/"><FaFacebook /></a>
+                        <a href="https://www.facebook.com/TimerByAthletid"><FaLinkedin /></a>
+                    </div>
+                </div>
 
-                </div>
-                <div className={'absolute bottom-[40px] right-[40px] flex space-x-4 z-[900] opacity-0 apparition-from-bottom-absolute'}>
-                    <FaYoutube size={14}/>
-                    <FaFacebook size={14}/>
-                    <FaInstagram size={14}/>
-                    <FaTiktok size={14}/>
-                </div>
+
+
+
+
             </div>
-
-
-
-
-
         </div>
+
     );
-})
+}
 
 
 

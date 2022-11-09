@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 
 const config = {
     rootMargin: "0px 0px 0px 0px",
@@ -38,7 +38,6 @@ function UseLazyLoad(props) {
     function loadImages(image) {
         image.src = image.dataset.src;
     }
-
 
 }
 

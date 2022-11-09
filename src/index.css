@@ -32,8 +32,11 @@
 }
 
 
-
-
+body {
+    background-color: #303539;
+    color : white;
+    overflow: hidden;
+}
 
 
 h1, h2, h3, h4, h5, h6, span {
@@ -72,36 +75,29 @@ svg {
 input, textarea{
     border-radius: 10px;
     margin-top: 0.3em;
-    color: white;
     padding: 10px;
     background-color: #292D30 ;
 }
 
-input[type=submit] {
-    color: white !important;
-    margin-top: 2.3em !important;
-}
 
 
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-    transition: background-color 600000s 0s, color 600000s 0s;
-}
 input[data-autocompleted] {
     background-color: transparent !important;
 }
-
-input:-webkit-autofill{
-    -webkit-text-fill-color: white !important;
-}
-
 
 
 
 .absolute-vertical-center {
     position: absolute;
     top: 50%;
-    left: 2.5rem !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.absolute-vertical-center-mobile {
+    position: absolute;
+    top: 50%;
+    left: 1.75rem !important;
     transform: translate(-0%, -50%);
 }
 
@@ -114,8 +110,15 @@ input:-webkit-autofill{
 }
 
 
-.object-custom-top-position {
-    object-position: 0% 10%;
+.fixed-center-element-horizontal {
+    bottom: 3rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.rounded-burger-menu {
+    border-radius: 9999px 0px 9999px 9999px;
 }
 
 
@@ -125,112 +128,8 @@ input:-webkit-autofill{
 }
 
 .white-inner-shadow {
-    background :linear-gradient(0deg, white, transparent 50%) bottom;
+    background :linear-gradient(0deg, #303639, transparent 50%);
 }
-
-
-
-
-
-
-
-
-.apparition-from-bottom-text {
-    animation: fadeIn 3s forwards, text-bottom-to-top 3s forwards;
-    animation-delay: 4s;
-}
-
-.apparition-from-bottom-absolute {
-    animation: fadeIn 3s forwards, text-bottom-to-top-absolute 3s forwards;
-    animation-delay: 4s;
-}
-
-
-.apparition-from-top {
-    animation: fadeIn 3s forwards, text-top-to-bottom 3s forwards;
-    animation-delay: 4s;
-}
-
-
-
-
-.apparition-from-bottom-hamburger-menu {
-    animation: fadeIn 6s, text-bottom-to-top 4s;
-}
-
-
-
-
-
-.rounded-header-effect {
-    animation: rounded 2s forwards;
-    animation-delay: 3s;
-}
-
-
-
-
-fade-animation {
-    animation: fadeIn 2s;
-}
-
-.bounce-click-effect {
-    animation: bounceEffect 2s;
-}
-
-
-.animation-direction-reverse {
-    animation-direction:reverse;
-}
-
-
-.animation-zoom-in {
-    animation: zoomIn 4s forwards;
-    animation-delay: 2s;
-}
-
-
-@keyframes zoomIn {
-    0%{ transform: scale(1);}
-    100%{ transform: scale(1.25);}
-}
-
-
-
-@keyframes rounded {
-    0%{border-radius: 0; margin: 0}
-    100%{border-radius: 60px; margin: 1.5rem}
-}
-
-
-@keyframes fadeIn {
-    0%{ opacity: 0;}
-    100%{opacity: 1;}
-}
-
-
-@keyframes text-bottom-to-top {
-    0% {margin-top: 40px }
-    40% {margin-top: 40px}
-    100% {margin-top: 0}
-}
-
-
-
-@keyframes text-top-to-bottom {
-    0% {margin-top: -40px }
-    40% {margin-top: -40px}
-    100% {margin-top: 0}
-}
-
-
-@keyframes text-bottom-to-top-absolute {
-    0% {bottom: 20px }
-    40% {bottom: 20px}
-    100% {bottom: 60px}
-}
-
-
 
 .player-wrapper {
     height: 100%;
@@ -243,10 +142,6 @@ fade-animation {
 .MuiAccordion-rounded {
     border-radius: 10px !important;
 }
-
-
-
-
 
 
 /*Responsive*/
@@ -272,12 +167,118 @@ fade-animation {
 }
 
 
-@media screen and (max-width: 768px) {
-    h2 {
+@media screen and (max-width: 1024px) {
+    h2, h3 {
         font-size: 1.6em;
         line-height: 30px;
     }
+
+
+    a {
+        font-size: 0.8em;
+    }
+
+    .rounded-header-mobile-tablet {
+        border-radius: 30px;
+    }
 }
+
+
+@media screen and (min-width: 1024px) {
+
+    .object-custom-top-position {
+        object-position: 0% 10%;
+    }
+
+    .rounded-header-effect-desktop {
+        animation: rounded 2s forwards;
+        animation-delay: 3s;
+    }
+
+    @keyframes rounded {
+        0%{border-radius: 0; margin: 0}
+        100%{border-radius: 60px; margin: 2rem 2em 0 2em}
+    }
+
+    .fade-animation {
+        animation: fadeIn 4s forwards;
+        animation-delay: 5s;
+        opacity: 0;
+    }
+
+    @keyframes fadeIn {
+        0%{ opacity: 0;}
+        100%{opacity: 1;}
+    }
+
+
+    .apparition-from-bottom-text {
+        animation: text-bottom-to-top 4s forwards;
+        animation-delay: 5s;
+    }
+
+    .apparition-from-bottom-absolute {
+        animation: fadeIn 4s forwards, text-bottom-to-top-absolute 4s forwards;
+        animation-delay: 5s;
+    }
+
+
+    .apparition-from-top {
+        animation: fadeIn 3s forwards, text-top-to-bottom 3s forwards;
+        animation-delay: 4s;
+    }
+
+
+    .apparition-from-bottom-hamburger-menu {
+        animation: fadeIn 6s, text-bottom-to-top 4s;
+    }
+
+
+    .bounce-click-effect {
+        animation: bounceEffect 2s;
+    }
+
+
+    .animation-direction-reverse {
+        animation-direction:reverse;
+    }
+
+
+    .animation-zoom-in {
+        animation: zoomIn 4s forwards;
+        animation-delay: 2s;
+    }
+
+
+    @keyframes zoomIn {
+        0%{ transform: scale(1);}
+        100%{ transform: scale(1.25);}
+    }
+
+
+    @keyframes text-bottom-to-top {
+        0% {margin-top: 40px}
+        40% {margin-top: 40px}
+        100% {margin-top: 0}
+    }
+
+
+
+    @keyframes text-top-to-bottom {
+        0% {margin-top: -40px }
+        40% {margin-top: -40px}
+        100% {margin-top: 0}
+    }
+
+
+    @keyframes text-bottom-to-top-absolute {
+        0% {bottom: 20px }
+        40% {bottom: 20px}
+        100% {bottom: 60px}
+    }
+
+}
+
 
 
 

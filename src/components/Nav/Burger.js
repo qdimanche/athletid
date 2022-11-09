@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 
 const StyledBurger = styled.div`
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
@@ -23,7 +23,7 @@ const StyledBurger = styled.div`
     
 
     &:nth-child(2){
-      transform: ${({open}) => open ? 'translateY(-12px) rotate(45deg)': 'rotate(0)'};
+      transform: ${({open}) => open ? 'translateY(-10px) rotate(45deg)': 'rotate(0)'};
     }
     
   }

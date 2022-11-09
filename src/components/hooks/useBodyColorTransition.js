@@ -10,7 +10,7 @@ function UseBodyColorTransition(myHeaderIsVisible) {
         const box = document.querySelectorAll('#box');
 
 
-        if (myHeaderIsVisible === false ) {
+        if (!myHeaderIsVisible) {
             bodyStyle.backgroundColor = "white";
             bodyStyle.color = "black";
             bodyStyle.transitionDuration = '1000ms';

@@ -6,12 +6,11 @@ import timerAppPreview from "../assets/images/timer-app-screenshot.webp";
 import athletidAppPreview from "../assets/images/athletid-app-screenshot.webp";
 import MasonryGrid from "../components/MasonryGrid";
 import ContactSupport from "../components/Contact/ContactSupport";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 import {useInView} from "react-intersection-observer";
 import Navbar from "../components/Nav/Navbar";
 import useLocoScroll from "../components/hooks/useLocoScroll";
-import useBodyColorTransition from "../components/hooks/useBodyColorTransition";
-
+import Newsletter from "../components/Footer/Newsletter";
 
 
 
@@ -26,19 +25,19 @@ const Home =  () => {
 
 
     useLocoScroll();
-    useBodyColorTransition(myElementIsAfterMasonry);
 
 
     return (
         <>
-            <Navbar classNameLinksWayUp={'duration-1000' } />
+            <Navbar/>
             <div id={'main-container'}  >
                 <Header src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"} />
-                <FullScreenBgImage src={timerAppPreview}  title={"Title"}  tag={"Bientôt disponible"} />
-                <FullScreenBgImage ref={fullScreenBgImg2} src={athletidAppPreview} title={"Title"}  tag={"Nouveau"}/>
-                <MasonryGrid previousElementIsVisible={myElementIsBeforeMasonry} nextElementIsVisible={myElementIsAfterMasonry}/>
-                <ContactSupport ref={bgWhite}  />
-                <Footer ref={bgWhite}/>
+                <FullScreenBgImage src={timerAppPreview}  title={"Network"}  tag={"Nouveau"} whiteButtonLink={'/socialApp'}/>
+                <FullScreenBgImage src={athletidAppPreview} title={"Timer"}  tag={"Bientôt disponible"} whiteButtonLink={'#'} />
+                <MasonryGrid previousElementIsVisible={{/*myElementIsBeforeMasonry*/}} nextElementIsVisible={{/*myElementIsAfterMasonry*/}}/>
+                <ContactSupport />
+                <Newsletter/>
+                <Footer/>
             </div>
         </>
 

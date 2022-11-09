@@ -5,18 +5,46 @@ import TimerVideo from "../assets/videos/video.mp4";
 import Header from "../components/Header";
 import SocialAppFeature from "../components/SocialApp/SocialAppFeature";
 import SocialAppFeatureSquare from "../components/SocialApp/SocialAppFeatureSquare";
-import useBodyColorTransition from "../components/hooks/useBodyColorTransition";
 import Testimonial from "../components/Testimonial/Testimonial";
 import DownloadApp from "../components/DownloadApp";
-import Footer from '../components/Footer';
+import Footer from '../components/Footer/Footer';
 
 const SocialApp = () => {
 
 
 
+/*    const header = useRef(null);
+
+
+    useEffect(() => {
+
+        if (header.current.hasAttribute('data-scroll-section-inview')){
+            console.log("on le voit")
+        }else {
+            console.log("on ne le voit plus")
+        }
+
+        console.log(header.current)
+    }, [header] )*/
+
+
+
+
+
+/*   if (header[0].hasAttribute('data-scroll-section-inview')){
+        console.log("on le voit")
+    }else {
+        console.log("on le voit pas")
+    }
+
+    const sectionInView = document.querySelector("[data-scroll-section-inview]");*/
+
 
     useLocoScroll();
-    useBodyColorTransition();
+
+
+
+
 
 
 

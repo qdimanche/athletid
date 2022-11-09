@@ -14,7 +14,7 @@ const TestimonialCard = (props) => {
 
 
     return (
-        <div id={'box'} className={'p-6 rounded-[30px] flex flex-col space-y-6'}>
+        <div id={'box'} className={'p-6 bg-[#21262B] rounded-[30px] flex flex-col space-y-6'}>
             <div className={'flex space-x-3 items-center'}>
                 <img src={props.imgsrc} className={'w-12 rounded-full'} alt={'avatarPhoto'}/>
                 <div className={'flex flex-col'}>
