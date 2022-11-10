@@ -7,7 +7,7 @@ const FullScreenBgImage = (props) => {
 
 
 
-        const { ref: sectionAnimation, inView: mySectionHasAnimations } = useInView({ triggerOnce: true, initialInView: true});
+        const { ref: sectionAnimation, inView: mySectionHasAnimations } = useInView({ triggerOnce: true, threshold: 0.02});
 
         return (
             <div data-scroll-section >

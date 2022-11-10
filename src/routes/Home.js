@@ -31,11 +31,11 @@ const Home =  () => {
         <>
             <Navbar/>
             <div id={'main-container'}  >
-                <Header src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"} />
+                <Header src={HeroVideoHome} title={"Title 1"} subTitle={"Subtitle"} buttonText={"Découvrir"}/>
                 <FullScreenBgImage src={timerAppPreview}  title={"Network"}  tag={"Nouveau"} whiteButtonLink={'/socialApp'}/>
                 <FullScreenBgImage src={athletidAppPreview} title={"Timer"}  tag={"Bientôt disponible"} whiteButtonLink={'#'} />
                 <MasonryGrid previousElementIsVisible={{/*myElementIsBeforeMasonry*/}} nextElementIsVisible={{/*myElementIsAfterMasonry*/}}/>
-                <ContactSupport />
+                <ContactSupport whiteButtonLink={'/Contact'}/>
                 <Newsletter/>
                 <Footer/>
             </div>

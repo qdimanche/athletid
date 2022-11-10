@@ -4,7 +4,7 @@ import RedButton from "../Buttons/RedButton";
 import HamburgerMenu from "./Burger"
 import Logo from "../../assets/images/logo.svg";
 import TextLogo from "../../assets/images/text-logo.svg";
-import {FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube} from "react-icons/fa";
+import {FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
 
 
 const Navbar = (props) => {
@@ -33,9 +33,9 @@ const Navbar = (props) => {
                     <li id={"elementWayUp"} className={'duration-1000'} >
                         <Link to="/">Support</Link>
                     </li>*/}
-                    <li className={'z-[999]'}>
+{/*                    <li className={'z-[999]'}>
                         <RedButton text={'Nos Applications'}/>
-                    </li>
+                    </li>*/}
                 </ul>
 
                 <div className={click? 'fixed bg-[#313539] rounded-none duration-[2000ms] w-[120%] h-[100%] top-0 right-[-10%]':'rounded-burger-menu bg-[#313539] w-0 h-0 right-[-20%] md:right-[-50%] top-[-55%]  fixed duration-[2000ms] '}>
@@ -82,10 +82,10 @@ const Navbar = (props) => {
                     </div>
 
 
-                    <ul className={click?'lg:hidden flex fixed fixed-center-element-horizontal space-x-4 z-300 !text-[1.3em]':'hidden'}>
-                        <a href="https://www.instagram.com/athletid/"><FaInstagram /></a>
-                        <a href="https://www.linkedin.com/company/athletid/"><FaFacebook /></a>
-                        <a href="https://www.facebook.com/TimerByAthletid"><FaLinkedin /></a>
+                    <ul className={click?'lg:hidden flex fixed fixed-center-element-horizontal space-x-4 z-300 !text-[1.3em] opacity-1 delay-1000 duration-1000':'opacity-0 fixed-center-element-horizontal '}>
+                        <a target={'_blank'} href="https://www.instagram.com/athletid/"><FaInstagram /></a>
+                        <a target={'_blank'} href="https://www.linkedin.com/company/athletid/"><FaFacebook /></a>
+                        <a target={'_blank'} href="https://www.facebook.com/TimerByAthletid"><FaLinkedin /></a>
                     </ul>
                 </div>
 

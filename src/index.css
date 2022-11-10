@@ -138,6 +138,9 @@ input[data-autocompleted] {
 .video-rounded-webkit video {
     -webkit-border-radius: 30px !important;
 }
+.safari-overflow-fix {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
 
 .MuiAccordion-rounded {
     border-radius: 10px !important;
@@ -196,8 +199,8 @@ input[data-autocompleted] {
     }
 
     @keyframes rounded {
-        0%{border-radius: 0; margin: 0}
-        100%{border-radius: 60px; margin: 2rem 2em 0 2em}
+        0%{border-radius: 0}
+        100%{border-radius: 60px; margin: 2rem 2em 0em 2em}
     }
 
     .fade-animation {
@@ -272,9 +275,9 @@ input[data-autocompleted] {
 
 
     @keyframes text-bottom-to-top-absolute {
-        0% {bottom: 20px }
-        40% {bottom: 20px}
-        100% {bottom: 60px}
+        0% {bottom: 1.5rem }
+        40% {bottom: 1.5rem}
+        100% {bottom: 2.5rem}
     }
 
 }

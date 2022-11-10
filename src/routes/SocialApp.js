@@ -53,7 +53,7 @@ const SocialApp = () => {
         <>
             <Navbar/>
             <div id={'main-container'}>
-                <Header src={TimerVideo} title={"Title 1"} subTitle={"Subtitle"} />
+                <Header src={TimerVideo} title={"Title 1"} subTitle={"Subtitle"} buttonText={"Télécharger l'App"} />
                 <SocialAppFeature />
                 <SocialAppFeatureSquare />
                 <Testimonial/>

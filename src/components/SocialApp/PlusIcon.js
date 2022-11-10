@@ -16,6 +16,7 @@ const StyledPlus = styled.div`
   border-radius: 50%;
   padding: 8px;
   transition-duration: 300ms;
+  cursor: pointer;
   
   transform: ${({open}) => open ? 'rotate(-45deg)': 'rotate(0)'};
   
@@ -56,12 +57,12 @@ const Plus = () => {
             </StyledPlus>
 
 
-            <div className={open?'absolute width-[66.6%] bg-[#242629] text-white z-2 bottom-[1.5rem] left-[1.5rem] lg:left-0 right-[1.5rem] !pb-[4rem] rounded-[30px] duration-1000 opacity-1':'opacity-0'} open={open}>
+            <div className={open?'absolute width-[66.6%] bg-[#242629] text-white z-2 bottom-[1.5rem] left-[1.5rem] right-[1.5rem] !pb-[4rem] rounded-[30px] duration-1000 opacity-1':'opacity-0'} open={open}>
 
                 <ul className={'flex lg:space-x-12 space-x-8 p-6 !pb-0 border-b-[1px] border-b-white/10'}>
-                    <li onClick={() => setCountTab(1)} className={countTab === 1 ?'pb-6 border-b-[1px] border-b-white':'pb-6 border-b-0'}>Progresse</li>
-                    <li onClick={() =>setCountTab(2)} className={countTab === 2 ?'pb-6 border-b-[1px] border-b-white':'pb-6 border-b-0'}>Inspire</li>
-                    <li onClick={() =>setCountTab(3)} className={countTab === 3 ?'pb-6 border-b-[1px] border-b-white':'pb-6 border-b-0'}>Partage</li>
+                    <li onClick={() => setCountTab(1)} className={countTab === 1 ?'pb-6 border-b-[1px] border-b-white':'pb-6 border-b-0 cursor-pointer'}>Progresse</li>
+                    <li onClick={() =>setCountTab(2)} className={countTab === 2 ?'pb-6 border-b-[1px] border-b-white':'pb-6 border-b-0 cursor-pointer'}>Inspire</li>
+                    <li onClick={() =>setCountTab(3)} className={countTab === 3 ?'pb-6 border-b-[1px] border-b-white':'pb-6 border-b-0 cursor-pointer'}>Partage</li>
                 </ul>
 
                 {
