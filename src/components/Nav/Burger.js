@@ -9,6 +9,8 @@ const StyledBurger = styled.div`
   justify-content: space-around;
   flex-flow: column nowrap;
   cursor: pointer;
+  margin-top: ${({open}) => open ? '10px': '0'};
+  transition-duration: 100ms;
   
   div {
     width: 2rem;

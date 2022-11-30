@@ -14,19 +14,17 @@ const TestimonialCard = (props) => {
 
 
     return (
-        <div id={'box'} className={'p-6 bg-[#21262B] rounded-[30px] flex flex-col space-y-6'}>
+        <div id={'box'} className={'p-6 bg-[#21262B] rounded-[30px] flex flex-col space-y-4'}>
             <div className={'flex space-x-3 items-center'}>
                 <img src={props.imgsrc} className={'w-12 rounded-full'} alt={'avatarPhoto'}/>
                 <div className={'flex flex-col'}>
-                    <div className={'flex space-x-2'}>
+                    <div className={'flex space-x-2 -mb-2'}>
                         <p className={'font-bold text-[0.8em]'}>{props.name}</p>
                         <p className={'font-bold text-[0.8em]'}>{props.surname}</p>
                     </div>
                     <p className={'text-[0.8em]'}>{props.publicationDate}</p>
 
                 </div>
-
-
 
             </div>
 
@@ -35,7 +33,7 @@ const TestimonialCard = (props) => {
             </div>
 
             <div>
-                <p className={'text-[0.8em]'} >{props.comment}</p>
+                <p className={'text-[0.8em] !leading-5'}>{props.comment}</p>
             </div>
 
         </div>

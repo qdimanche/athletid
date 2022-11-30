@@ -42,7 +42,7 @@ const StyledPlus = styled.div`
 `;
 
 
-const Plus = () => {
+const Plus = (props) => {
 
 
     const [open, setOpen] = useState(false);
@@ -60,29 +60,23 @@ const Plus = () => {
             <div className={open?'absolute width-[66.6%] bg-[#242629] text-white z-2 bottom-[1.5rem] left-[1.5rem] right-[1.5rem] !pb-[4rem] rounded-[30px] duration-1000 opacity-1':'opacity-0'} open={open}>
 
                 <ul className={'flex lg:space-x-12 space-x-8 p-6 !pb-0 border-b-[1px] border-b-white/10'}>
-                    <li onClick={() => setCountTab(1)} className={countTab === 1 ?'pb-6 border-b-[1px] border-b-white':'pb-6 border-b-0 cursor-pointer'}>Progresse</li>
-                    <li onClick={() =>setCountTab(2)} className={countTab === 2 ?'pb-6 border-b-[1px] border-b-white':'pb-6 border-b-0 cursor-pointer'}>Inspire</li>
-                    <li onClick={() =>setCountTab(3)} className={countTab === 3 ?'pb-6 border-b-[1px] border-b-white':'pb-6 border-b-0 cursor-pointer'}>Partage</li>
+                    <li onClick={() => setCountTab(1)} className={countTab === 1 ?'pb-6 border-b-[1px] border-b-white':'pb-6 border-b-0 cursor-pointer'}>{props.titleTab1}</li>
+                    <li onClick={() =>setCountTab(2)} className={countTab === 2 ?'pb-6 border-b-[1px] border-b-white':'pb-6 border-b-0 cursor-pointer'}>{props.titleTab2}</li>
+                    <li onClick={() =>setCountTab(3)} className={countTab === 3 ?'pb-6 border-b-[1px] border-b-white':'pb-6 border-b-0 cursor-pointer'}>{props.titleTab3}</li>
                 </ul>
 
                 {
                     countTab === 1 ?
                         <div className={'p-[1.5rem]'}>
-                            <span>Progresse</span>
-                            <p>Grâce aux nombreux entraînements et
-                                conseils des professionnels du sport.</p>
+                            <p>{props.textTab1}</p>
                         </div>
                         : countTab === 2 ?
                                 <div className={'p-[1.5rem]'}>
-                                    <span>Inspire</span>
-                                    <p>Grâce aux nombreux entraînements et
-                                        conseils des professionnels du sport.</p>
+                                    <p>{props.textTab2}</p>
                                 </div>
                                 :
                                     <div className={'p-[1.5rem]'}>
-                                        <span>Progresse</span>
-                                        <p>Grâce aux nombreux entraînements et
-                                            conseils des professionnels du sport.</p>
+                                        <p>{props.textTab3}</p>
                                     </div>
                 }
 

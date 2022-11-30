@@ -4,7 +4,7 @@ import useLocoScroll from "../components/hooks/useLocoScroll";
 import TimerVideo from "../assets/videos/video.mp4";
 import Header from "../components/Header";
 import SocialAppFeature from "../components/SocialApp/SocialAppFeature";
-import SocialAppFeatureSquare from "../components/SocialApp/SocialAppFeatureSquare";
+import FeatureSquare from "../components/FeatureSquare";
 import Testimonial from "../components/Testimonial/Testimonial";
 import DownloadApp from "../components/DownloadApp";
 import Footer from '../components/Footer/Footer';
@@ -53,11 +53,28 @@ const SocialApp = () => {
         <>
             <Navbar/>
             <div id={'main-container'}>
-                <Header src={TimerVideo} title={"Title 1"} subTitle={"Subtitle"} buttonText={"Télécharger l'App"} />
-                <SocialAppFeature />
-                <SocialAppFeatureSquare />
-                <Testimonial/>
-                <DownloadApp />
+                <Header
+                    src={TimerVideo}
+                    title={"Le 1er réseau de partage dédié à l’entraînement et au bien-être"}
+                    subTitle={"Découvre gratuitement du contenu sportif adapté à ta discipline et tes objectifs"}
+                    buttonText={"Télécharger l'App"}
+                />
+                <SocialAppFeature
+                    tagAppFeature1={"Professionnel"}
+                    tagAppFeature2={"Sportif"}
+                />
+                <FeatureSquare
+                    titleFeatureSquare={"Partage ta passion"}
+                    subTitleFeatureSquare={"Du Bodybuilding au Crossfit en passant par le Yoga ou le Running, retrouve chaque discipline de l’entraînement et du bien-être ainsi que de nombreuses thématiques de conseils (nutrition, récupération, posturologie, rééducation, etc.)"}
+                    titleSquare1={"Trouve ce dont tu as besoin "}
+                    titleSquare2={"Découvre de nouveaux entraînements et conseils"}
+                    titleSquare3={"Partage tes performances et objectifs !"}
+                />
+                <Testimonial
+                    titleTestimonial={"Ils ont rejoins notre version BETA"}
+                    subTitleTestimonial={"De nombreux sportifs et professionnels nous ont déjà rejoins, ils n’attendent plus que toi ! "}
+                />
+                <DownloadApp title={"Nous avons hâte de découvrir tes entraînements et tes conseils !"}/>
                 <Footer />
             </div>
         </>
