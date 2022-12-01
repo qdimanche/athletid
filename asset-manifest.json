@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/athletid/static/css/main.57256d33.css",
-    "main.js": "/athletid/static/js/main.d0481fce.js",
+    "main.css": "/athletid/static/css/main.7261717a.css",
+    "main.js": "/athletid/static/js/main.f3b6069d.js",
     "static/media/heroVideoHome.mp4": "/athletid/static/media/heroVideoHome.777bc56aec26055483d6.mp4",
     "static/media/timer-app-screenshot.webp": "/athletid/static/media/timer-app-screenshot.eb77c84d1846ad0cba01.webp",
     "static/media/pro.jpg": "/athletid/static/media/pro.0707e37e45ea1e4bef07.jpg",
     "static/media/video.mp4": "/athletid/static/media/video.139eb0900dca44c05bf1.mp4",
+    "static/media/img-header-home.png": "/athletid/static/media/img-header-home.515392a86946b5da4a13.png",
     "static/media/sportif.jpg": "/athletid/static/media/sportif.a5b56d4e8988a00069eb.jpg",
     "static/media/img24.webp": "/athletid/static/media/img24.53530411583895a438b7.webp",
     "static/media/img9.webp": "/athletid/static/media/img9.612c3f3bc6fe07c4cd68.webp",
@@ -36,6 +37,7 @@
     "static/media/avatar-01.jpeg": "/athletid/static/media/avatar-01.2e45ccceeda77b73c66e.jpeg",
     "static/media/avatar-03.jpeg": "/athletid/static/media/avatar-03.22c58d282da240e212bb.jpeg",
     "static/media/img8.webp": "/athletid/static/media/img8.0066135a758de5087237.webp",
+    "static/media/img-header-timer.png": "/athletid/static/media/img-header-timer.74ecf49857537abe1be4.png",
     "static/media/avatar-02.jpeg": "/athletid/static/media/avatar-02.14a07c72f4171110bb01.jpeg",
     "static/media/img5.webp": "/athletid/static/media/img5.8adf5f913436dda85fd3.webp",
     "static/media/greycliffCF-bold.ttf": "/athletid/static/media/greycliffCF-bold.8883621dc18ff4a9833a.ttf",
@@ -47,11 +49,11 @@
     "static/media/text-logo.svg": "/athletid/static/media/text-logo.b219cb4cea825b9eeb1e185627f6d359.svg",
     "index.html": "/athletid/index.html",
     "static/media/logo.svg": "/athletid/static/media/logo.a1b8393c63d890880775ce057b5d50c2.svg",
-    "main.57256d33.css.map": "/athletid/static/css/main.57256d33.css.map",
-    "main.d0481fce.js.map": "/athletid/static/js/main.d0481fce.js.map"
+    "main.7261717a.css.map": "/athletid/static/css/main.7261717a.css.map",
+    "main.f3b6069d.js.map": "/athletid/static/js/main.f3b6069d.js.map"
   },
   "entrypoints": [
-    "static/css/main.57256d33.css",
-    "static/js/main.d0481fce.js"
+    "static/css/main.7261717a.css",
+    "static/js/main.f3b6069d.js"
   ]
 }
