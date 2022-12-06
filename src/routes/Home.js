@@ -32,7 +32,6 @@ const Home = () => {
                     subTitle={"Découvre nos solutions innovantes et améliore ton expérience sportive en créant l’environnement le plus propice à ta réussite, quel que soit ton niveau, tes objectifs et ta discipline."}
                     buttonText={"Découvrir"}
                     img={ImgHeaderHome}
-
                 />
                 <FullScreenBgImage
                     src={athletidAppPreview}

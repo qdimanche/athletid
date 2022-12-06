@@ -8,13 +8,11 @@ const Contact = () => {
 
     useLocoScroll();
 
-    const navbar = document.getElementById("navbar");
-
     return (
         <>
             <Navbar animation={false}/>
             <div id={'main-container'}>
-                <ContactForm overridePaddingY={'!py-[30px]'}/>
+                <ContactForm/>
                 <Footer/>
             </div>
 

@@ -9,7 +9,7 @@ const Footer = (props) => {
 
         <div data-scroll-section data-scroll className={''}>
 
-            <div className={'flex flex-col relative lg:mt-0 mt-0  lg:w-full md:w-1/2 w-3/4 mx-auto  lg:!pb-8 pb-0'}>
+            <div className={'flex flex-col relative lg:mt-0 mt-0  lg:w-full md:w-1/2 w-3/4 mx-auto '}>
 
                 <div className={'lg:mt-12  pb-16 flex lg:flex-row flex-col lg:px-20 justify-between lg:items-start items-center'}>
                     <div className={'flex lg:flex-col flex-row lg:order-1 order-5 mt-1 lg:mt-0'}>

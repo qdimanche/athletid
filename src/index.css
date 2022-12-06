@@ -35,13 +35,14 @@
 body {
     background-color: #303539;
     color : white;
-    overflow: hidden;
     min-height: 100vh;
+    overflow: hidden;
     min-height: -webkit-fill-available !important;
 }
 
 
-html, .heightfix-ios {
+
+html {
     height: -webkit-fill-available !important;
 }
 

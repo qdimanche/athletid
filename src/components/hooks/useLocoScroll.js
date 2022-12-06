@@ -36,13 +36,13 @@ function useLocoScroll() {
             const elementWayUp = document.querySelectorAll('#elementWayUp');
             const mobile = window.matchMedia("(max-width: 1024px)");
 
-            if (instance.scroll.y > 100 && !mobile.matches) {
+            if (instance.scroll.y > 100 && !mobile.matches && navbar[0]) {
                 navbar[0].style.paddingTop = '30px';
                 navbar[0].style.paddingBottom = '30px';
                 for (let i = 0; i < elementWayUp.length ; i ++) {
                     elementWayUp[i].style.transform = 'translateY(-300%)';
                 }
-            } else if (instance.scroll.y != 0 && !mobile.matches){
+            } else if (instance.scroll.y != 0 && !mobile.matches && navbar[0]){
                 navbar[0].style.paddingTop = '60px';
                 navbar[0].style.paddingBottom = '60px';
                 elementWayUp[0].style.marginTop = '0';
@@ -86,10 +86,8 @@ function useLocoScroll() {
         });
 */
 
-
-
-
         setTimeout(() => locoScroll.update(), 300);
+        new ResizeObserver(() => setTimeout(() => locoScroll.update(), 300)).observe(scrollEl);
 
         return () => {
             if (locoScroll) locoScroll.destroy();
