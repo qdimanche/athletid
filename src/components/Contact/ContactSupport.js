@@ -1,5 +1,4 @@
 import React from 'react';
-import WhiteBorderButton from "../Buttons/WhiteBorderButton";
 
 const ContactSupport = React.forwardRef((props, ref) => {
     return (
@@ -10,7 +9,7 @@ const ContactSupport = React.forwardRef((props, ref) => {
                 </div>
                 <div className={'flex flex-col text-left lg:w-[70%] lg:ml-8 space-y-8'}>
                     <p>Dans le but de répondre au mieux à tes besoins, n’hésites pas à nous faire tes suggestions d’améliorations pour nos solutions. Nous essayerons d’y répondre au mieux.</p>
-                    <a class={'bg-transparent transition duration-300 px-3 md:px-6 py-2 rounded-[30px] border-[1px] border-white w-fit'} href={'mailto:contact@athletid.com'}>Nous contacter</a>
+                    <a className={'bg-transparent transition duration-300 px-3 md:px-6 py-2 rounded-[30px] border-[1px] border-white w-fit'} href={'mailto:contact@athletid.com'}>Nous contacter</a>
                 </div>
             </div>
         </div>

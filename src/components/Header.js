@@ -10,11 +10,6 @@ const Header =  (props) => {
     const { ref: headerVisible, inView: myHeaderIsVisible } = useInView({ triggerOnce: true});
     Burger(myHeaderIsVisible);
 
-    const video = document.querySelector('.video')
-
-    setTimeout(() => {
-        video.play()
-    }, 0)
 
     return (
         <div data-scroll-section>
@@ -31,9 +26,9 @@ const Header =  (props) => {
                         </div>
                     </div>
                     <div className={'absolute bottom-[1.75rem] lg:right-[2.5rem] right-[1.75rem] space-x-6 z-[900] apparition-from-bottom-absolute lg:opacity-0 text-[1.3em] hidden md:flex' }>
-                        <a class target={'_blank'} href="https://www.instagram.com/athletid/" ><FaInstagram size={18}/></a>
-                        <a class target={'_blank'} href="https://www.linkedin.com/company/athletid/" ><FaFacebook size={18}/></a>
-                        <a class target={'_blank'} href="https://www.facebook.com/TimerByAthletid"><FaLinkedin size={18} /></a>
+                        <a target={'_blank'} href="https://www.instagram.com/athletid/" ><FaInstagram size={18}/></a>
+                        <a target={'_blank'} href="https://www.linkedin.com/company/athletid/" ><FaFacebook size={18}/></a>
+                        <a target={'_blank'} href="https://www.facebook.com/TimerByAthletid"><FaLinkedin size={18} /></a>
                     </div>
                 </div>
 

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {NavLink} from "react-router-dom";
 import RedButton from "../Buttons/RedButton";
 import HamburgerMenu from "./Burger"
@@ -11,13 +11,21 @@ const Navbar = (props) => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
 
+    const [animation, setAnimation] = useState(false);
+
+    useEffect(() => {
+        props.animation === false ? setAnimation(false): setAnimation(true);
+    },)
+
+
+
 
     click ? document.body.style.overflow = "hidden" : document.body.style.overflow = "visible";
 
 
     return (
-        <div data-scroll data-scroll-sticky data-scroll-target="#main-container" id={"navbar"}
-             className={`flex fixed justify-between z-[999] w-screen lg:py-[60px] lg:px-[75px] py-[2.5rem] px-[3rem] top-0 duration-1000 `} >
+        <div data-scroll data-scroll-sticky data-scroll-target="#main-container" id={animation?"navbar":""}
+             className={animation?`flex fixed justify-between z-[999] w-screen lg:py-[60px] lg:px-[75px] py-[2.5rem] px-[3rem] top-0 duration-1000 apparition-from-bottom-text`:`flex fixed justify-between z-[999] w-screen lg:py-[30px] lg:px-[75px] py-[2.5rem] px-[3rem] top-0 duration-1000 `} >
             <NavLink to="/">
                 <div className={`flex space-x-2 ${props.animation} z-[999]`}>
                     <img id={'test'} src={Logo} className={'lg:w-8 w-6'} alt=""/>

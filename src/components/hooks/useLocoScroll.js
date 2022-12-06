@@ -35,7 +35,6 @@ function useLocoScroll() {
             const navbar = document.querySelectorAll('#navbar');
             const elementWayUp = document.querySelectorAll('#elementWayUp');
             const mobile = window.matchMedia("(max-width: 1024px)");
-            const desktop = window.matchMedia("(min-width:1024px)")
 
             if (instance.scroll.y > 100 && !mobile.matches) {
                 navbar[0].style.paddingTop = '30px';
@@ -50,7 +49,7 @@ function useLocoScroll() {
                 for (let i = 0; i < elementWayUp.length ; i ++) {
                     elementWayUp[i].style.transform = 'translateY(0)';
                 }
-            }else if(mobile.matches){
+            }else if(mobile.matches && navbar[0]){
                 navbar[0].style.paddingTop = '2.5rem';
                 navbar[0].style.paddingBottom = '2.5rem';
                 elementWayUp[0].style.marginTop = '0';

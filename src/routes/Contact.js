@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactForm from "../components/Contact/ContactForm";
 import Footer from "../components/Footer/Footer";
-import NavbarWithoutAnimation from "../components/Nav/NavbarWithoutAnimation";
+import Navbar from "../components/Nav/Navbar";
 import useLocoScroll from "../components/hooks/useLocoScroll";
 
 const Contact = () => {
@@ -12,7 +12,7 @@ const Contact = () => {
 
     return (
         <>
-            <NavbarWithoutAnimation animation={'unset'}/>
+            <Navbar animation={false}/>
             <div id={'main-container'}>
                 <ContactForm overridePaddingY={'!py-[30px]'}/>
                 <Footer/>

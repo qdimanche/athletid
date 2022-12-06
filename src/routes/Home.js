@@ -12,14 +12,12 @@ import {useInView} from "react-intersection-observer";
 import Navbar from "../components/Nav/Navbar";
 import useLocoScroll from "../components/hooks/useLocoScroll";
 import Newsletter from "../components/Footer/Newsletter";
-import FullScreenBgImageTimer from "../components/FullScreenBgImageTimer";
-
 
 const Home = () => {
 
 
-    const {ref: fullScreenBgImg2, inView: myElementIsBeforeMasonry} = useInView();
-    const {ref: bgWhite, inView: myElementIsAfterMasonry} = useInView();
+/*    const {ref: fullScreenBgImg2, inView: myElementIsBeforeMasonry} = useInView();
+    const {ref: bgWhite, inView: myElementIsAfterMasonry} = useInView();*/
 
     useLocoScroll();
 
@@ -42,9 +40,9 @@ const Home = () => {
                     tag={"Nouveau"}
                     link={"/network"}
                 />
-                <FullScreenBgImageTimer
+                <FullScreenBgImage
                     src={timerAppPreview}
-                    title={"Ton temps est précieux"} tag={"Bientôt disponible"}
+                    title={"Ton temps est précieux"} tag={"Bientôt disponible"} button={false}
                 />
                 <MasonryGrid
                     previousElementIsVisible={{/*myElementIsBeforeMasonry*/}}
