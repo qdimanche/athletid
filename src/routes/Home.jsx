@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "../components/Header";
 import HeroVideoHome from "../assets/videos/heroVideoHome.mp4";
+import ImgHeaderHome from "../assets/images/img-header-home.png"
 import FullScreenBgImage from "../components/FullScreenBgImage";
 import timerAppPreview from "../assets/images/timer-app-screenshot.webp";
 import athletidAppPreview from "../assets/images/athletid-app-screenshot.webp";
@@ -20,24 +21,26 @@ const Home = () => {
     const {ref: fullScreenBgImg2, inView: myElementIsBeforeMasonry} = useInView();
     const {ref: bgWhite, inView: myElementIsAfterMasonry} = useInView();
 
-
     useLocoScroll();
 
 
     return (
         <>
-            <Navbar/>
+            <Navbar animation={'fade-animation'}/>
             <div id={'main-container'}>
                 <Header
                     src={HeroVideoHome}
                     title={`Donne du sens à tes entraînements avec l’univers Athletid !`}
                     subTitle={"Découvre nos solutions innovantes et améliore ton expérience sportive en créant l’environnement le plus propice à ta réussite, quel que soit ton niveau, tes objectifs et ta discipline."}
-                    buttonText={"Découvrir"}/>
+                    buttonText={"Découvrir"}
+                    img={ImgHeaderHome}
+
+                />
                 <FullScreenBgImage
                     src={athletidAppPreview}
                     title={"Partage ta passion "}
                     tag={"Nouveau"}
-                    link={"/socialApp"}
+                    link={"/network"}
                 />
                 <FullScreenBgImageTimer
                     src={timerAppPreview}
@@ -50,7 +53,7 @@ const Home = () => {
                     subTitleMasonry={"Construisons ensemble l’univers qui vous propulsera vers vos objectifs"}
                     link={"/a-propos"}
                 />
-                <ContactSupport whiteButtonLink={'/Contact'}/>
+                <ContactSupport whiteButtonLink={'/contact'}/>
                 <Newsletter/>
                 <Footer/>
             </div>

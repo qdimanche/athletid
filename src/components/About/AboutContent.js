@@ -1,10 +1,11 @@
 import React from 'react';
 import HeroVideoHome from "../../assets/videos/heroVideoHome.mp4";
+import ImgHeaderHome from "../../assets/images/img-header-home.png"
 
 const AboutContent = () => {
     return (
-        <div data-scroll-section className={'xl:mt-[15rem] 2xl:mt-[30rem] mt-20  pb-20 border-b border-white/10'}>
-            <div className={'flex lg:flex-row flex-col mx-12 lg:mx-60 lg:space-y-0 space-y-6'}>
+        <div data-scroll-section className={'2xl:mt-[15rem]  mt-20  pb-20 border-b border-white/10 overflow-x-hidden'}>
+            <div className={'flex lg:flex-row flex-col mx-12 lg:mx-20 lg:space-y-0 space-y-6'}>
                 <div className={'lg:w-[30%] text-left'}>
                     <span className={'text-[1.5em]'}>Lorem ipsum dolor adipiscing</span>
                 </div>
@@ -13,7 +14,7 @@ const AboutContent = () => {
                 </div>
             </div>
 
-            <div className={'flex lg:flex-row flex-col mx-12 lg:mx-60 lg:space-y-0 space-y-6 lg:my-40 my-20'}>
+            <div className={'flex lg:flex-row flex-col mx-12 lg:mx-20 lg:space-y-0 space-y-6 my-20'}>
                 <div className={'lg:w-[30%] text-left'}>
                     <span className={'text-[1.5em]'}>Lorem ipsum dolor adipiscing</span>
                 </div>
@@ -23,8 +24,9 @@ const AboutContent = () => {
             </div>
 
             <div
-                className={'h-[60vh] lg:h-[93vh] relative overflow-hidden flex rounded-header-effect-desktop rounded-header-mobile-tablet m-5 mb-0 lg:m-0 safari-overflow-fix'}>
-                <video className={'w-full h-full object-cover '} src={HeroVideoHome} autoPlay loop muted type="video/mp4"/>
+                className={'lg:h-[60vh] h-[35vh] rounded-[30px] relative overflow-hidden flex m-5 mb-0 lg:mx-20 safari-overflow-fix'}>
+                <video className={'w-full h-full object-cover lg:block hidden'} src={HeroVideoHome} autoPlay loop muted type="video/mp4"/>
+                <img src={ImgHeaderHome} alt="" className={'lg:hidden w-full h-full object-cover pointer-events-none'}/>
             </div>
 
 

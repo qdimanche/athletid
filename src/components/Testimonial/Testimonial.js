@@ -7,7 +7,7 @@ const Testimonial = React.forwardRef((props, ref) => {
 
     return (
         <div ref={ref} data-scroll data-scroll-section className={'md:mx-8 mb-16'}>
-            <div className={'text-center lg:mb-12 md:pt-20 pt-16 pb-0 p-5'}>
+            <div className={'text-center lg:mb-12 lg:pt-6 md:pt-20 pt-16 pb-0 p-5'}>
                 <h2>{props.titleTestimonial}</h2>
                 <p>{props.subTitleTestimonial}</p>
             </div>

@@ -1,7 +1,6 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import emailjs from '@emailjs/browser';
 import {useState, useRef} from "react";
-import {FaChevronUp} from "react-icons/fa";
 
 
 const Result = () => {
@@ -16,10 +15,10 @@ const ContactForm = (props) => {
     const form = useRef();
 
     const [result, showResult] = useState(false);
-    const [open, setOpen] = useState(false);
+/*    const [open, setOpen] = useState(false);
     const [childOpen, setChildOpen] = useState(false);
     const [countTab, setCountTab] = useState(0);
-    const [countChildTab, setCountChildTab] = useState(0);
+    const [countChildTab, setCountChildTab] = useState(0);*/
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -36,7 +35,7 @@ const ContactForm = (props) => {
 
     };
 
-    const blockHidden = document.querySelectorAll('#blockHidden');
+/*    const blockHidden = document.querySelectorAll('#blockHidden');*/
 
 
 
@@ -51,8 +50,8 @@ const ContactForm = (props) => {
 
 
 
-        <div data-scroll-section data-scroll className={'grid lg:grid-cols-2 grid-cols-1 lg:space-y-0 space-y-14 lg:space-x-10 lg:p-12 px-8 py-6 mt-28  '}>
-            <div className={'h-full'}>
+        <div data-scroll-section data-scroll className={'lg:space-y-0 space-y-14 lg:w-[40%] md:w-1/2 w-3/4 mx-auto py-6 lg:mt-24 mt-16 lg:mb-0 mb-12 '}>
+            {/*<div className={'h-full'}>
                 <div className={'w-full bg-[#242629] flex justify-between p-5 h-fit rounded-[10px]'}>
                     <p >Lorem ipsum dolor sit amet, consectetur</p>
                     <FaChevronUp className={open && countTab === 1?'rotate-180 duration-700':'duration-700'} onClick={()=> {
@@ -198,21 +197,27 @@ const ContactForm = (props) => {
 
 
 
+            </div>*/}
+
+            <div className={'flex flex-col items-center mb-12'}>
+                <h2 className={'md:!-mb-2 mb-2'}>Entrer en contact</h2>
+                <span>Nous sommes toujours heureux d’aider</span>
             </div>
 
-            <div className={''}>
+
+            <div className={'bg-[#242629] p-8 rounded-[30px]'}>
                 <form action="" className={'flex flex-col space-y-6'} ref={form} onSubmit={sendEmail}>
 
                     <div className={'flex flex-col'}>
                         <label>
-                            Your name
+                            Nom
                         </label>
-                        <input type="text" name="fullName"/>
+                        <input className={'focus:ring-1 focus:ring-white'} type="text" name="fullName"/>
                     </div>
 
                     <div className={'flex flex-col'}>
                         <label>
-                            Your mail
+                            Email
                         </label>
                         <input type="mail" name="email"/>
                     </div>
@@ -224,9 +229,9 @@ const ContactForm = (props) => {
                         <textarea name="message" id="message" rows="5" placeholder={'Message'}></textarea>
                     </div>
 
-                    <input type="submit" value="Send a message" className={'bg-timeRed hover:bg-timeRedHover transition duration-300  px-4 py-3 rounded-[30px] shadow-lg shadow-timeRed/50 w-1/2 self-end'}/>
+                    <input type="submit" value="Envoyer" className={'!bg-timeRed hover:!bg-timeRedHover !transition !duration-300  !px-4 !py-3 !rounded-[30px] !shadow-lg !shadow-timeRed/50 !w-1/2 !self-end'}/>
 
-                    <div> {result ? <Result/> : null} </div>
+                    <div className={result?'':'hidden'}> {result ? <Result/> : null} </div>
                 </form>
 
             </div>

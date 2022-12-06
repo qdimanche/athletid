@@ -16,7 +16,7 @@ const SocialApp = () => {
 
     return (
         <>
-            <Navbar/>
+            <Navbar animation={'fade-animation'}/>
             <div id={'main-container'}>
                 <Header src={TimerVideo} title={"Title 1"} subTitle={"Subtitle"} buttonText={"Télécharger l'App"} />
                 <AppFeature />

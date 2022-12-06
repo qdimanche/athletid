@@ -5,10 +5,14 @@ import Curve from '../../assets/images/curve.png'
 const HeaderAbout = () => {
     return (
         <div data-scroll-section data-scroll className={''}>
-            <div className={'relative flex flex-col items-center justify-center text-left md:min-h-screen min-h-[80vh]'}>
-                <h1>Bienvenue chez</h1>
-                <span className={'text-[5.8em] text-[#E63D31]'}>Athletid</span>
-                <img src={Curve} className={'-mt-8'} alt=""/>
+            <div className={'relative flex flex-col items-center justify-center text-left md:min-h-screen lg:mt-16 mt-12 md:pb-0 pb-20' }>
+                <div className={'flex flex-col items-center justify-center md:mt-0 mt-12'}>
+                    <h1>Bienvenue chez</h1>
+                    <div className={'lg:w-[50%] md:w-[60%] w-[36%]'}>
+                        <span className={'md:text-[3.5em] text-[2.2em]  text-[#E63D31] '}>Athletid</span>
+                        <img src={Curve} className={'-mt-3'} alt=""/>
+                    </div>
+                </div>
 
                 <img src={Avatar} className={'w-24 rounded-full absolute top-64 xl:left-40 md:left-14 hidden md:block'} alt=""/>
                 <img src={Avatar} className={'w-24 rounded-full absolute top-56 xl:right-40 md:right-14 hidden md:block'} alt=""/>

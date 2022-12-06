@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Nav/Navbar'
 import useLocoScroll from "../components/hooks/useLocoScroll";
 import TimerVideo from "../assets/videos/video.mp4";
+import ImgHeaderTimer from "../assets/images/img-header-timer.png"
 import Header from "../components/Header";
 import SocialAppFeature from "../components/SocialApp/SocialAppFeature";
 import FeatureSquare from "../components/FeatureSquare";
@@ -51,13 +52,14 @@ const SocialApp = () => {
 
     return (
         <>
-            <Navbar/>
+            <Navbar animation={'fade-animation'} apparition={'apparition-from-bottom-text'}/>
             <div id={'main-container'}>
                 <Header
                     src={TimerVideo}
                     title={"Le 1er réseau de partage dédié à l’entraînement et au bien-être"}
                     subTitle={"Découvre gratuitement du contenu sportif adapté à ta discipline et tes objectifs"}
                     buttonText={"Télécharger l'App"}
+                    img={ImgHeaderTimer}
                 />
                 <SocialAppFeature
                     tagAppFeature1={"Professionnel"}

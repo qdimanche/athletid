@@ -3,7 +3,7 @@ import WhiteBorderButton from "../Buttons/WhiteBorderButton";
 
 const ContactSupport = React.forwardRef((props, ref) => {
     return (
-        <div ref={ref} data-scroll-section className={'xl:mt-[15rem] 2xl:mt-[30rem] mt-20  pb-20 border-b border-white/10'}>
+        <div ref={ref} data-scroll-section className={'xl:mt-24 mt-20  pb-20 border-b border-white/10'}>
             <div className={'flex lg:flex-row flex-col mx-12 lg:mx-60 lg:space-y-0 space-y-6'}>
                 <div className={'lg:w-[30%] text-left'}>
                     <span className={'text-[1.5em]'}>Ton avis est important</span>

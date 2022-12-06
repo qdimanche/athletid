@@ -21,10 +21,11 @@ const Header =  (props) => {
             <div ref={headerVisible} data-scroll>
                 <div className={'h-[60vh] lg:h-[93vh] relative overflow-hidden flex rounded-header-effect-desktop rounded-header-mobile-tablet m-5 mb-0 lg:m-0 safari-overflow-fix'}>
                     <div className={"absolute top-0 left-0 w-full h-full bg-[black]/20 z-[1] "}></div>
-                    <video className={'w-full h-full object-cover pointer-events-none'} src={props.src} controls={false} loop muted autoPlay playsInline type="video/mp4"/>
-                    <div  className={'lg:mt-0 md:mt-3 absolute-vertical-center-mobile absolute-vertical-center-mobile-header flex flex-col justify-center md:items-start items-center xl:w-[35%] lg:w-[50%] md:w-[55%]  z-[3]'}>
+                    <video className={'w-full lg:block hidden h-full object-cover pointer-events-none'} src={props.src} controls={false} loop muted autoPlay playsInline type="video/mp4"/>
+                    <img src={props.img} alt="" className={'lg:hidden w-full h-full object-cover pointer-events-none'}/>
+                    <div  className={'lg:mt-0 md:mt-3 absolute-vertical-center-tablet-desktop absolute-vertical-center-mobile-header flex flex-col justify-center md:items-start items-center 2xl:w-[35%] lg:w-[50%] md:w-[60%]  z-[3] md:p-0 p-5'}>
                         <h1 className={'lg:mb-[10px] xl:mb-6 mb-4 apparition-from-top lg:opacity-0 md:text-left text-center'}>{props.title}</h1>
-                        <p className={'mb-[30px] w-full  apparition-from-bottom-text lg:opacity-0 hidden md:block'}>{props.subTitle}</p>
+                        <p className={'md:mb-[25px] mb-[30px] lg:!mb-[30px] lg:!mt-[10px] w-full  apparition-from-bottom-text lg:opacity-0 hidden md:block'}>{props.subTitle}</p>
                         <div className={'flex items-center space-x-4 apparition-from-bottom-text lg:opacity-0 xl:!mt-3'}>
                             <WhiteBorderButton text={props.buttonText}/>
                         </div>

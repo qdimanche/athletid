@@ -16,21 +16,21 @@ const Navbar = (props) => {
 
 
     return (
-        <div data-scroll data-scroll-sticky data-scroll-target="#main-container" id={"navbar"}
-             className={`flex fixed justify-between z-[999] w-screen lg:py-[60px] lg:px-[75px] py-[2.5rem] px-[3rem] top-0 duration-1000 `} >
+        <div data-scroll data-scroll-sticky data-scroll-target="#main-container"
+             className={`flex fixed justify-between z-[999] w-screen lg:py-[30px] lg:px-[75px] py-[2.5rem] px-[3rem] top-0 duration-1000 `} >
             <NavLink to="/">
                 <div className={`flex space-x-2 ${props.animation} z-[999]`}>
                     <img id={'test'} src={Logo} className={'lg:w-8 w-6'} alt=""/>
-                    <img id={"elementWayUp"} src={TextLogo} style={{width: "50%"}} className={`duration-1000 hidden md:block`} alt=""/>
+                    <img src={TextLogo} style={{width: "50%"}} className={`duration-1000 hidden md:block`} alt=""/>
                 </div>
             </NavLink>
 
             <div className={`flex items-center ${props.animation}`}>
                 <ul className={`justify-end items-center px-10 w-full  lg:flex hidden space-x-8 ${props.animation}`}>
-                    <li id={"elementWayUp"} className={`duration-1000 `}>
+                    <li className={`duration-1000 `}>
                         <NavLink to="/a-propos">À propos de nous</NavLink>
                     </li>
-                    <li id={"elementWayUp"} className={'duration-1000'}>
+                    <li className={'duration-1000'}>
                         <NavLink to="/contact">Support</NavLink>
                     </li>
                     <li className={''}>
@@ -39,7 +39,7 @@ const Navbar = (props) => {
                 </ul>
 
                 <div
-                    className={click ? 'fixed bg-[#313539] duration-[2000ms] w-screen h-screen heightfix-ios top-0 left-0 bottom-0 overflow-hidden z-[400]' : 'bg-[#313539] invisible opacity-0 duration-[300ms] absolute w-screen h-screen top-0 left-0 bottom-0 overflow-visible'}>
+                    className={click ? 'fixed bg-[#313539] duration-[2000ms] w-screen h-screen top-0 left-0 bottom-0 overflow-hidden z-[400]' : 'bg-[#313539] invisible opacity-0 duration-[300ms] absolute w-screen h-screen top-0 left-0 bottom-0 overflow-visible'}>
                     <div
                         className={click ? 'lg:fixed-center-element absolute-vertical-center flex lg:space-x-40' : 'hidden'}>
                         <ul className={'text-left apparition-from-bottom-hamburger-menu lg:block hidden '}>
@@ -88,7 +88,7 @@ const Navbar = (props) => {
                     </div>
 
 
-                    <ul className={click ? 'lg:hidden flex fixed fixed-center-element-horizontal space-x-8 z-300 !text-[1.3em] opacity-1 delay-1000 duration-1000' : 'opacity-0 fixed-center-element-horizontal '}>
+                    <ul className={click ? 'lg:hidden flex fixed fixed-center-element-horizontal space-x-4 z-300 !text-[1.3em] opacity-1 delay-1000 duration-1000' : 'opacity-0 fixed-center-element-horizontal '}>
                         <a target={'_blank'} href="https://www.instagram.com/athletid/"><FaInstagram size={18}/></a>
                         <a target={'_blank'} href="https://www.linkedin.com/company/athletid/"><FaFacebook
                             size={18}/></a>
