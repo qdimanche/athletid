@@ -12,8 +12,8 @@ const StyledPlus = styled.div`
   bottom: 2.5rem; 
   right: 2.5rem;
   z-index: 3;
-  border: 1px solid white;
   border-radius: 50%;
+  background-color: #242628;
   padding: 8px;
   transition-duration: 300ms;
   cursor: pointer;
@@ -36,7 +36,7 @@ const StyledPlus = styled.div`
   
   div:nth-child(2){
     transition-duration: 300ms;
-    transform:  rotate(90deg) translateX(-3px) !important;
+    transform:  rotate(90deg) translateX(-4px) !important;
   }
   
 `;

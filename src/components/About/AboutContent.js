@@ -25,7 +25,7 @@ const AboutContent = () => {
 
             <div
                 className={'lg:h-[60vh] h-[35vh] rounded-[30px] relative overflow-hidden flex m-5 mb-0 lg:mx-20 safari-overflow-fix'}>
-                <video className={'w-full h-full object-cover lg:block hidden'} src={HeroVideoHome} autoPlay loop muted type="video/mp4"/>
+                <video className={'w-full h-full object-cover lg:block hidden'} src={HeroVideoHome} autoPlay loop muted playsInline type="video/mp4"/>
                 <img src={ImgHeaderHome} alt="" className={'lg:hidden w-full h-full object-cover pointer-events-none'}/>
             </div>
 

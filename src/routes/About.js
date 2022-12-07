@@ -13,7 +13,7 @@ const About = () => {
 
     return (
         <>
-            <Navbar/>
+            <Navbar animation={false}/>
             <div id={'main-container'}>
                 <HeaderAbout/>
                 <MasonryGrid displayTitle={'hidden'} customMarginTop={'lg:!mt-24 md:!mt-0 !mt-12'}/>

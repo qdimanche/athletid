@@ -6,7 +6,7 @@ const config = {
 }
 
 
-function UseLazyLoad(props) {
+/*function UseLazyLoad(props) {
 
 
     useEffect(() => {
@@ -39,6 +39,6 @@ function UseLazyLoad(props) {
         image.src = image.dataset.src;
     }
 
-}
+}*/
 
 export default UseLazyLoad;

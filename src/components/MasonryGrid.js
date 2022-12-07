@@ -35,7 +35,7 @@ const MasonryGrid = (props) => {
                 </div>
             </div>
 
-            <div className={'flex space-x-4  absolute lg:mx-[-10%] lg:translate-y-[-8%] relative lg:h-[1150px] h-fit'}>
+            <div className={'flex space-x-4  absolute lg:mx-[-10%] lg:translate-y-[-8%] relative 2xl:h-[1400px] xl:h-[1300px] lg:h-[1100px] h-fit'}>
                 <div className={
                     props.previousElementIsVisible ? 'lg:translate-y-[-15%] translate-y-0 space-y-4  w-1/2 md:w-1/3 lg:w-[12%] duration-1000 z-[800]':
                              myAnimationStart ? 'lg:translate-y-[-15%] translate-y-0 space-y-4 w-1/2 md:w-1/3 lg:w-[12%] duration-1000 z-[800]'

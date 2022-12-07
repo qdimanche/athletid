@@ -1,90 +1,77 @@
-import Avatar01 from "../../assets/images/avatar-01.jpeg";
-import Avatar02 from "../../assets/images/avatar-02.jpeg";
-import Avatar03 from "../../assets/images/avatar-03.jpeg";
-import Avatar04 from "../../assets/images/avatar-04.jpeg";
 
 
 const TestimonialCardData = [
     {
-        imgsrc: Avatar01,
-        name: "Dupont",
-        surname: "Diana",
-        publicationDate: "2 months ago",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        name: "s0fit",
+        publicationDate: "29/11/2022",
+        title:"Programmes de musculation gratuits!",
+        comment: "Des programmes de musculation de tous genres, tout ce qu’il faut pour progresser en musculation 🚀 Je peux aussi partager mes idées de séances, une vraie communauté 💪",
         star: 5
     },
     {
-        imgsrc: Avatar02,
-        name: "Stark",
-        surname: "Frederic",
-        publicationDate: "4 days ago",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        star: 4
-    },
-    {
-        imgsrc: Avatar03,
-        name: "Herman",
-        surname: "Mike",
-        publicationDate: "1 hour ago",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        name: "Titi7793",
+        publicationDate: "04/12/2022",
+        title:"Application à suivre en 2023",
+        comment: "Une source d’inspiration et de motivation !\n Un réseau qui demande qu’à grandir",
         star: 5
     },
     {
-        imgsrc: Avatar04,
-        name: "Kim",
-        surname: "Alix",
-        publicationDate: "6 months ago",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        star: 4
-    },
-    {
-        imgsrc: Avatar01,
-        name: "Dupont",
-        surname: "Diana",
-        publicationDate: "2 months ago",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        star: 4
-    },
-    {
-        imgsrc: Avatar01,
-        name: "Dupont",
-        surname: "Diana",
-        publicationDate: "2 months ago",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        name: "man.g60",
+        publicationDate: "29/11/2022",
+        title:"Enfin un bon réseau social pour sportif ✌",
+        comment: "Application sympa et très pratique pour trouver des nouvelles séances et des partenaires de sport avec qui discuter",
         star: 5
     },
     {
-        imgsrc: Avatar02,
-        name: "Stark",
-        surname: "Frederic",
-        publicationDate: "4 days ago",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        star: 4
-    },
-    {
-        imgsrc: Avatar03,
-        name: "Herman",
-        surname: "Mike",
-        publicationDate: "1 hour ago",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        name: "s0fit",
+        publicationDate: "29/11/2022",
+        title:"Programmes de musculation gratuits!",
+        comment: "Des programmes de musculation de tous genres, tout ce qu’il faut pour progresser en musculation 🚀 Je peux aussi partager mes idées de séances, une vraie communauté 💪",
         star: 5
     },
     {
-        imgsrc: Avatar04,
-        name: "Kim",
-        surname: "Alix",
-        publicationDate: "6 months ago",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        star: 4
+        name: "cryxz",
+        publicationDate: "04/12/2022",
+        title:"Une communauté incroyable !",
+        comment: "Un réseau pour partager avec de nombreux acteurs et sportifs ! Merci pour l’initiative, hâte de voir la suite !!",
+        star: 5
     },
     {
-        imgsrc: Avatar01,
-        name: "Dupont",
-        surname: "Diana",
-        publicationDate: "2 months ago",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        star: 4
+        name: "Choucrouteee",
+        publicationDate: "01/12/2022",
+        title:"Un potentiel énorme !",
+        comment: "J’ai pas l’habitude d’écrire des coms pour les apps, mais là je me sentais obligé ! \n Athletid c’est plus qu’une app, c’est une communauté qui partage notre passion commune du sport. Des séances d’entraînement, des conseils … tout ça dans la bienveillance.\nUne beta vraiment très prometteuse.\n Hâte de voir la suite de ce projet que je vais suivre de prêt ! 👏",
+        star: 5
     },
+    {
+        name: "raftihinsdale",
+        publicationDate: "01/12/2022",
+        title:"Adapté pour tous",
+        comment: "J’adore le concept ! Une version Beta prometteuse faut leur donner de la force pour la suite ! 💪💪",
+        star: 5
+    },
+    {
+        name: "RaZoR Fx",
+        publicationDate: "29/11/2022",
+        title:"Programmes de musculation gratuits!",
+        comment: "Une première version super intéressante pour tous les sportifs et professionnels qui souhaitent partager leur passion 💪🏻\n Perso j’ai déjà découvert pleins de nouveaux entraînements et appris de nouveaux tips même avec 5 années de muscu !",
+        star: 5
+    },
+    {
+        name: "Ju-",
+        publicationDate: "03/12/2022",
+        title:"Top appli sport",
+        comment: "Une dinguerie, à la fois du coaching et un réseau social exclusivement axé sport quel que soit la discipline!!!",
+        star: 5
+    },
+    {
+        name: "MarineDal",
+        publicationDate: "29/11/2022",
+        title:"Je recommande à 100% !!!",
+        comment: "Du partage, du plaisir, du sport, un pur bonheur ! Un moyen d’apprendre a bien s’entraîner et à innover dans ses séances de sport. Innovant et à la fois addictif ! 🤩",
+        star: 5
+    },
+
 
 ]
 

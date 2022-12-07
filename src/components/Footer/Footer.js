@@ -23,7 +23,7 @@ const Footer = (props) => {
 
                         <div className={'w-full grid grid-cols-2 md:grid-cols-4 gap-y-3 gap-x-6 space-x-0'}>
                             <Link  to={"/"}>Accueil</Link>
-                            <Link  to={"/socialApp"}>Network</Link>
+                            <Link  to={"/network"}>Network</Link>
                             <Link to={"/a-propos"}>À propos</Link>
                             <Link to={"/contact"}>Contact</Link>
                         </div>

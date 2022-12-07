@@ -14,13 +14,11 @@ const TestimonialCard = (props) => {
 
 
     return (
-        <div id={'box'} className={'p-5 bg-[#21262B] rounded-[30px] flex flex-col space-y-4'}>
+        <div id={'box'} className={'p-5 bg-[#21262B] rounded-[30px] flex flex-col space-y-4 h-fit'}>
             <div className={'flex space-x-3 items-center'}>
-                <img src={props.imgsrc} className={'w-12 rounded-full'} alt={'avatarPhoto'}/>
                 <div className={'flex flex-col'}>
-                    <div className={'flex space-x-2 -mb-2'}>
+                    <div className={'-mb-2'}>
                         <p className={'font-bold text-[0.8em]'}>{props.name}</p>
-                        <p className={'font-bold text-[0.8em]'}>{props.surname}</p>
                     </div>
                     <p className={'text-[0.8em]'}>{props.publicationDate}</p>
 
@@ -32,8 +30,9 @@ const TestimonialCard = (props) => {
                 {countStar()}
             </div>
 
-            <div>
-                <p className={'text-[0.8em] !leading-5'}>{props.comment}</p>
+            <div className={'flex flex-col'}>
+                <p className={'text-[0.8em] !font-bold !leading-5 mb-2'}>{props.title}</p>
+                <p style={{ whiteSpace: "pre-line" }} className={'text-[0.8em] !leading-5'}>{props.comment}</p>
             </div>
 
         </div>

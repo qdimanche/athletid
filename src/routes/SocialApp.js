@@ -60,6 +60,8 @@ const SocialApp = () => {
                     subTitle={"Découvre gratuitement du contenu sportif adapté à ta discipline et tes objectifs"}
                     buttonText={"Télécharger l'App"}
                     img={ImgHeaderTimer}
+                    visibilityWhiteButton={'hidden'}
+                    visibilityDownloadButton={'flex'}
                 />
                 <SocialAppFeature
                     tagAppFeature1={"Professionnel"}
@@ -73,7 +75,7 @@ const SocialApp = () => {
                     titleSquare3={"Partage tes performances et objectifs !"}
                 />
                 <Testimonial
-                    titleTestimonial={"Ils ont rejoins notre version BETA"}
+                    titleTestimonial={"Ils ont rejoins notre \n version BETA"}
                     subTitleTestimonial={"De nombreux sportifs et professionnels nous ont déjà rejoins, ils n’attendent plus que toi ! "}
                 />
                 <DownloadApp title={"Nous avons hâte de découvrir tes entraînements et tes conseils !"}/>
