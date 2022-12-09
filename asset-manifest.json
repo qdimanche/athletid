@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/athletid/static/css/main.288fa244.css",
-    "main.js": "/athletid/static/js/main.dc71170d.js",
+    "main.css": "/athletid/static/css/main.3e5cce49.css",
+    "main.js": "/athletid/static/js/main.a3b4475a.js",
     "static/js/652.3d908bc5.chunk.js": "/athletid/static/js/652.3d908bc5.chunk.js",
     "static/media/heroVideoHome.mp4": "/athletid/static/media/heroVideoHome.777bc56aec26055483d6.mp4",
     "static/media/timer-app-screenshot.webp": "/athletid/static/media/timer-app-screenshot.eb77c84d1846ad0cba01.webp",
@@ -47,15 +47,15 @@
     "static/media/timer-app-tempo.webp": "/athletid/static/media/timer-app-tempo.6bde9ef9dcedbbcc0ae8.webp",
     "static/media/downloadAppStore.svg": "/athletid/static/media/downloadAppStore.2de454eec4ec5885ed9238a55592bf74.svg",
     "static/media/downloadPlayStore.svg": "/athletid/static/media/downloadPlayStore.91044ff65750426e1909c4eec7d6c212.svg",
-    "static/media/text-logo.svg": "/athletid/static/media/text-logo.b219cb4cea825b9eeb1e185627f6d359.svg",
+    "static/media/text-logo.svg": "/athletid/static/media/text-logo.0341e611b803fe16c40966196d963217.svg",
     "index.html": "/athletid/index.html",
     "static/media/logo.svg": "/athletid/static/media/logo.a1b8393c63d890880775ce057b5d50c2.svg",
-    "main.288fa244.css.map": "/athletid/static/css/main.288fa244.css.map",
-    "main.dc71170d.js.map": "/athletid/static/js/main.dc71170d.js.map",
+    "main.3e5cce49.css.map": "/athletid/static/css/main.3e5cce49.css.map",
+    "main.a3b4475a.js.map": "/athletid/static/js/main.a3b4475a.js.map",
     "652.3d908bc5.chunk.js.map": "/athletid/static/js/652.3d908bc5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.288fa244.css",
-    "static/js/main.dc71170d.js"
+    "static/css/main.3e5cce49.css",
+    "static/js/main.a3b4475a.js"
   ]
 }
