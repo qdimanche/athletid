@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/athletid/static/css/main.225010f9.css",
-    "main.js": "/athletid/static/js/main.9cc56ab3.js",
+    "main.css": "/athletid/static/css/main.2780338b.css",
+    "main.js": "/athletid/static/js/main.59a62a15.js",
     "static/media/heroVideoHome.mp4": "/athletid/static/media/heroVideoHome.777bc56aec26055483d6.mp4",
     "static/media/video.mp4": "/athletid/static/media/video.139eb0900dca44c05bf1.mp4",
     "static/media/img-header-home.png": "/athletid/static/media/img-header-home.515392a86946b5da4a13.png",
@@ -25,8 +25,8 @@
     "static/media/img18.webp": "/athletid/static/media/img18.f9c6a04696e0bc2e3b1d.webp",
     "static/media/img22.webp": "/athletid/static/media/img22.1bfc4b6a143cdfbd0852.webp",
     "static/media/img20.webp": "/athletid/static/media/img20.6888c064fb63e5e6762c.webp",
-    "static/media/athletid-screen-home-1-dec-2022.png": "/athletid/static/media/athletid-screen-home-1-dec-2022.6b22519e3a048fc59b81.png",
     "static/media/img17.webp": "/athletid/static/media/img17.c56840d062c38fc62fb2.webp",
+    "static/media/athletid-screen-home-1-dec-2022.png": "/athletid/static/media/athletid-screen-home-1-dec-2022.5d4594bcb8581396b936.png",
     "static/media/img19.webp": "/athletid/static/media/img19.aef20aa4e38f64c46c32.webp",
     "static/media/avatar.jpeg": "/athletid/static/media/avatar.c8b15b1465ce0d8ee824.jpeg",
     "static/media/img4.webp": "/athletid/static/media/img4.a5cb3718fdd09924c941.webp",
@@ -35,8 +35,8 @@
     "static/media/network-sportif.jpg": "/athletid/static/media/network-sportif.1a5ea3ffea22687bd77f.jpg",
     "static/media/network-pro.jpg": "/athletid/static/media/network-pro.a02e35648779a62e5fa8.jpg",
     "static/media/img5.webp": "/athletid/static/media/img5.8adf5f913436dda85fd3.webp",
-    "static/media/timer-screen1-dec-2022.png": "/athletid/static/media/timer-screen1-dec-2022.d30b13d16e2f09d16077.png",
     "static/media/network-entreprise.jpg": "/athletid/static/media/network-entreprise.a9a3135b49f360478750.jpg",
+    "static/media/timer-screen1-dec-2022.png": "/athletid/static/media/timer-screen1-dec-2022.6dd246575950c1979a77.png",
     "static/media/networkScreen03.png": "/athletid/static/media/networkScreen03.5f06fe579b45b6ea47e2.png",
     "static/media/athletid-screen-home-2-dec-2022.png": "/athletid/static/media/athletid-screen-home-2-dec-2022.fa7b795c147dc4bb00da.png",
     "static/media/networkScreen02.png": "/athletid/static/media/networkScreen02.81ea88b4dac2c9fa9243.png",
@@ -50,11 +50,11 @@
     "static/media/text-logo.svg": "/athletid/static/media/text-logo.0341e611b803fe16c40966196d963217.svg",
     "index.html": "/athletid/index.html",
     "static/media/logo.svg": "/athletid/static/media/logo.a1b8393c63d890880775ce057b5d50c2.svg",
-    "main.225010f9.css.map": "/athletid/static/css/main.225010f9.css.map",
-    "main.9cc56ab3.js.map": "/athletid/static/js/main.9cc56ab3.js.map"
+    "main.2780338b.css.map": "/athletid/static/css/main.2780338b.css.map",
+    "main.59a62a15.js.map": "/athletid/static/js/main.59a62a15.js.map"
   },
   "entrypoints": [
-    "static/css/main.225010f9.css",
-    "static/js/main.9cc56ab3.js"
+    "static/css/main.2780338b.css",
+    "static/js/main.59a62a15.js"
   ]
 }
