@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/athletid/static/css/main.5ccb8aa8.css",
-    "main.js": "/athletid/static/js/main.2c5b6a3a.js",
+    "main.css": "/athletid/static/css/main.04a8b162.css",
+    "main.js": "/athletid/static/js/main.b94e5283.js",
     "static/media/heroVideoHome.mp4": "/athletid/static/media/heroVideoHome.777bc56aec26055483d6.mp4",
     "static/media/sn-video.mp4": "/athletid/static/media/sn-video.c9a976bd9335ea2cf5ba.mp4",
     "static/media/timer-video.mp4": "/athletid/static/media/timer-video.f1f761a59458385b4643.mp4",
@@ -52,11 +52,11 @@
     "static/media/text-logo.svg": "/athletid/static/media/text-logo.0341e611b803fe16c40966196d963217.svg",
     "index.html": "/athletid/index.html",
     "static/media/logo.svg": "/athletid/static/media/logo.a1b8393c63d890880775ce057b5d50c2.svg",
-    "main.5ccb8aa8.css.map": "/athletid/static/css/main.5ccb8aa8.css.map",
-    "main.2c5b6a3a.js.map": "/athletid/static/js/main.2c5b6a3a.js.map"
+    "main.04a8b162.css.map": "/athletid/static/css/main.04a8b162.css.map",
+    "main.b94e5283.js.map": "/athletid/static/js/main.b94e5283.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ccb8aa8.css",
-    "static/js/main.2c5b6a3a.js"
+    "static/css/main.04a8b162.css",
+    "static/js/main.b94e5283.js"
   ]
 }
