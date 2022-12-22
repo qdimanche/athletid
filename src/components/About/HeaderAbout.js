@@ -5,7 +5,7 @@ import Curve from '../../assets/images/curve.png'
 const HeaderAbout = () => {
     return (
         <div data-scroll-section data-scroll className={''}>
-            <div className={'relative flex flex-col items-center justify-center text-left md:min-h-screen lg:mt-16 mt-12 md:pb-0 pb-20' }>
+            <div className={'relative flex flex-col items-center justify-center text-left md:min-h-screen md:my-8 m-16 mb-16 ' }>
                 <div className={'flex flex-col items-center justify-center md:mt-0 mt-12'}>
                     <h1>Bienvenue chez</h1>
                     <div className={'lg:w-[50%] md:w-[60%] w-[36%]'}>

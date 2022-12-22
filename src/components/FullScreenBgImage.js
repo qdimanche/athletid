@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import RedButton from "./Buttons/RedButton";
 import {useInView} from "react-intersection-observer";
 import {LazyLoadImage} from "react-lazy-load-image-component";
-
+import BlackBorderButton from "./Buttons/BlackBorderButton";
 const FullScreenBgImage = (props) => {
 
 
@@ -17,17 +17,21 @@ const FullScreenBgImage = (props) => {
         },)
 
         return (
-            <div data-scroll-section id={props.idSection}>
-                <div ref={sectionAnimation} className={mySectionHasAnimations?'lg:duration-[2000ms] lg:opacity-1 h-[60vh] lg:h-[93vh] lg:rounded-[60px] rounded-[30px] overflow-hidden relative lg:m-8 m-5 translate-y-0':'lg:opacity-0 h-[93vh] lg:rounded-[60px] rounded-[30px] overflow-hidden relative m-5 lg:m-8 lg:translate-y-[10%]'}>
-                    <div className={"absolute top-0 left-0 w-full h-full lg:bg-[black]/30 bg-[black]/50 z-[1] "}></div>
-                    <div className={'absolute top-[1.75rem] left-[1.75rem] z-[9] px-4 py-1 rounded-[30px] bg-white text-black mb-8 text-[0.9em]'}>{props.tag}</div>
-                    <LazyLoadImage className={mySectionHasAnimations?'object-cover h-full object-custom-top-position animation-zoom-in w-full':'h-full object-cover object-custom-top-position'} alt={''} src={props.src}/>
-                    <div className={'absolute-vertical-center-tablet-desktop absolute-vertical-center-mobile  flex flex-col justify-center items-start w-3/4  z-[3]'}>
-                        <h2 style={{ whiteSpace: "pre-line" }} className={'mb-8 fade-in-effect'}>{props.title}</h2>
-                        <div className={button?'flex items-center space-x-4':'hidden'}>
-                            <RedButton text={"Télécharger l'App"} link={props.link}/>
+            <div id={props.idSection}>
+                <div ref={sectionAnimation} className={'grid md:grid-cols-2 grid-cols-1 md:m-4 md:mb-4 mb-8 pt-4  overflow-hidden md:bg-black/5 md:rounded-[30px] 2xl:pl-28 lg:pl-20 md:pl-12 md:pr-0 px-4'}>
+                    <div className={' flex flex-col justify-center md:items-start items-center md:order-1 order-2 md:w-full 2xl:pr-28 lg:pr-20 md:pr-12'}>
+                        <div className={'px-4 py-1 rounded-[30px] bg-black text-white mb-[10px] text-[0.9em] md:text-left text-center lg:mt-0 mt-[20px]'}>{props.tag}</div>
+                        <h2 style={{ whiteSpace: "pre-line" }} className={'mb-[10px] md:text-left text-center'}>{props.title}</h2>
+                        <p className={'mb-[20px] md:text-left text-center'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed elementum dolor. Curabitur cursus lacus id porta gravida. Suspendisse eget commodo est.</p>
+                        <div className={button?'flex items-center space-x-4 md:pb-[20px] md:text-left text-center':'hidden'}>
+                            <BlackBorderButton text={"Découvrir"} link={props.link}/>
                         </div>
                     </div>
+                    <div className={'overflow-hidden flex self-end max-h-[93vh] md:order-2 order-1 md:bg-unset md:bg-transparent bg-black/5 md:h-full h-fit rounded-[30px] w-full  lg:pt-4'}>
+                        <LazyLoadImage alt={''} className={'self-end lg:w-[89%] md:w-full w-[60%] object-cover mx-auto lg:hidden block'} src={props.src}/>
+                        <video className={'w-3/4 mx-auto lg:block hidden object-cover pointer-events-none'} src={props.videoSource} loop muted autoPlay playsInline type="video/mp4"/>
+                    </div>
+
                 </div>
             </div>
 

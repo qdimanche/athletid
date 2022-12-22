@@ -1,45 +1,48 @@
 import React, {useEffect, useState} from 'react';
-import {NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 import RedButton from "../Buttons/RedButton";
 import HamburgerMenu from "./Burger"
 import Logo from "../../assets/images/logo.svg";
-import TextLogo from "../../assets/images/text-logo.svg";
+import {ReactComponent as TextLogo} from "../../assets/images/text-logo.svg";
 import {FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
+import {useScrollPosition} from "../hooks/useScrollPosition";
 
 
 const Navbar = (props) => {
+
+    const scrollPosition = useScrollPosition();
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
 
     const [animation, setAnimation] = useState(false);
 
     useEffect(() => {
-        props.animation === false ? setAnimation(false): setAnimation(true);
+        props.animation === false ? setAnimation(false) : setAnimation(true);
     },)
-
-
 
 
     click ? document.body.style.overflow = "hidden" : document.body.style.overflow = "visible";
 
 
     return (
-        <div data-scroll data-scroll-sticky data-scroll-target="#main-container" id={animation?"navbar":""}
-             className={animation?`flex fixed justify-between z-[999] w-screen lg:py-[60px] lg:px-[75px] py-[2.5rem] px-[3rem] top-0 duration-1000 apparition-from-bottom-text`:`flex fixed justify-between z-[999] w-screen lg:py-[30px] lg:px-[75px] py-[2.5rem] px-[3rem] top-0 duration-1000 `} >
-            <NavLink to="/">
-                <div className={`flex space-x-2 ${props.animation} z-[999]`}>
+        <div
+            className={'flex fixed justify-between z-[999] w-screen lg:!py-[30px] !py-[2.5rem] px-12  top-0 duration-1000 '}>
+            <Link to="/">
+                <div className={`flex space-x-2 items-center ${props.animation} z-[999]`}>
                     <img id={'test'} src={Logo} className={'lg:w-8 w-6'} alt=""/>
-                    <img id={"elementWayUp"} src={TextLogo} style={{width: "50%"}} className={`duration-1000 hidden md:block`} alt=""/>
+                    <TextLogo style={{width: "70px"}}
+                              className={scrollPosition < 100 && props.playAnimation === true ? ` hidden lg:block translate-y-0` : 'translate-y-[-300%] duration-1000 hidden lg:block'}
+                              alt=""/>
                 </div>
-            </NavLink>
+            </Link>
 
             <div className={`flex items-center ${props.animation}`}>
                 <ul className={`justify-end items-center px-10 w-full  lg:flex hidden space-x-8 ${props.animation}`}>
-                    <li id={"elementWayUp"} className={`duration-1000 `}>
-                        <NavLink to="/a-propos">À propos de nous</NavLink>
+                    <li className={scrollPosition < 100 && props.playAnimation === true ? `translate-y-0` : 'translate-y-[-300%] duration-1000'}>
+                        <Link to="/a-propos">À propos de nous</Link>
                     </li>
-                    <li id={"elementWayUp"} className={'duration-1000'}>
-                        <NavLink to="/contact">Support</NavLink>
+                    <li className={scrollPosition < 100 && props.playAnimation === true ? `translate-y-0 ` : 'translate-y-[-300%] duration-1000'}>
+                        <Link to="/contact">Support</Link>
                     </li>
                     <li className={''}>
                         <RedButton text={'Network'} link={"/network"}/>
@@ -47,7 +50,7 @@ const Navbar = (props) => {
                 </ul>
 
                 <div
-                    className={click ? 'fixed bg-[#313539] duration-[2000ms] w-screen h-screen heightfix-ios top-0 left-0 bottom-0 overflow-hidden z-[400]' : 'bg-[#313539] invisible opacity-0 duration-[300ms] absolute w-screen h-screen top-0 left-0 bottom-0 overflow-visible'}>
+                    className={click ? 'fixed bg-white duration-[1300ms] w-screen h-screen heightfix-ios top-0 left-0 bottom-0 overflow-hidden z-[400]' : 'bg-white invisible opacity-0 duration-[300ms] absolute w-screen h-screen top-0 left-0 bottom-0 overflow-visible'}>
                     <div
                         className={click ? 'lg:fixed-center-element absolute-vertical-center flex lg:space-x-40' : 'hidden'}>
                         <ul className={'text-left apparition-from-bottom-hamburger-menu lg:block hidden '}>
@@ -77,35 +80,36 @@ const Navbar = (props) => {
                                 Menu
                             </li>
                             <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
-                                <NavLink to="/">Accueil</NavLink>
+                                <Link to="/">Accueil</Link>
                             </li>
                             <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
-                                <NavLink to="/network">Network</NavLink>
+                                <Link to="/network">Network</Link>
                             </li>
-{/*                            <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
-                                <NavLink to="/timer">Timer</NavLink>
+                            {/*                            <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
+                                <Link to="/timer">Timer</Link>
                             </li>*/}
                             <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
-                                <NavLink to="/a-propos">À propos</NavLink>
+                                <Link to="/a-propos">À propos</Link>
                             </li>
                             <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
-                                <NavLink to="/Contact">Contact</NavLink>
+                                <Link to="/Contact">Contact</Link>
+                            </li>
+                            <li className={'lg:hidden flex justify-center space-x-8 z-300 !text-[1.3em] pt-4'}>
+                                <a target={'_blank'} href="https://www.instagram.com/athletid/"><FaInstagram color={'black'} size={18}/></a>
+                                <a target={'_blank'} href="https://www.linkedin.com/company/athletid/"><FaFacebook
+                                    color={'black'}
+                                    size={18}/></a>
+                                <a target={'_blank'} href="https://www.facebook.com/TimerByAthletid"><FaLinkedin color={'black'}
+                                                                                                                 size={18}/></a>
                             </li>
                         </ul>
 
                     </div>
 
-
-                    <ul className={click ? 'lg:hidden flex fixed fixed-center-element-horizontal space-x-8 z-300 !text-[1.3em] opacity-1 delay-1000 duration-1000' : 'opacity-0 fixed-center-element-horizontal '}>
-                        <a target={'_blank'} href="https://www.instagram.com/athletid/"><FaInstagram size={18}/></a>
-                        <a target={'_blank'} href="https://www.linkedin.com/company/athletid/"><FaFacebook
-                            size={18}/></a>
-                        <a target={'_blank'} href="https://www.facebook.com/TimerByAthletid"><FaLinkedin size={18}/></a>
-                    </ul>
                 </div>
 
 
-                <div className={'z-[900]'} onClick={handleClick}>
+                <div className={'z-[900] w-[2rem]'} onClick={handleClick}>
                     {click ? (<HamburgerMenu/>) : (<HamburgerMenu/>)}
                 </div>
             </div>

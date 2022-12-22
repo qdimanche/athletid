@@ -1,14 +1,20 @@
 import React from 'react';
-import DownloadAppStore from '../assets/images/downloadAppStore.svg';
-import DownloadPlayStore from '../assets/images/downloadPlayStore.svg';
+import { ReactComponent as DownloadPlayStore } from "../assets/images/downloadPlayStore.svg";
+import {ReactComponent as DownloadAppStore} from "../assets/images/downloadAppStore.svg";
+
+
 
 const DownloadApp = React.forwardRef((props, ref)=> {
     return (
-        <div data-scroll-section data-scroll ref={ref} className={'flex flex-col text-center items-center md:pt-10 lg:px-20 px-5 mb-28 lg:mx-0 md:mx-28'}>
-            <h4 className={'mb-10'}>{props.title}</h4>
-            <div className={'flex space-x-8'}>
-                <img src={DownloadPlayStore} className={'lg:w-[160px]  w-[140px]'} alt=""/>
-                <img src={DownloadAppStore} className={'lg:w-[160px] w-[140px]'} alt=""/>
+        <div data-scroll-section data-scroll ref={ref} className={'flex flex-col text-center items-center 2xl:px-32 lg:px-24 md:px-12 px-4 pb-32'}>
+            <h4 style={{whiteSpace:"pre-line"}} className={'mb-10'}>{props.title}</h4>
+            <div className={`flex justify-center space-x-4 !w-full`}>
+                <a target={'_blank'} href="https://play.google.com/store/apps/details?id=com.athletid.athletid&gl=FR">
+                    <DownloadPlayStore className={'hover:fill-white duration-300 rounded-[9px] overflow-y-hidden hover:bg-black '}/>
+                </a>
+                <a target={'_blank'} href="https://apps.apple.com/fr/app/athletid/id6443471192">
+                    <DownloadAppStore className={'hover:fill-white duration-300 rounded-[9px] overflow-y-hidden hover:bg-black '} alt=""/>
+                </a>
             </div>
         </div>
     );

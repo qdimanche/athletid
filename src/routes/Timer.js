@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '../components/Nav/Navbar'
-import useLocoScroll from "../components/hooks/useLocoScroll";
 import TimerVideo from "../assets/videos/video.mp4";
 import Header from "../components/Header";
 import AppFeature from "../components/Timer/AppFeature";
@@ -10,9 +9,6 @@ import DownloadApp from "../components/DownloadApp";
 import Footer from '../components/Footer/Footer';
 
 const SocialApp = () => {
-
-    useLocoScroll();
-
 
     return (
         <>

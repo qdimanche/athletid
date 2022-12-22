@@ -14,8 +14,8 @@ const TestimonialCard = (props) => {
 
 
     return (
-        <div id={'box'} className={'p-5 bg-[#21262B] rounded-[30px] flex flex-col space-y-4 h-fit'}>
-            <div className={'flex space-x-3 items-center'}>
+        <div id={'box'} className={'p-4 bg-[#F2F2F2] rounded-[30px] flex flex-col space-y-4 h-fit w-full mb-4 break-inside-avoid-column inline-block' }>
+            <div className={'flex space-x-3 items-start'}>
                 <div className={'flex flex-col'}>
                     <div className={'-mb-2'}>
                         <p className={'font-bold text-[0.8em]'}>{props.name}</p>

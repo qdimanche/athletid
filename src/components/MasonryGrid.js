@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import MasonryImages from '../assets/images/masonry';
 import {useInView} from "react-intersection-observer";
-import WhiteBorderButton from "./Buttons/WhiteBorderButton";
+import BlackBorderButton from "./Buttons/BlackBorderButton";
 import {LazyLoadImage} from "react-lazy-load-image-component";
 
 
@@ -22,24 +22,24 @@ const MasonryGrid = (props) => {
 
 
     return (
-        <div data-scroll-section className={`relative m-5 lg:mt-40 mt-20 ${props.customMarginTop}`}>
+        <div className={`relative lg:mx-0 md:py-16 pt-8 pb-16 lg:pb-0  mx-4  max-w-screen overflow-hidden`}>
 
 
-            <div className={`mx-8 z-1 lg:mb-48 ${props.displayTitle}`}>
+            <div className={`lg:mx-8 z-1 lg:mb-48 ${props.displayTitle}`}>
                 <div className={'text-center '}>
                     <div className={'mb-10 lg:mb-20 flex flex-col items-center'} id={'titleMasonry'}>
-                        <h3  className={'mb-4'}>{props.titleMasonry}</h3>
-                        <p className={'mb-8'}>{props.subTitleMasonry}</p>
-                        <WhiteBorderButton text={'À propos de nous'} link={props.link} />
+                        <h2 style={{whiteSpace:"pre-line"}} className={''}>{props.titleMasonry}</h2>
+                        <p style={{whiteSpace:"pre-line"}} className={'mt-[10px] mb-[20px]'}>{props.subTitleMasonry}</p>
+                        <BlackBorderButton text={'À propos de nous'} link={props.link} />
                     </div>
                 </div>
             </div>
 
-            <div className={'flex space-x-4  absolute lg:mx-[-10%] lg:translate-y-[-8%] relative 2xl:h-[1400px] xl:h-[1300px] lg:h-[1100px] h-fit'}>
+            <div className={`flex space-x-4  absolute lg:mx-[-10%] lg:translate-y-[-8%] relative 3xl:min-h-[1400px] 2xl:h-[1250px] md:h-[1180px]  h-[560px] ${props.customMarginTop}`}>
                 <div className={
                     props.previousElementIsVisible ? 'lg:translate-y-[-15%] translate-y-0 space-y-4  w-1/2 md:w-1/3 lg:w-[12%] duration-1000 z-[800]':
                              myAnimationStart ? 'lg:translate-y-[-15%] translate-y-0 space-y-4 w-1/2 md:w-1/3 lg:w-[12%] duration-1000 z-[800]'
-                                 : mySectionReachMiddle || myAnimationEnd || props.nextElementIsVisible? 'lg:translate-y-[-30%] translate-y-0 space-y-4 w-1/2 md:w-1/3 lg:w-[12%] duration-1000 z-[800]' : 'translate-y-[-15%] space-y-4 w-1/2 md:w-1/3  lg:w-[12%] duration-1000 z-[800]'}
+                                 : mySectionReachMiddle || myAnimationEnd || props.nextElementIsVisible? 'lg:translate-y-[-30%] translate-y-0 space-y-4 w-1/2 md:w-1/3 lg:w-[12%] duration-1000 z-[800]' : 'lg:translate-y-[-15%] translate-y-0 space-y-4 w-1/2 md:w-1/3  lg:w-[12%] duration-1000 z-[800]'}
                 >
                     <LazyLoadImage  className={'object-cover h-[230px] lg:h-[400px] lg:w-full rounded-[30px] md:block hidden'} src={MasonryImages.img1}  alt=""/>
                     <LazyLoadImage  className={'object-cover h-[270px] lg:h-[400px] lg:w-full rounded-[30px] '} src={MasonryImages.img2}  alt=""/>

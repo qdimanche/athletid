@@ -12,6 +12,8 @@
     "@types/react": "^18.0.21",
     "axios": "^1.1.0",
     "blazy": "^1.8.2",
+    "flowbite": "^1.5.5",
+    "flowbite-react": "^0.3.7",
     "gh-pages": "^4.0.0",
     "gsap": "^3.11.3",
     "imagesloaded": "^5.0.0",
@@ -28,6 +30,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
+    "tw-elements": "^1.0.0-alpha13",
     "vanilla-lazyload": "^17.8.3",
     "web-vitals": "^2.1.4"
   },

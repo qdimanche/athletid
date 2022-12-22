@@ -23,10 +23,14 @@ const TestimonialCardData = [
         star: 5
     },
     {
-        name: "s0fit",
-        publicationDate: "29/11/2022",
-        title:"Programmes de musculation gratuits!",
-        comment: "Des programmes de musculation de tous genres, tout ce qu’il faut pour progresser en musculation 🚀 Je peux aussi partager mes idées de séances, une vraie communauté 💪",
+        name: "Anthonyjudo",
+        publicationDate: "06/12/2022",
+        title:"Merci !",
+        comment: "Enfin un espace qui nous permet, nous professionnels du sport, de rencontrer notre audience, de comprendre les attentes des pratiquants et suivre les tendances. Mais également de leur démontrer notre expertise en leur apportant du contenu de qualité.\n" +
+            "\n" +
+            "C’est aussi l’opportunité de partager avec les autres experts du secteur et de poursuivre notre formation en continue, et ce, gratuitement !\n" +
+            "\n" +
+            "Merci Athletid 🙏",
         star: 5
     },
     {

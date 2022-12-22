@@ -1,5 +1,7 @@
-import Pro from "../../assets/images/pro.jpg"
-import Sportif from "../../assets/images/sportif.jpg"
+
+import Sportif from "../../assets/images/network-sportif.jpg";
+import Pro from "../../assets/images/network-pro.jpg";
+import Entreprise from "../../assets/images/network-entreprise.jpg";
 import React from "react";
 import PlusIcon from "./PlusIcon";
 
@@ -8,29 +10,40 @@ const SocialAppContent = React.forwardRef((props, ref) => {
 
 
     return (
-        <div data-scroll-section data-scroll className={'lg:py-8 lg:px-32 p-5 flex items-center'}>
-            <div className={'flex md:flex-row flex-col md:space-x-6 md:space-y-0 space-y-5' }>
-                <div className={'overflow-hidden aspect-square rounded-[30px] lg:rounded-[40px] md:w-1/2 w-full relative'}>
-                    <div className={'px-4 py-1 rounded-[30px] bg-[#303539] text-white mb-8 text-[0.9em] absolute top-[1.75rem] left-[1.75rem]'}>{props.tagAppFeature1}</div>
-                    <img src={Sportif} className={'object-cover h-full'} alt=""/>
-                    <PlusIcon
-                        titleTab1={"Partage"} textTab1={"Partage ton expertise et tes expériences avec la communauté des sportifs du monde entier."}
-                        titleTab2={"Gagne"} textTab2={"Gagne en visibilité et en notoriété auprès de ton audience "}
-                        titleTab3={"Vends"} textTab3={"Vends tes services dans le monde entier sur notre marketaplace *à venir prochainement. "}
-                    />
+        <div data-scroll-section data-scroll className={'lg:px-4 md:px-12 px-4 lg:pb-20 pb-12'}>
+            <div className={'grid lg:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 lg:w-full  md:px-0 mx-auto'}>
+                <div className={'safari-overflow-fix rounded-[30px] lg:safari-overflow-fix rounded-[40px] h-fit order-1'}>
+                    <img src={Sportif} className={'object-cover object-top lg:object-center lg:h-full w-full h-[50vh]' } alt=""/>
                 </div>
-                <div className={'overflow-hidden aspect-square rounded-[30px] lg:rounded-[40px] relative md:w-1/2 w-full'}>
-                    <div className={'px-4 py-1 rounded-[30px] bg-[#303539] text-white mb-8 text-[0.9em] absolute top-[1.75rem] left-[1.75rem]'}>{props.tagAppFeature2}</div>
-                    <img src={Pro} className={'object-cover h-full'} alt=""/>
-                    <PlusIcon
-                        titleTab1={"Partage"} textTab1={"Partage ton journal d’entraînement et tes expériences avec la communauté "}
-                        titleTab2={"Inspire-toi"} textTab2={"Inspire-toi de sportifs du monde entier et motive-les à ton tour"}
-                        titleTab3={"Progresse"} textTab3={"Progresse ! Grâce aux nombreux entraînements et conseils de professionnels du sport"}
-                    />
+                <div className={'flex flex-col lg:items-start items-center justify-center order-2 2xl:px-28 lg:px-20'}>
+                    <div className={'px-4 py-1 safari-overflow-fix rounded-[30px] bg-black text-white mb-[10px] w-fit'}>{props.tagAppFeature1}</div>
+                    <h2 style={{ whiteSpace: "pre-line" }} className={'mb-[10px] lg:text-left text-center'}>{props.titleAppFeature1}</h2>
+                    <p style={{ whiteSpace: "pre-line" }} className={'lg:text-left text-center lg:mb-0 mb-8'}>{props.subtitleAppFeature1}</p>
                 </div>
 
+                <div className={'flex flex-col justify-center lg:items-start items-center lg:order-3 order-4 2xl:px-28 lg:px-20'}>
+                    <div className={'px-4 py-1 safari-overflow-fix rounded-[30px] bg-black text-white mb-[10px] w-fit'}>{props.tagAppFeature2}</div>
+                    <h2 style={{ whiteSpace: "pre-line" }} className={'mb-[10px] lg:text-left text-center'}>{props.titleAppFeature2}</h2>
+                    <p style={{ whiteSpace: "pre-line" }} className={'lg:text-left text-center lg:mb-0 mb-8'}>{props.subtitleAppFeature2}</p>
+                </div>
+                <div className={'safari-overflow-fix rounded-[30px] lg:safari-overflow-fix rounded-[40px] lg:order-4 order-3'}>
+                    <img src={Pro} className={'object-cover lg:h-full w-full md:object-center object-top h-[50vh]'} alt=""/>
+                </div>
+
+                <div className={'safari-overflow-fix rounded-[30px]  lg:safari-overflow-fix rounded-[40px] order-5'}>
+                    <img src={Entreprise} className={'object-cover lg:h-full w-full lg:object-center object-top h-[50vh]'} alt=""/>
+                </div>
+                <div className={' flex flex-col justify-center order-6 lg:items-start items-center 2xl:px-28 lg:px-20'}>
+                    <div className={'px-4 py-1 safari-overflow-fix rounded-[30px] bg-black text-white mb-[10px] w-fit'}>{props.tagAppFeature3}</div>
+                    <h2 style={{ whiteSpace: "pre-line" }} className={'mb-[10px] lg:text-left text-center'}>{props.titleAppFeature3}</h2>
+                    <p style={{ whiteSpace: "pre-line" }} className={'lg:text-left text-center lg:mb-0 mb-8'}>{props.subtitleAppFeature3}</p>
+                </div>
 
             </div>
+
+
+
+
 
         </div>
     );
