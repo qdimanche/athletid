@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 
 const StyledBurger = styled.div`
-  width: 1.25rem;
+  width: 2rem;
   height: 1.25rem;
   display: flex;
   justify-content: space-around;

@@ -38,9 +38,9 @@ const Navbar = (props) => {
 
             <div className={`flex items-center ${props.animation}`}>
                 <ul className={`justify-end items-center px-10 w-full  lg:flex hidden space-x-8 ${props.animation}`}>
-                    <li className={scrollPosition < 100 && props.playAnimation === true ? `translate-y-0` : 'translate-y-[-300%] duration-1000'}>
+{/*                    <li className={scrollPosition < 100 && props.playAnimation === true ? `translate-y-0` : 'translate-y-[-300%] duration-1000'}>
                         <Link to="/a-propos">À propos de nous</Link>
-                    </li>
+                    </li>*/}
                     <li className={scrollPosition < 100 && props.playAnimation === true ? `translate-y-0 ` : 'translate-y-[-300%] duration-1000'}>
                         <Link to="/contact">Support</Link>
                     </li>
@@ -76,7 +76,7 @@ const Navbar = (props) => {
 
 
                         <ul className={'text-left apparition-from-bottom-hamburger-menu space-y-10'}>
-                            <li className={'text-[20px] lg:text-[14px] font-bold lg:!-mb-4'}>
+                            <li className={'text-[20px] lg:text-[14px]  font-bold lg:!-mb-4'}>
                                 Menu
                             </li>
                             <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
@@ -88,9 +88,9 @@ const Navbar = (props) => {
                             {/*                            <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
                                 <Link to="/timer">Timer</Link>
                             </li>*/}
-                            <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
+{/*                            <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
                                 <Link to="/a-propos">À propos</Link>
-                            </li>
+                            </li>*/}
                             <li className={'text-[2.5rem] lg:text-[38px] opacity-60'}>
                                 <Link to="/Contact">Contact</Link>
                             </li>

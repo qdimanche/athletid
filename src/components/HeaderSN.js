@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import {FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
 import { ReactComponent as DownloadPlayStore } from "../assets/images/downloadPlayStore.svg";
 import {ReactComponent as DownloadAppStore} from "../assets/images/downloadAppStore.svg";
@@ -14,11 +14,11 @@ const Header = (props) => {
                     <h1 style={{ whiteSpace: "pre-line" }} className={''}>{props.title}</h1>
                     <p style={{ whiteSpace: "pre-line" }} className={' mt-[10px] mb-[20px]  w-full md:block'}>{props.subTitle}</p>
                     <div className={`flex lg:justify-start justify-center space-x-4 xl:!mt-3 !w-full`}>
-                        <a target={'_blank'} href="https://play.google.com/store/apps/details?id=com.athletid.athletid&gl=FR">
-                            <DownloadPlayStore className={'hover:fill-white duration-300 rounded-[9px] overflow-y-hidden hover:bg-black '}/>
+                        <a target={'_blank'} rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.athletid.athletid&gl=FR">
+                            <DownloadPlayStore width={162} height={50} className={'hover:fill-white duration-300 rounded-[9px] hover:bg-black h-auto'}/>
                         </a>
-                        <a target={'_blank'} href="https://apps.apple.com/fr/app/athletid/id6443471192">
-                            <DownloadAppStore className={'hover:fill-white duration-300 rounded-[9px] overflow-y-hidden hover:bg-black '} alt=""/>
+                        <a target={'_blank'} rel="noreferrer" href="https://apps.apple.com/fr/app/athletid/id6443471192">
+                            <DownloadAppStore width={162} height={50} className={'hover:fill-white duration-300 rounded-[9px] hover:bg-black h-auto'} alt=""/>
                         </a>
                     </div>
                 </div>
@@ -27,9 +27,9 @@ const Header = (props) => {
                 </div>
                 <div
                     className={'absolute bottom-[1.75rem] lg:right-[2.5rem] right-[1.75rem] space-x-6 z-[900]  text-[1.3em] hidden md:flex'}>
-                    <a target={'_blank'} href="https://www.instagram.com/athletid/"><FaInstagram size={18}/></a>
-                    <a target={'_blank'} href="https://www.linkedin.com/company/athletid/"><FaFacebook size={18}/></a>
-                    <a target={'_blank'} href="https://www.facebook.com/TimerByAthletid"><FaLinkedin size={18}/></a>
+                    <a target={'_blank'} rel="noreferrer" href="https://www.instagram.com/athletid/"><FaInstagram size={18}/></a>
+                    <a target={'_blank'} rel="noreferrer" href="https://www.linkedin.com/company/athletid/"><FaFacebook size={18}/></a>
+                    <a target={'_blank'} rel="noreferrer" href="https://www.facebook.com/TimerByAthletid"><FaLinkedin size={18}/></a>
                 </div>
             </div>
 

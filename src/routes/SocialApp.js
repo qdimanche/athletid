@@ -1,8 +1,9 @@
 import React from 'react';
 import Navbar from '../components/Nav/Navbar'
-import TimerVideo from "../assets/videos/video.mp4";
 import ImgHeaderTimer from "../assets/images/img-header-timer.png"
-import Header from "../components/Header";
+import NetworkScreen01 from "../assets/images/networkScreen01.png";
+import NetworkScreen02 from "../assets/images/networkScreen02.png";
+import NetworkScreen03 from "../assets/images/networkScreen03.png";
 import SocialAppFeature from "../components/SocialApp/SocialAppFeature";
 import FeatureSquare from "../components/FeatureSquare";
 import Testimonial from "../components/Testimonial/Testimonial";
@@ -39,8 +40,11 @@ const SocialApp = () => {
                 titleFeatureSquare={"Un réseau social. \n Une émulation collective."}
                 subTitleFeatureSquare={"Du Bodybuilding au Crossfit en passant par le Yoga ou le Running, retrouve chaque discipline de l’entraînement et du bien-être ainsi que de nombreuses thématiques de conseils."}
                 titleSquare1={"Trouve \n ce dont tu as besoin !"}
+                imgSquare1={NetworkScreen01}
                 titleSquare2={"Découvre \n de nouveaux entraînements et conseils !"}
+                imgSquare2={NetworkScreen02}
                 titleSquare3={"Partage \n tes performances et objectifs !"}
+                imgSquare3={NetworkScreen03}
             />
             <Testimonial
                 titleTestimonial={"Ils ont rejoins notre \n version BETA"}

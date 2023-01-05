@@ -1,12 +1,14 @@
 const MasonryImages = {
 
     img1: require('./img1.webp'),
+    img1Tablet: require('./img1Tablet.webp'),
     img2: require('./img2.webp'),
     img3: require('./img3.webp'),
     img4: require('./img4.webp'),
     img5: require('./img5.webp'),
     img6: require('./img6.webp'),
     img7: require('./img7.webp'),
+    img7Tablet: require('./img7Tablet.webp'),
     img8: require('./img8.webp'),
     img9: require('./img9.webp'),
     img10: require('./img10.webp'),

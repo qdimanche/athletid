@@ -5,21 +5,21 @@ import ImgHeaderHome from "../../assets/images/img-header-home.png"
 const AboutContent = () => {
     return (
         <div data-scroll-section className={'2xl:mt-[15rem]  lg:!m-8  border-b border-white/10 overflow-x-hidden m-4 mb-16'}>
-            <div className={'flex lg:flex-row flex-col lg:space-y-0 space-y-6'}>
-                <div className={'lg:w-[30%] md:text-left text-center' }>
-                    <span className={'text-[1.5em]'}>Lorem ipsum dolor adipiscing</span>
+            <div className={'flex lg:flex-row flex-col lg:space-y-0 space-y-6 items-center'}>
+                <div className={' md:text-left text-center' }>
+                    <span className={'text-[1.5em]'}>Notre Vision. </span>
                 </div>
-                <div className={'flex flex-col md:text-left text-center  lg:w-[70%] lg:ml-8 space-y-8'}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed elementum dolor. Curabitur cursus lacus id porta gravida. Suspendisse eget commodo est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed elementum dolor. Curabitur cursus lacus id porta gravida. Suspendisse eget commodo est. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div className={'flex flex-col md:text-left text-center lg:ml-8'}>
+                    <p>Donner à chacun la possibilité d’atteindre ses objectifs. Lorsque deux forces sont jointes, leur efficacité est double</p>
                 </div>
             </div>
 
-            <div className={'flex lg:flex-row flex-col lg:space-y-0 space-y-6 my-16'}>
-                <div className={'lg:w-[30%] md:text-left text-center' }>
-                    <span className={'text-[1.5em]'}>Lorem ipsum dolor adipiscing</span>
+            <div className={'flex lg:flex-row flex-col lg:space-y-0 space-y-6 items-center my-8'}>
+                <div className={' md:text-left text-center' }>
+                    <span className={'text-[1.5em]'}>Notre Mission.</span>
                 </div>
-                <div className={'flex flex-col md:text-left text-center  lg:w-[70%] lg:ml-8 space-y-8'}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed elementum dolor. Curabitur cursus lacus id porta gravida. Suspendisse eget commodo est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed elementum dolor. Curabitur cursus lacus id porta gravida. Suspendisse eget commodo est. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div className={'flex flex-col md:text-left text-center lg:ml-8 '}>
+                    <p>Créer une expérience et un environnement qui sont le reflet des sportifs du monde entier, dans le but de les accompagner dans leur quêtes.</p>
                 </div>
             </div>
 

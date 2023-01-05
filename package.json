@@ -12,6 +12,7 @@
     "@types/react": "^18.0.21",
     "axios": "^1.1.0",
     "blazy": "^1.8.2",
+    "express": "^4.18.2",
     "flowbite": "^1.5.5",
     "flowbite-react": "^0.3.7",
     "gh-pages": "^4.0.0",
