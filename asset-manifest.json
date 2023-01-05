@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/athletid/static/css/main.0637ff54.css",
-    "main.js": "/athletid/static/js/main.3b776991.js",
+    "main.css": "/athletid/static/css/main.4314fc19.css",
+    "main.js": "/athletid/static/js/main.54ff9370.js",
     "static/media/testhome4.mp4": "/athletid/static/media/testhome4.a8f531827b6870a5b285.mp4",
     "static/media/heroVideoHome.mp4": "/athletid/static/media/heroVideoHome.777bc56aec26055483d6.mp4",
     "static/media/sn-video.mp4": "/athletid/static/media/sn-video.c9a976bd9335ea2cf5ba.mp4",
@@ -53,16 +53,16 @@
     "static/media/timerScreen03.webp": "/athletid/static/media/timerScreen03.5dd34190553259db417d.webp",
     "static/media/timerScreen01.webp": "/athletid/static/media/timerScreen01.51279f0a084ba7787572.webp",
     "static/media/timer-app-tempo.webp": "/athletid/static/media/timer-app-tempo.6bde9ef9dcedbbcc0ae8.webp",
-    "static/media/downloadAppStore.svg": "/athletid/static/media/downloadAppStore.2de454eec4ec5885ed9238a55592bf74.svg",
-    "static/media/downloadPlayStore.svg": "/athletid/static/media/downloadPlayStore.1b4ae334b1554426ec304b688f2776ac.svg",
+    "static/media/downloadAppStore.svg": "/athletid/static/media/downloadAppStore.12072e9ee412d634197f7005fe45475e.svg",
+    "static/media/downloadPlayStore.svg": "/athletid/static/media/downloadPlayStore.cded4a7047a90b0440e3ce21fb73cb5a.svg",
     "static/media/text-logo.svg": "/athletid/static/media/text-logo.0341e611b803fe16c40966196d963217.svg",
     "index.html": "/athletid/index.html",
     "static/media/logo.svg": "/athletid/static/media/logo.a1b8393c63d890880775ce057b5d50c2.svg",
-    "main.0637ff54.css.map": "/athletid/static/css/main.0637ff54.css.map",
-    "main.3b776991.js.map": "/athletid/static/js/main.3b776991.js.map"
+    "main.4314fc19.css.map": "/athletid/static/css/main.4314fc19.css.map",
+    "main.54ff9370.js.map": "/athletid/static/js/main.54ff9370.js.map"
   },
   "entrypoints": [
-    "static/css/main.0637ff54.css",
-    "static/js/main.3b776991.js"
+    "static/css/main.4314fc19.css",
+    "static/js/main.54ff9370.js"
   ]
 }
