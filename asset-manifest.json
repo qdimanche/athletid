@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/athletid/static/css/main.78d5cdeb.css",
-    "main.js": "/athletid/static/js/main.61421239.js",
+    "main.js": "/athletid/static/js/main.6ecc87aa.js",
     "static/media/testhome4.mp4": "/athletid/static/media/testhome4.a8f531827b6870a5b285.mp4",
     "static/media/heroVideoHome.mp4": "/athletid/static/media/heroVideoHome.777bc56aec26055483d6.mp4",
     "static/media/sn-video.mp4": "/athletid/static/media/sn-video.c9a976bd9335ea2cf5ba.mp4",
@@ -59,10 +59,10 @@
     "index.html": "/athletid/index.html",
     "static/media/logo.svg": "/athletid/static/media/logo.a1b8393c63d890880775ce057b5d50c2.svg",
     "main.78d5cdeb.css.map": "/athletid/static/css/main.78d5cdeb.css.map",
-    "main.61421239.js.map": "/athletid/static/js/main.61421239.js.map"
+    "main.6ecc87aa.js.map": "/athletid/static/js/main.6ecc87aa.js.map"
   },
   "entrypoints": [
     "static/css/main.78d5cdeb.css",
-    "static/js/main.61421239.js"
+    "static/js/main.6ecc87aa.js"
   ]
 }
